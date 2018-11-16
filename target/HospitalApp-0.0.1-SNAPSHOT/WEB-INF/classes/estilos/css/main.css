@@ -1,0 +1,93 @@
+body{
+	font-family:Arial, Verdana,Times;
+	font-size: .72em;
+	color: #444;
+	background: #489cec;
+	
+	
+}
+.content{
+	width:960px;
+	background: #c0c0c0;
+	border-radius: 5px;
+	
+}
+/*PARA LOS CAMPOS */
+.row{
+	/*background: #EED; */
+}
+.Box{
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	}
+	.row .box{
+	display: inlane-block;
+	
+	}
+	
+	
+	
+.spam10{
+	width:99%;
+	}
+	.spam9{
+	width:89%;
+	}
+	.spam8{
+	width:79%;
+	}
+	.spam7{
+	width:69%;
+	}
+	.spam6{
+	width:59%;
+	}
+	.spam5{
+	width:49%;
+	}
+	.spam4{
+	width:39%;
+	}
+	.spam3{
+	width:29%;
+	}
+	.spam2{
+	width:19%;
+	}
+	.spam1{
+	width:9%;
+	}
+	.row p{
+	display: inlane-block;
+	margin:0px;
+	vertical-aligne:middle;
+	
+	}
+	align-top{
+	vertical-align: top;
+	}
+	align-middle{
+	vertical-align: middle;
+	}
+	align-bottom{
+	vertical-align: bottom;
+	}
+	align-right{
+	text-align: right;
+	}
+	align-center{
+	text-align: center;
+	}
+	align-left{
+	text-align: left;
+	}
+	
+	.center{
+	margin: 0 auto;
+	}
+	.border{
+	border:solid #80ff801px;
+	}
+	.padding{
+	padding: 10px;
+	}

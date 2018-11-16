@@ -1,0 +1,21 @@
+table.datatable{
+	border-collapse:collapse;
+	border: 1px solid #e79f2a;
+	
+}
+table.datatable td table.datatable th{
+	border: 1px solid #00ff80;
+	padding: 4px 6px;
+}
+table.datatable .crud{
+	width:20px;
+}
+table.datatable tbody tr:nth-of-type(odd){
+	background-color: #ffffff;
+}
+table.datatable tbody tr:nth-of-type(even){
+	background-color: #ffea92;
+}
+	table.datatable tbody tr:nth-of-type(hover){
+	background-color: #00ff80;
+	}

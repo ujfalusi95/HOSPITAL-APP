@@ -2,6 +2,7 @@ package com.emilio.classes;
 import java.util.List;
 
 
+
 import com.emilio.init.JDBCHelper;
 public class Ingreso {
 	private String fechaingreso;

@@ -8,7 +8,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Editar Ingreso</title>
 </head>
-<body>
+<body> 
 	<%
 		
 		
@@ -24,7 +24,7 @@
  
 Ingreso ingreso = new Ingreso (fechaingreso,fechasalida,codigomedico,planta,cama,coste,diagnostico,Integer.parseInt(nhistorial),Integer.parseInt(nexpediente)); 
 
-	ingreso.editarIngreso();
+	ingreso.editarIngreso(); 
 		
 		
 		response.sendRedirect("MostrarIngresos.jsp");

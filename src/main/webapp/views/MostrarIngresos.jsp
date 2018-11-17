@@ -2,7 +2,7 @@
     pageEncoding="ISO-8859-1"%>
     <%@page import="java.util.List"%>
 <%@page import="java.util.ArrayList"%>
-<%@page import= "com.emilio.init.*"%>
+<%@page import= "com.emilio.init.*"%> 
 <%@page import= "com.emilio.classes.Paciente"%>
 <%@page import= "com.emilio.classes.Ingreso"%>
 <!doctype html>

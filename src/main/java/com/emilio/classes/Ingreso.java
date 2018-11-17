@@ -23,7 +23,7 @@ public Ingreso(){}
 public Ingreso(Integer nhistorial) {
 	super();
 	this.nhistorial = nhistorial;
-}
+} 
 
 
 

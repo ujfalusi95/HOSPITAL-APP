@@ -1,4 +1,8 @@
-
+<%@page import="java.sql.SQLException"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.Connection"%>
 <%@page import= "com.emilio.init.*"%>
 <%@page import= "com.emilio.classes.Paciente"%>
 <%@page import= "com.emilio.classes.Medico"%>

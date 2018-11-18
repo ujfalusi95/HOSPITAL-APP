@@ -243,7 +243,7 @@ public class Paciente {
 	public void setNhistorial(Integer nhistorial) {
 		this.nhistorial = nhistorial;
 	}
-
+ 
 
 
 

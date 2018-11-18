@@ -4,15 +4,16 @@
 <%@page import="java.util.ArrayList"%>
 <%@page import= "com.emilio.init.*"%>
 <%@page import= "com.emilio.classes.Paciente"%>
+<%@page import= "com.emilio.classes.Ingreso"%>
 <!doctype html>
-<html lang="en">  
+<html lang="en"> 
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
    <!--  <link rel="icon" href="../../../../favicon.ico"> -->
- 
+
      <title>Dashboard Template for Bootstrap</title>  
 
     <!-- Bootstrap core CSS -->
@@ -68,15 +69,15 @@
                   
           
 
-          <h2>GESTION DE PACIENTES </h2>
+          <h2>GESTION DE INGRESOS </h2>
           <div>
           <fieldset >
           <div class="form-group">
-          <label for="disabledTextInput"> Nombre del paciente</label>
+          <label for="disabledTextInput"> fechaingreso</label>
           <input type="text" id="nombrepaciente" class="form-control" placeholder="Ingrese el nombre">
         </div>
         <div class="form-group">
-        <label for="disabledSelect">Poblacion</label>
+        <label for="disabledSelect">Diagnostico</label>
         <select id="poblacion" class="form-control">
          <option value="seleccionar">seleccionar</option>
 		<%
@@ -109,7 +110,7 @@
              
            <div class="aligne-right">
            
-           <a href="FormularioAgregarPaciente.jsp"> Nuevo Paciente</a> 
+           <a href="FormularioAgregarIngreso.jsp"> Nuevo Ingreso</a> 
            </div>
          
                   
@@ -122,47 +123,43 @@
             
               <thead>
                 <tr>
-                 <th>Numero Historial Clinico</th>
-                  <th>Nombre Paciente</th>
-                  <th>Apellidos Paciente</th>
-                  <th>Domiclio</th>
-                   <th>Poblacion</th>
-                  <th>CP</th>
-                  <th>Telefono</th>
-                  <th>Fecha de Nacimiento</th>
-                  <th>Sexo</th>
-                  <th>DNI</th>
-                  <th>Numero de la Seguridad Social</th>
-                 
-                  <th> Acciones</th>
+                   <th>Neexpediente</th>
+                  <th>Fecha Ingreso</th>
+                  <th>Fecha de alta</th>
+                  <th>Codigo del medico</th>
+                   <th>Planta</th>
+                  <th>Cama</th>
+                  <th>Coste</th>
+                  <th>Diagnostico</th>
+                  <th>Nhistorial</th>
+               
+                 <th> Acciones</th>
                 </tr>
               </thead>
               <tbody>
               		<%
 
 	       
-				List<Paciente> listapaciente = Paciente.ListarTodosPacientes();
-			for(Paciente paciente: listapaciente){
+				List<Ingreso> listaingresos = Ingreso.ListarTodosIngresos();
+			for(Ingreso ingreso: listaingresos){
 	%>
 	
 <tr>
-<td><%=paciente.getNhistorial()%></td> 
-<td><%=paciente.getNombrepaciente()%></td>
-<td><%=paciente.getApellidospaciente()%></td>
-<td><%=paciente.getDomicilio()%></td>
-<td><%=paciente.getPoblacion()%></td>
-<td><%=paciente.getCp()%></td>
-<td><%=paciente.getTelefono()%></td>
-<td><%=paciente.getFechanacimiento()%></td>
-<td><%=paciente.getSexo()%></td>
-<td><%=paciente.getDni()%></td>
-<td><%=paciente.getNss()%></td>
+<td><%=ingreso.getNexpediente()%></td>
+<td><%=ingreso.getFechaingreso()%></td>  
+<td><%=ingreso.getFechasalida()%></td>
+<td><%=ingreso.getCodigomedico()%></td>
+<td><%=ingreso.getPlanta()%></td>
+<td><%=ingreso.getCama()%></td> 
+<td><%=ingreso.getCoste()%></td>
+<td><%=ingreso.getDiagnostico()%></td>
+<td><%=ingreso.getNhistorial()%></td>
 
 <td>
 
 
-<a href="FormularioEditarPaciente.jsp?nhistorial=<%=paciente.getNhistorial()%>">Editar</a>
-<a href="EliminarPaciente.jsp?dni=<%=paciente.getDni()%>">Eliminar</a>
+<a href="FormularioEditarIngreso.jsp?nhistorial=<%=ingreso.getNhistorial()%>">Editar</a>
+<a href="EliminarIngreso.jsp?nhistorial=<%=ingreso.getNhistorial()%>">Eliminar</a>
 </td>
 </tr>
 	<%
@@ -181,7 +178,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
  
     <script src="../../assets/js/vendor/popper.min.js"></script>
     <script src="../../dist/js/bootstrap.min.js"></script>

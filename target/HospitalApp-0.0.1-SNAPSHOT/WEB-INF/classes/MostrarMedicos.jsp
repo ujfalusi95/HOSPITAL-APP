@@ -4,15 +4,16 @@
 <%@page import="java.util.ArrayList"%>
 <%@page import= "com.emilio.init.*"%>
 <%@page import= "com.emilio.classes.Paciente"%>
+<%@page import= "com.emilio.classes.Medico"%>
 <!doctype html>
-<html lang="en">  
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
    <!--  <link rel="icon" href="../../../../favicon.ico"> -->
- 
+
      <title>Dashboard Template for Bootstrap</title>  
 
     <!-- Bootstrap core CSS -->
@@ -68,24 +69,24 @@
                   
           
 
-          <h2>GESTION DE PACIENTES </h2>
+          <h2>GESTION DE MEDICOS </h2>
           <div>
           <fieldset >
           <div class="form-group">
-          <label for="disabledTextInput"> Nombre del paciente</label>
+          <label for="disabledTextInput"> Nombre del medico</label>
           <input type="text" id="nombrepaciente" class="form-control" placeholder="Ingrese el nombre">
         </div>
         <div class="form-group">
-        <label for="disabledSelect">Poblacion</label>
+        <label for="disabledSelect">Especialidad</label>
         <select id="poblacion" class="form-control">
          <option value="seleccionar">seleccionar</option>
 		<%
 		
-		List<String> listapoblacion =  Paciente.ListarTodasPoblaciones();
-			for (String poblacion: listapoblacion){
+		List<String> listaespecialidades =  Medico.ListarTodasEspecialidades();
+			for (String especialidad: listaespecialidades){
 		%>
-		<option value="<%=poblacion%>">
- 			<%=poblacion%>
+		<option value="<%=especialidad%>">
+ 			<%=especialidad%>
  				</option>
 		<% } %>
       
@@ -109,7 +110,7 @@
              
            <div class="aligne-right">
            
-           <a href="FormularioAgregarPaciente.jsp"> Nuevo Paciente</a> 
+           <a href="FormularioAgregarMedicos.jsp"> Nuevo Medico</a> 
            </div>
          
                   
@@ -122,17 +123,13 @@
             
               <thead>
                 <tr>
-                 <th>Numero Historial Clinico</th>
-                  <th>Nombre Paciente</th>
-                  <th>Apellidos Paciente</th>
-                  <th>Domiclio</th>
-                   <th>Poblacion</th>
-                  <th>CP</th>
-                  <th>Telefono</th>
-                  <th>Fecha de Nacimiento</th>
-                  <th>Sexo</th>
-                  <th>DNI</th>
-                  <th>Numero de la Seguridad Social</th>
+                 <th>Nombre del Medico</th>
+                  <th>Apellidos del Medico</th>
+                  <th>Especialidad</th>
+                  <th>Numero de colegiado</th>
+                  <th>Cargo</th>
+                  <th>Codigo del Medico</th>
+               
                  
                   <th> Acciones</th>
                 </tr>
@@ -141,28 +138,24 @@
               		<%
 
 	       
-				List<Paciente> listapaciente = Paciente.ListarTodosPacientes();
-			for(Paciente paciente: listapaciente){
+				List<Medico> listamedico = Medico.ListarTodosMedicos();
+			for(Medico medico: listamedico){
 	%>
 	
 <tr>
-<td><%=paciente.getNhistorial()%></td> 
-<td><%=paciente.getNombrepaciente()%></td>
-<td><%=paciente.getApellidospaciente()%></td>
-<td><%=paciente.getDomicilio()%></td>
-<td><%=paciente.getPoblacion()%></td>
-<td><%=paciente.getCp()%></td>
-<td><%=paciente.getTelefono()%></td>
-<td><%=paciente.getFechanacimiento()%></td>
-<td><%=paciente.getSexo()%></td>
-<td><%=paciente.getDni()%></td>
-<td><%=paciente.getNss()%></td>
+<td><%=medico.getNombremedico()%></td> 
+<td><%=medico.getApellidosmedico()%></td>
+<td><%=medico.getEspecialidad()%></td>
+<td><%=medico.getNumerocolegiado()%></td>
+<td><%=medico.getCargo()%></td>
+<td><%=medico.getCodigomedico()%></td>
+
 
 <td>
 
 
-<a href="FormularioEditarPaciente.jsp?nhistorial=<%=paciente.getNhistorial()%>">Editar</a>
-<a href="EliminarPaciente.jsp?dni=<%=paciente.getDni()%>">Eliminar</a>
+<a href="FormularioEditarMedico.jsp?codigomedico=<%=medico.getCodigomedico()%>">Editar</a>
+<a href="EliminarMedico.jsp?codigomedico=<%=medico.getCodigomedico()%>">Eliminar</a>
 </td>
 </tr>
 	<%

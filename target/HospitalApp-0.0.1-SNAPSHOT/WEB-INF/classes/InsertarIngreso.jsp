@@ -10,7 +10,7 @@
 </head>
 <body>
 	<%
-		 
+		
 		
 		//Recogiendo parámetros
 		String fechaingreso = request.getParameter("fechaingreso");

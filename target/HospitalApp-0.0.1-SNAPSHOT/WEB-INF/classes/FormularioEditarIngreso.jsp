@@ -14,7 +14,7 @@
 <body>
 	<%
 		
-			 
+			
 			String nhistorial = request.getParameter("nhistorial");
 			
 		

@@ -9,7 +9,7 @@
 <body> 
 <a href="MostrarPaciente.jsp">Mostrar Todos los pacientes pinchando aqui.</a>
 <%@ include file ="views\js\head.jspf"
-
+ 
 %>
 </body>
 </html>

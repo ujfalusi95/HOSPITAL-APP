@@ -4,12 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Buienvenido</title>
+<title>Bienvenido</title>
 </head>
-<body>
+<body> 
 <a href="MostrarPaciente.jsp">Mostrar Todos los pacientes pinchando aqui.</a>
 <%@ include file ="views\js\head.jspf"
-
+ 
 %>
 </body>
 </html>

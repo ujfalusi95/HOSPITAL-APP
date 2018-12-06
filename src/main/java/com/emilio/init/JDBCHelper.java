@@ -22,10 +22,10 @@ public class JDBCHelper<T> {
 			//  2 maneras de hacerla properties.load(JDBCHelper.class.getClassLoader().getResourceAsStream("config.properties"));
 			properties.load(Thread.currentThread().getContextClassLoader()
 					.getResourceAsStream("config.properties"));
-			String driver = properties.getProperty("key.driver");
-			String url = properties.getProperty("key.url");
-			String user = properties.getProperty("key.user");
-			String password = properties.getProperty("key.password");
+			String driver = System.getenv().get("key.driver");
+			String url = System.getenv().get("key.url");
+			String user = System.getenv().get("key.user");
+			String password = System.getenv().get("key.password");
 			Class.forName(driver);
 			conexion = DriverManager.getConnection(url, user, password);
 		} catch (Exception e) {

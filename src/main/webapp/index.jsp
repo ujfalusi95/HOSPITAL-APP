@@ -6,7 +6,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Product example for Bootstrap</title>
+    <title>Sistema de Gestion de Hospitales</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../public/dist/css/bootstrap.min.css" rel="stylesheet">

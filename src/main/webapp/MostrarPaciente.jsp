@@ -14,7 +14,7 @@
    <!--  <link rel="icon" href="../../../../favicon.ico"> -->
  
      <title>Dashboard Template for Bootstrap</title>  
-
+ <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
     <!-- Bootstrap core CSS -->
     <link href="../public/dist/css/bootstrap.min.css" rel="stylesheet">
 

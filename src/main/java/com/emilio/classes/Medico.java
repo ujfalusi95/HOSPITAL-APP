@@ -1,4 +1,6 @@
 package com.emilio.classes;
+import java.net.URISyntaxException;
+import java.sql.SQLException;
 import java.util.List;
 
 
@@ -112,14 +114,14 @@ public void setCodigomedico(String codigomedico) {
 
 //Metodos
 
-public static List<Medico> ListarTodosMedicos() {
+public static List<Medico> ListarTodosMedicos() throws URISyntaxException, SQLException {
 	JDBCHelper<Medico> helper = new JDBCHelper<Medico>();
 	String sql = "Select nombremedico,apellidosmedico,especialidad,numerocolegiado,cargo,codigomedico from medico";
 	List<Medico> lista = helper.seleccionarRegistros(sql, Medico.class);
 	return lista;
 }
 
-public static List<String> ListarTodasEspecialidades() {
+public static List<String> ListarTodasEspecialidades() throws URISyntaxException, SQLException {
 	JDBCHelper<String> helper = new JDBCHelper<String>();
 List<String> lista= helper.seleccionarRegistros("select distinct(especialidad) from medico", String.class);
 	
@@ -128,17 +130,17 @@ List<String> lista= helper.seleccionarRegistros("select distinct(especialidad) f
 	return lista ;
 	
 }
-public  void insertarMedico() {
+public  void insertarMedico() throws URISyntaxException, SQLException {
    JDBCHelper<Medico> helper = new JDBCHelper<Medico>();
    String sql = "INSERT INTO medico (nombremedico,apellidosmedico,especialidad,numerocolegiado,cargo,codigomedico)  VALUES ('"+this.nombremedico+"','"+this.apellidosmedico+"','"+this.especialidad+"','"+this.numerocolegiado+"','"+this.cargo+"','"+this.codigomedico+"')";
    helper.modificarRegistro(sql);
 }
-public  void editarMedico() {
+public  void editarMedico() throws URISyntaxException, SQLException {
    JDBCHelper<Medico> helper = new JDBCHelper<Medico>();
    String sql = "UPDATE medico SET nombremedico='"+this.nombremedico+"',apellidosmedico='"+this.apellidosmedico+"',especialidad='"+this.especialidad+"',numerocolegiado='"+this.numerocolegiado+"',cargo='"+this.cargo+"',codigomedico='"+this.codigomedico+"' WHERE codigomedico='"+this.codigomedico+"'";
    helper.modificarRegistro(sql);
 }
-public  Medico buscarMedicoPorCodigo() {
+public  Medico buscarMedicoPorCodigo() throws URISyntaxException, SQLException {
    JDBCHelper<Medico> helper = new JDBCHelper<Medico>();
 	String sql= "SELECT * FROM medico WHERE codigomedico='"+this.codigomedico+"'";
 	List<Medico> lista = helper.seleccionarRegistros(sql, Medico.class);
@@ -147,7 +149,7 @@ public  Medico buscarMedicoPorCodigo() {
 
 
 }
-public  void eliminarMedico() {
+public  void eliminarMedico() throws URISyntaxException, SQLException {
   JDBCHelper<Medico> helper = new JDBCHelper<Medico>();
   String sql = "DELETE FROM medico WHERE codigomedico='"+this.codigomedico+"'";
   helper.modificarRegistro(sql);

@@ -5,6 +5,8 @@ package com.emilio.classes;
 
 
 
+import java.net.URISyntaxException;
+import java.sql.SQLException;
 import java.util.List;
 
 
@@ -268,14 +270,14 @@ public class Paciente {
 
 
 
-	public static List<Paciente> ListarTodosPacientes() {
+	public static List<Paciente> ListarTodosPacientes() throws URISyntaxException, SQLException {
 		JDBCHelper<Paciente> helper = new JDBCHelper<Paciente>();
 		String sql = "Select nombrepaciente,apellidospaciente,domicilio,poblacion,cp,telefono,fechanacimiento,sexo,dni,nss,nhistorial from paciente";
 		List<Paciente> lista = helper.seleccionarRegistros(sql, Paciente.class);
 		return lista;
 	}
 	
-	public static List<String> ListarTodasPoblaciones() {
+	public static List<String> ListarTodasPoblaciones() throws URISyntaxException, SQLException {
 		JDBCHelper<String> helper = new JDBCHelper<String>();
 	List<String> lista= helper.seleccionarRegistros("select distinct(poblacion) from paciente", String.class);
 		
@@ -284,17 +286,17 @@ public class Paciente {
 		return lista ;
 		
 	}
-   public  void insertarPaciente() {
+   public  void insertarPaciente() throws URISyntaxException, SQLException {
 	   JDBCHelper<Paciente> helper = new JDBCHelper<Paciente>();
 	   String sql = "INSERT INTO paciente (nombrepaciente,apellidospaciente,domicilio,poblacion,cp,telefono,fechanacimiento,sexo,dni,nss)  VALUES ('"+this.nombrepaciente+"','"+this.apellidospaciente+"','"+this.domicilio+"','"+this.poblacion+"','"+this.cp+"','"+this.telefono+"','"+this.fechanacimiento+"','"+this.sexo+"','"+this.dni+"','"+this.nss+"')";
        helper.modificarRegistro(sql);
    }
-   public  void editarPaciente() {
+   public  void editarPaciente() throws URISyntaxException, SQLException {
 	   JDBCHelper<Paciente> helper = new JDBCHelper<Paciente>();
 	   String sql = "UPDATE paciente SET nombrepaciente='"+this.nombrepaciente+"',apellidospaciente='"+this.apellidospaciente+"',domicilio='"+this.domicilio+"',poblacion='"+this.poblacion+"',cp='"+this.cp+"',telefono='"+this.telefono+"',fechanacimiento='"+this.fechanacimiento+"',sexo='"+this.sexo+"',dni='"+this.dni+"',nss='"+this.nss+"' WHERE nhistorial='"+this.nhistorial+"'";
        helper.modificarRegistro(sql);
 }
-   public  Paciente buscarPacientePorDNI() {
+   public  Paciente buscarPacientePorDNI() throws URISyntaxException, SQLException {
 	   JDBCHelper<Paciente> helper = new JDBCHelper<Paciente>();
 		String sql= "SELECT * FROM paciente WHERE nhistorial="+this.nhistorial;
 		List<Paciente> lista = helper.seleccionarRegistros(sql, Paciente.class);
@@ -303,7 +305,7 @@ public class Paciente {
    
    
 }
-  public  void eliminarPaciente() {
+  public  void eliminarPaciente() throws URISyntaxException, SQLException {
 	  JDBCHelper<Paciente> helper = new JDBCHelper<Paciente>();
 	  String sql = "DELETE FROM paciente WHERE dni='"+this.dni+"'";
 	  helper.modificarRegistro(sql);

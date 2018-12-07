@@ -1,4 +1,6 @@
 package com.emilio.classes;
+import java.net.URISyntaxException;
+import java.sql.SQLException;
 import java.util.List;
 
 
@@ -173,30 +175,30 @@ public void setNexpediente(Integer nexpediente) {
 
 //Metodos
 
-public static List<Ingreso> ListarTodosIngresos() {
+public static List<Ingreso> ListarTodosIngresos() throws URISyntaxException, SQLException {
 	JDBCHelper<Ingreso> helper = new JDBCHelper<Ingreso>();
 	String sql = "Select fechaingreso,fechasalida,codigomedico,planta,cama,coste,diagnostico,nhistorial,nexpediente from ingreso";
 	List<Ingreso> lista = helper.seleccionarRegistros(sql, Ingreso.class);
 	return lista;
 }
 
-public static List<String> ListarTodosDiagonosticos() {
+public static List<String> ListarTodosDiagonosticos() throws URISyntaxException, SQLException {
 	JDBCHelper<String> helper = new JDBCHelper<String>();
 List<String> lista= helper.seleccionarRegistros("select distinct(diagnostico) from diagnostico", String.class);
 return lista ;
 	
 }
-public  void insertarIngreso() {
+public  void insertarIngreso() throws URISyntaxException, SQLException {
    JDBCHelper<Ingreso> helper = new JDBCHelper<Ingreso>();
    String sql = "INSERT INTO ingreso (fechaingreso,fechasalida,codigomedico,planta,cama,coste,diagnostico,nhistorial)  VALUES ('"+this.fechaingreso+"','"+this.fechasalida+"','"+this.codigomedico+"','"+this.planta+"','"+this.cama+"','"+this.coste+"','"+this.diagnostico+"','"+this.nhistorial+"')";
    helper.modificarRegistro(sql);
 }
-public  void editarIngreso() {
+public  void editarIngreso() throws URISyntaxException, SQLException {
    JDBCHelper<Ingreso> helper = new JDBCHelper<Ingreso>();
    String sql = "UPDATE ingreso SET fechaingreso='"+this.fechaingreso+"',fechasalida='"+this.fechasalida+"',codigomedico='"+this.codigomedico+"',planta='"+this.planta+"',cama='"+this.cama+"',coste='"+this.coste+"',diagnostico='"+this.diagnostico+"',nhistorial='"+this.nhistorial+"' WHERE nexpediente='"+this.nexpediente+"'";
    helper.modificarRegistro(sql);
 }
-public  Ingreso buscarHistorial() {
+public  Ingreso buscarHistorial() throws URISyntaxException, SQLException {
    JDBCHelper<Ingreso> helper = new JDBCHelper<Ingreso>();
 	String sql= "SELECT * FROM ingreso WHERE nhistorial="+this.nhistorial;
 	List<Ingreso> lista = helper.seleccionarRegistros(sql, Ingreso.class);
@@ -205,7 +207,7 @@ public  Ingreso buscarHistorial() {
 
 
 }
-public  void eliminarIngreso() {
+public  void eliminarIngreso() throws URISyntaxException, SQLException {
   JDBCHelper<Ingreso> helper = new JDBCHelper<Ingreso>();
   String sql = "DELETE FROM ingreso WHERE nhistorial='"+this.nhistorial+"'";
   helper.modificarRegistro(sql);

@@ -63,7 +63,7 @@
          <div class="col-md-8 ml-sm-auto col-lg-10 pt-3 px-3">
           
      
-         
+         <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
         
                   
           
@@ -199,7 +199,7 @@
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          labels: ["W1", "W2", "W3", "W4", "W5", "W6", "W7"],
           datasets: [{
             data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
             lineTension: 0,

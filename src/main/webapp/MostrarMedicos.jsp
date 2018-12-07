@@ -74,7 +74,8 @@
           <fieldset >
           <div class="form-group">
           <label for="disabledTextInput"> Nombre del medico</label>
-          <input type="text" id="nombrepaciente" class="form-control" placeholder="Ingrese el nombre">
+         
+   <input type="text" id="nombrepaciente" class="form-control" placeholder="Ingrese el nombre">
         </div>
         <div class="form-group">
         <label for="disabledSelect">Especialidad</label>
@@ -92,7 +93,14 @@
       
         </select>
             </div>
-            <button id="btnBuscar" class="btn btn-primary">Buscar</button>
+            	<%
+
+	       
+				List<Medico> listamedico = Medico.ListarTodosMedicos();
+			for(Medico medico: listamedico){
+	%>
+	
+            <button id="btnBuscar" class="btn btn-primary" onKeyUp="listamedico">Buscar</button>
          </fieldset>
           </div>
           

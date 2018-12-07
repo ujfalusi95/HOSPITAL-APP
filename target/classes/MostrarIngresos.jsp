@@ -198,7 +198,7 @@
         data: {
           labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
           datasets: [{
-            data: [ingreso.getCoste(), 21345, 18483, 24003, 23489, 24092, 12034],
+            data: [1000, 21345, 18483, 24003, 23489, 24092, 12034],
             lineTension: 0,
             backgroundColor: 'transparent',
             borderColor: '#007bff',

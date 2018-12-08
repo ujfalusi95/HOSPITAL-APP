@@ -6,39 +6,12 @@
 <%@page import= "com.emilio.classes.Paciente"%>
 <%@page import= "com.emilio.classes.Ingreso"%>
 <%@ page import="java.util.*,java.sql.*" %>
-<%@ page import="com.google.gson.Gson"%>
-<%@ page import="com.google.gson.JsonObject"%>
+
 
 
 
  
-<%
-Gson gsonObj = new Gson();
-Map<Object,Object> map = null;
-List<Map<Object,Object>> list = new ArrayList<Map<Object,Object>>();
-String dataPoints = null;
- 
-try{
-	Class.forName("org.postgresql.Driver"); 
-	Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/HOSPITAL", "postgres", "balonmano2014");
-	Statement statement = connection.createStatement();
-	String xVal, yVal;
-	
-	ResultSet resultSet = statement.executeQuery("select * from ingreso");
-	
-	while(resultSet.next()){
-		xVal = resultSet.getString("x");
-		yVal = resultSet.getString("y");
-		map = new HashMap<Object,Object>(); map.put("x", Double.parseDouble(xVal)); map.put("y", Double.parseDouble(yVal)); list.add(map);
-		dataPoints = gsonObj.toJson(list);
-	}
-	connection.close();
-}
-catch(SQLException e){
-	out.println("<div  style='width: 50%; margin-left: auto; margin-right: auto; margin-top: 200px;'>Could not connect to the database. Please check if you have mySQL Connector installed on the machine - if not, try installing the same.</div>");
-	dataPoints = null;
-}
-%>
+
 <!doctype html>
 <html lang="en"> 
   <head>
@@ -56,26 +29,7 @@ catch(SQLException e){
     <!-- Custom styles for this template -->
     <link href="public/custom/css/dashboard.css" rel="stylesheet">
     
-    <script type="text/javascript">
-window.onload = function() { 
- 
-<% if(dataPoints != null) { %>
-var chart = new CanvasJS.Chart("chartContainer", {
-	animationEnabled: true,
-	exportEnabled: true,
-	title: {
-		text: "JSP Column Chart from Database"
-	},
-	data: [{
-		type: "column", //change type to bar, line, area, pie, etc
-		dataPoints: <%out.print(dataPoints);%>
-	}]
-});
-chart.render();
-<% } %> 
- 
-}
-</script>
+   
   </head>
 
   <body>

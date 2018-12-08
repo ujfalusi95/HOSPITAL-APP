@@ -33,19 +33,17 @@
   </head>
 
   <body>
-  <div id="chartContainer" style="height: 370px; width: 100%;"></div>
-<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
-    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#"></a>
-      <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
-      <ul class="navbar-nav px-3">
+
+    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0"> -->
+     <!--   --><a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#"></a>  -->
+      <!--  <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search"> -->
+     <ul class="navbar-nav px-3"> 
         <li class="nav-item text-nowrap">
-          <a class="nav-link" href="#">Sign out</a>
-        </li>
-      </ul>
-    </nav>
-
+        <!--  <a class="nav-link" href="#">Sign out</a> -->
+        </li> 
+     </ul>
+    </nav> 
     <div class="container-fluid">
       <div class="row">
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
@@ -203,14 +201,14 @@
 
     <!-- Graphs -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-    <script>
+     <script>
       var ctx = document.getElementById("myChart");
       var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          labels: ["W1", "W2", "W3", "W4", "W5", "W6", "W7"],
           datasets: [{
-            data: [1000, 21345, 18483, 24003, 23489, 24092, 12034],
+            data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
             lineTension: 0,
             backgroundColor: 'transparent',
             borderColor: '#007bff',

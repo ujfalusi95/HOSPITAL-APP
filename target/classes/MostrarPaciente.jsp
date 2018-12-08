@@ -41,19 +41,19 @@
               <li class="nav-item">
                 <a class="nav-link active" href="MostrarPaciente.jsp">
                   <span data-feather="home"></span>
-                  Pacientes <span class="sr-only"></span>
+                 PACIENTES <span class="sr-only"></span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="MostrarMedicos.jsp">
                   <span data-feather="file"></span>
-                Medicos
+                MEDICOS
                 </a>
               </li>
                <li class="nav-item">
                 <a class="nav-link" href="MostrarIngresos.jsp">
                   <span data-feather="file"></span>
-               Ingresos
+              INGRESOS
                 </a>
               </li>
             </ul>

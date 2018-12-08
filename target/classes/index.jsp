@@ -31,9 +31,9 @@
 
     <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
       <div class="col-md-5 p-lg-5 mx-auto my-5">
-        <h1 class="display-4 font-weight-normal">Nuevo Sistema de Gestion del Hospital!</h1>
-        <p class="lead font-weight-normal">Mira todo lo que te puede ofrecer el nuevo sistema clickando aqui!</p>
-        <a class="btn btn-outline-secondary" href="MostrarPaciente.jsp">Pulsa!</a>
+        <h1 class="display-4 font-weight-normal">¡Nuevo Sistema de Gestion del Hospital!</h1>
+        <p class="lead font-weight-normal">¡Mira todo lo que te puede ofrecer el nuevo sistema clickando aqui!</p>
+        <a class="btn btn-outline-secondary" href="MostrarPaciente.jsp">¡Pulsa!</a>
       </div>
       <div class="product-device shadow-sm d-none d-md-block"></div>
       <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>

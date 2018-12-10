@@ -315,4 +315,6 @@ public class Paciente {
 	  helper.modificarRegistro(sql);
 	  
   }
+ 
+  
 }

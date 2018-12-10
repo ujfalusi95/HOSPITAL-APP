@@ -91,7 +91,7 @@
       
         </select>
             </div>
-            <button id="btnBuscar" class="btn btn-primary">Buscar</button>
+           <input type="submit"  id="btnBuscar" class="btn btn-primary" value="buscar" />
          </fieldset>
           </div>
           

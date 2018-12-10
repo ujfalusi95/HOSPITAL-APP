@@ -73,7 +73,7 @@
           <fieldset >
           <div class="form-group">
           <label for="disabledTextInput"> Nombre del paciente</label>
-          <input type="text" id="nombrepaciente" class="form-control" placeholder="Ingrese el nombre">
+          <input type="text" id="nombrepaciente" name="nombreapciente" value=""class="form-control" placeholder="Ingrese el nombre">
         </div>
         <div class="form-group">
         <label for="disabledSelect">Poblacion</label>

@@ -13,7 +13,7 @@
     <meta name="author" content="">
    <!--  <link rel="icon" href="../../../../favicon.ico"> -->
  
-     <title>Gestion de Pacientes</title>  
+     <title>Gestion de </title>  
  
     <!-- Bootstrap core CSS -->
     <link href="../public/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -91,7 +91,7 @@
       
         </select>
             </div>
-           <input type="submit" name="q" id="btnBuscar" class="btn btn-primary" value="Buscar" />
+            <button  type="submit" id="btnBuscar" class="btn btn-primary">Buscar</button>
          </fieldset>
           </div>
           

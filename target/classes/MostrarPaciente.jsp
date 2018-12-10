@@ -71,7 +71,7 @@
           <h2>GESTION DE PACIENTES </h2>
           <div>
           <fieldset >
-           <form method ="post" >
+           <form method ="post" action="MostrarPacient.jsp" >
           <div class="form-group">
          
          

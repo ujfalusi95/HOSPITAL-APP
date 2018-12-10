@@ -71,9 +71,12 @@
           <h2>GESTION DE PACIENTES </h2>
           <div>
           <fieldset >
+           <form method ="post" >
           <div class="form-group">
+         
+         
           <label for="disabledTextInput"> Nombre del paciente</label>
-          <input type="text" id="nombrepaciente" name="nombreapciente" value=""class="form-control" placeholder="Ingrese el nombre">
+          <input type="text" id="nombrepaciente" name="nombreapciente" value=""class="form-control" placeholder="Ingrese el nombre" title="Escriba el nombre todo en minuscula">
         </div>
         <div class="form-group">
         <label for="disabledSelect">Poblacion</label>
@@ -91,7 +94,11 @@
       
         </select>
             </div>
-            <button  type="submit" name="nombrepaciente" id="btnBuscar" class="btn btn-primary" onclick="BuscarPacientePorNombre()">Buscar</button>
+            <p>
+
+
+         <button  type="submit" name="nombrepaciente" id="btnBuscar" class="btn btn-primary" >Buscar</button>
+         </form>
          </fieldset>
           </div>
           

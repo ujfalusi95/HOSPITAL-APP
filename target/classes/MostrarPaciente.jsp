@@ -97,7 +97,7 @@
             <p>
 
 
-         <button  type="submit" name="nombrepaciente" id="btnBuscar" class="btn btn-primary" >Buscar</button>
+         <button  type="submit" name="nombrepaciente" id="btnBuscar" class="btn btn-primary" onclick="BuscarPacientePorNombre()">Buscar</button>
          </form>
          </fieldset>
           </div>

@@ -230,7 +230,7 @@ public  void eliminarIngreso() throws URISyntaxException, SQLException {
   
 }
 
-public  JFreeChart ObtenerParametrosGraficos() throws URISyntaxException, SQLException {
+public static JFreeChart ObtenerParametrosGraficos() throws URISyntaxException, SQLException {
 	JDBCHelper<Ingreso> helper = new JDBCHelper<Ingreso>();
 	String sql = "Select coste,diagnostico from ingreso";
 	List<Ingreso> lista = helper.seleccionarRegistros(sql, Ingreso.class);
@@ -244,7 +244,7 @@ public  JFreeChart ObtenerParametrosGraficos() throws URISyntaxException, SQLExc
 	}
 	 JFreeChart chart = ChartFactory.createBarChart("Coste por diagnostico","Diagnostico","Dinero",dataset, PlotOrientation.HORIZONTAL,true,false,false);
 
-	  
+	 
 	 return chart;
 			
 			  

@@ -7,9 +7,10 @@
 <%@page import= "com.emilio.classes.Ingreso"%>
 <%@ page import="java.util.*,java.sql.*" %>
 <%@ page import="org.jfree.data.category.DefaultCategoryDataset" %>
-
-
-
+<%@ page import="org.jfree.chart.JFreeChart" %>
+<%@ page import="org.jfree.chart.ChartFactory" %>
+<%@ page import="javax.servlet.http.HttpServletResponse" %>
+<%@ page import="org.jfree.chart.ChartUtils" %>
  
 
 <!doctype html>
@@ -204,8 +205,14 @@
      <script>
    
     </script> 
+    <%  
     JFreeChart grafico = Ingreso.ObtenerParametrosGraficos();
- ChartUtilities.writeChartAsPNG(ouputStream, chart, 800, 600);
-
+    response.setContentType("image/png");
+    ServletOutputStream ouputStream = response.getOutputStream();
+ ChartUtils.writeChartAsPNG(ouputStream, grafico, 800, 600);
+   
+ 
+ ouputStream.close();
+ %>
   </body>
 </html>

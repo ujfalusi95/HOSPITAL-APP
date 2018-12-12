@@ -242,7 +242,7 @@ public static JFreeChart ObtenerParametrosGraficos() throws URISyntaxException, 
 	  Ingreso parametrosgraficos= (Ingreso)it.next();
 	  dataset.addValue(Integer.parseInt(parametrosgraficos.getCoste()),parametrosgraficos.getDiagnostico(),parametrosgraficos.getCoste());
 	}
-	 JFreeChart chart = ChartFactory.createBarChart("Coste por diagnostico","Diagnostico","Dinero",dataset, PlotOrientation.HORIZONTAL,true,false,false);
+	 JFreeChart chart = ChartFactory.createBarChart("Coste por diagnostico","Dinero","Diagnostico",dataset, PlotOrientation.HORIZONTAL,true,false,false);
 
 	 
 	 return chart;

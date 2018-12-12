@@ -6,7 +6,7 @@
 <%@page import= "com.emilio.classes.Paciente"%>
 <%@page import= "com.emilio.classes.Ingreso"%>
 <%@ page import="java.util.*,java.sql.*" %>
-
+<%@ page import="org.jfree.data.category.DefaultCategoryDataset" %>
 
 
 
@@ -202,34 +202,10 @@
     <!-- Graphs -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
      <script>
-      var ctx = document.getElementById("myChart");
-      var myChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: ["W1", "W2", "W3", "W4", "W5", "W6", "W7"],
-          datasets: [{
-            data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
-            lineTension: 0,
-            backgroundColor: 'transparent',
-            borderColor: '#007bff',
-            borderWidth: 4,
-            pointBackgroundColor: '#007bff'
-          }]
-        },
-        options: {
-          scales: {
-            yAxes: [{
-              ticks: {
-                beginAtZero: false
-              }
-            }]
-          },
-          legend: {
-            display: false,
-          }
-        }
-      });
+   
     </script> 
-    
+    JFreeChart grafico = Ingreso.ObtenerParametrosGraficos();
+ ChartUtilities.writeChartAsPNG(ouputStream, chart, 800, 600);
+
   </body>
 </html>

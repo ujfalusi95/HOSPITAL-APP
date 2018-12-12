@@ -1,9 +1,15 @@
 package com.emilio.classes;
 import java.net.URISyntaxException;
+
 import java.sql.SQLException;
+import java.util.Iterator;
+
 import java.util.List;
 
-
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.JFreeChart;
+import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.data.category.DefaultCategoryDataset;
 
 import com.emilio.init.JDBCHelper;
 public class Ingreso {
@@ -18,6 +24,16 @@ public class Ingreso {
 	private Integer nexpediente;
 	
 public Ingreso(){}
+
+
+
+
+
+public Ingreso(String coste, String diagnostico) {
+	super();
+	this.coste = coste;
+	this.diagnostico = diagnostico;
+}
 
 
 
@@ -214,6 +230,31 @@ public  void eliminarIngreso() throws URISyntaxException, SQLException {
   
 }
 
+public  JFreeChart ObtenerParametrosGraficos() throws URISyntaxException, SQLException {
+	JDBCHelper<Ingreso> helper = new JDBCHelper<Ingreso>();
+	String sql = "Select coste,diagnostico from ingreso";
+	List<Ingreso> lista = helper.seleccionarRegistros(sql, Ingreso.class);
 
+ Iterator<Ingreso> it = lista.iterator();
+	DefaultCategoryDataset dataset = new DefaultCategoryDataset();
+
+	while (it.hasNext()) {
+	  Ingreso parametrosgraficos= (Ingreso)it.next();
+	  dataset.addValue(Integer.parseInt(parametrosgraficos.getCoste()),parametrosgraficos.getDiagnostico(),parametrosgraficos.getCoste());
+	}
+	 JFreeChart chart = ChartFactory.createBarChart("Coste por diagnostico","Diagnostico","Dinero",dataset, PlotOrientation.HORIZONTAL,true,false,false);
+
+	  
+	 return chart;
+			
+			  
+			  
+			  
+			
+			  
+		
+
+
+}
 
 }

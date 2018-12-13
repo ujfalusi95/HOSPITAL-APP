@@ -209,9 +209,9 @@
     </script> 
     
    <% 
-    //JFreeChart grafico = Ingreso.ObtenerParametrosGraficos();
-    //ServletOutputStream ouputStream = response.getOutputStream();
-  //ChartUtils.writeChartAsPNG(ouputStream, grafico, 800, 600);
+    
+   
+  
   
 
   DefaultCategoryDataset dataset = new DefaultCategoryDataset();
@@ -226,12 +226,15 @@
 	}
 	 JFreeChart chart = ChartFactory.createBarChart("Coste por diagnostico","Diagnostico","Dinero",dataset, PlotOrientation.HORIZONTAL,true,false,false);
 
-	 
-	
+	 response.setContentType("image/png");
+	 ServletOutputStream ouputStream = response.getOutputStream();
+
+	 ChartUtils.writeChartAsPNG(ouputStream, chart, 800, 600);
+	 ouputStream.close();
 			
 			  
  
-  // ouputStream.close();
+  ouputStream.close();
  %>
   </body>
 </html>

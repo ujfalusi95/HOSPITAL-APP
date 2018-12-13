@@ -151,7 +151,7 @@
               
               		<%
 
-              		System.out.println("Soy estupido a mas no poder");
+              		System.out.println("dswnjkahjasjjskaamajkkakakakakakkakakkakakkakakakakakakakakakkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk");
 				List<Ingreso> listaingresos = Ingreso.ListarTodosIngresos();
 			for(Ingreso ingreso: listaingresos){
 	%>

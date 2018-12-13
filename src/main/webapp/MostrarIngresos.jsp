@@ -172,7 +172,7 @@
 
 <a href="FormularioEditarIngreso.jsp?nhistorial=<%=ingreso.getNhistorial()%>">Editar</a>
 <a href="EliminarIngreso.jsp?nhistorial=<%=ingreso.getNhistorial()%>">Eliminar</a>
-<td> <%= System.out.println("Soy estupido a mas no poder")%></td> 
+<td> <%=out.println("Soy estupido a mas no poder")%></td> 
 
 </tr>
 	<%

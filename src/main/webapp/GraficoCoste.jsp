@@ -27,14 +27,14 @@
 
   DefaultCategoryDataset dataset = new DefaultCategoryDataset();
   List<Ingreso> listavariables = Ingreso.ListarTodosIngresos();
-			for(Ingreso ingreso: listavariables){
-				
-   
+for(Ingreso ingreso: listavariables){
 	
-
-
+			
+               
+			
+			
 	  dataset.setValue(ingreso.getCoste(),"Total de Euros",ingreso.getDiagnostico());
-	}
+			}
 	 JFreeChart chart = ChartFactory.createBarChart("Coste por diagnostico","Diagnostico","Dinero",dataset, PlotOrientation.HORIZONTAL,true,false,false);
 
 	 response.setContentType("image/png");

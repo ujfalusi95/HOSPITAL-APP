@@ -222,7 +222,7 @@
 	
 
 
-	  dataset.setValue(ingreso.getCoste(),ingreso.getDiagnostico(),ingreso.getCoste());
+	  dataset.setValue(ingreso.getCoste(),"Total de Euros",ingreso.getDiagnostico());
 	}
 	 JFreeChart chart = ChartFactory.createBarChart("Coste por diagnostico","Diagnostico","Dinero",dataset, PlotOrientation.HORIZONTAL,true,false,false);
 

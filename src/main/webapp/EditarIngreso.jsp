@@ -22,7 +22,7 @@
 	String nhistorial = request.getParameter("nhistorial");
 	String nexpediente = request.getParameter("nexpediente");
  
-Ingreso ingreso = new Ingreso (fechaingreso,fechasalida,codigomedico,planta,cama,coste,diagnostico,Integer.parseInt(nhistorial),Integer.parseInt(nexpediente)); 
+Ingreso ingreso = new Ingreso (fechaingreso,fechasalida,codigomedico,planta,cama,Integer.parseInt(coste),diagnostico,Integer.parseInt(nhistorial),Integer.parseInt(nexpediente)); 
 
 	ingreso.editarIngreso(); 
 		

@@ -208,10 +208,10 @@
     <%  
     JFreeChart grafico = Ingreso.ObtenerParametrosGraficos();
     ServletOutputStream ouputStream = response.getOutputStream();
- ChartUtils.writeChartAsPNG(ouputStream, grafico, 800, 600);
+  ChartUtils.writeChartAsPNG(ouputStream, grafico, 800, 600);
    
  
- ouputStream.close();
+   ouputStream.close();
  %>
   </body>
 </html>

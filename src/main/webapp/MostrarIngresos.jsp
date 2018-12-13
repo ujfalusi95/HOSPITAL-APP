@@ -206,7 +206,7 @@
    
     </script> 
     <%  
-    System.out.println(Ingreso.ObtenerParametrosGraficos());
+    System.out.println("Soy estupido a mas no poder");
     //JFreeChart grafico = Ingreso.ObtenerParametrosGraficos();
     //ServletOutputStream ouputStream = response.getOutputStream();
   //ChartUtils.writeChartAsPNG(ouputStream, grafico, 800, 600);

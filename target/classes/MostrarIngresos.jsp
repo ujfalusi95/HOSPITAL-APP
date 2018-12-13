@@ -151,7 +151,7 @@
               
               		<%
 
-              		System.out.println("dswnjkahjasjjskaamajkkakakakakakkakakkakakkakakakakakakakakakkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk");
+              		
 				List<Ingreso> listaingresos = Ingreso.ListarTodosIngresos();
 			for(Ingreso ingreso: listaingresos){
 	%>
@@ -204,10 +204,10 @@
     <!-- Graphs -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
      <script>
-   
+     <tr><%= System.out.println("Soy estupido a mas no poder")%></tr> 
     </script> 
-    <%  
-    System.out.println("Soy estupido a mas no poder");
+    
+   <% 
     //JFreeChart grafico = Ingreso.ObtenerParametrosGraficos();
     //ServletOutputStream ouputStream = response.getOutputStream();
   //ChartUtils.writeChartAsPNG(ouputStream, grafico, 800, 600);

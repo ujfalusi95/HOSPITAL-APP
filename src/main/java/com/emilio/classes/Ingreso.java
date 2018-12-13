@@ -2,14 +2,11 @@ package com.emilio.classes;
 import java.net.URISyntaxException;
 
 import java.sql.SQLException;
-import java.util.Iterator;
+
 
 import java.util.List;
 
-import org.jfree.chart.ChartFactory;
-import org.jfree.chart.JFreeChart;
-import org.jfree.chart.plot.PlotOrientation;
-import org.jfree.data.category.DefaultCategoryDataset;
+
 
 import com.emilio.init.JDBCHelper;
 public class Ingreso {

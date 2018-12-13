@@ -57,6 +57,14 @@
                INGRESOS
                 </a>
               </li>
+            
+               <li class="nav-item">
+                <a class="nav-link" href="GraficoCoste.jsp">
+                  <span data-feather="file"></span>
+              Coste por Diagnotico
+                </a>
+              </li>
+              
             </ul>
 </div>
         </nav>

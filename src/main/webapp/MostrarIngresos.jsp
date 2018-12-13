@@ -67,6 +67,12 @@
               INGRESOS
                 </a>
               </li>
+               <li class="nav-item">
+                <a class="nav-link" href="GraficoCoste.jsp">
+                  <span data-feather="file"></span>
+              Coste por Diagnotico
+                </a>
+              </li>
             </ul>
 </div>
         </nav>
@@ -204,37 +210,8 @@
 
     <!-- Graphs -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-     <script>
-     
-    </script> 
-    
-   <% 
+  
     
    
-  
-  
-
-  DefaultCategoryDataset dataset = new DefaultCategoryDataset();
-  List<Ingreso> listavariables = Ingreso.ListarTodosIngresos();
-			for(Ingreso ingreso: listavariables){
-				
-   
-	
-
-
-	  dataset.setValue(ingreso.getCoste(),"Total de Euros",ingreso.getDiagnostico());
-	}
-	 JFreeChart chart = ChartFactory.createBarChart("Coste por diagnostico","Diagnostico","Dinero",dataset, PlotOrientation.HORIZONTAL,true,false,false);
-
-	 response.setContentType("image/png");
-	 ServletOutputStream ouputStream = response.getOutputStream();
-
-	 ChartUtils.writeChartAsPNG(ouputStream, chart, 800, 600);
-	 ouputStream.close();
-			
-			  
- 
-  ouputStream.close();
- %>
   </body>
 </html>

@@ -18,7 +18,7 @@ public class Ingreso {
 	private String codigomedico;
 	private String planta;
 	private String cama; 
-	private String coste;
+	private Integer coste;
 	private String diagnostico;
 	private Integer nhistorial;
 	private Integer nexpediente;
@@ -29,7 +29,7 @@ public Ingreso(){}
 
 
 
-public Ingreso(String coste, String diagnostico) {
+public Ingreso(Integer coste, String diagnostico) {
 	super();
 	this.coste = coste;
 	this.diagnostico = diagnostico;
@@ -48,7 +48,7 @@ public Ingreso(Integer nhistorial) {
 
 
 
-public Ingreso(String fechaingreso, String fechasalida, String codigomedico, String planta, String cama, String coste,
+public Ingreso(String fechaingreso, String fechasalida, String codigomedico, String planta, String cama, Integer coste,
 		String diagnostico, Integer nhistorial) {
 	super();
 	this.fechaingreso = fechaingreso;
@@ -65,7 +65,7 @@ public Ingreso(String fechaingreso, String fechasalida, String codigomedico, Str
 
 
 
-public Ingreso(String fechaingreso, String fechasalida, String codigomedico, String planta, String cama, String coste,
+public Ingreso(String fechaingreso, String fechasalida, String codigomedico, String planta, String cama, Integer coste,
 		String diagnostico, Integer nhistorial, Integer nexpediente) {
 	super();
 	this.fechaingreso = fechaingreso;
@@ -143,13 +143,13 @@ public void setCama(String cama) {
 
 
 
-public String getCoste() {
+public Integer getCoste() {
 	return coste;
 }
 
 
 
-public void setCoste(String coste) {
+public void setCoste(Integer coste) {
 	this.coste = coste;
 }
 
@@ -240,7 +240,7 @@ public static JFreeChart ObtenerParametrosGraficos() throws URISyntaxException, 
 
 	while (it.hasNext()) {
 	  Ingreso parametrosgraficos= (Ingreso)it.next();
-	  dataset.setValue(Integer.parseInt(parametrosgraficos.getCoste()),parametrosgraficos.getDiagnostico(),parametrosgraficos.getCoste());
+	  dataset.setValue(parametrosgraficos.getCoste(),parametrosgraficos.getDiagnostico(),parametrosgraficos.getCoste());
 	}
 	 JFreeChart chart = ChartFactory.createBarChart("Coste por diagnostico","Diagnostico","Dinero",dataset, PlotOrientation.HORIZONTAL,true,false,false);
 

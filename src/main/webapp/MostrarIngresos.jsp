@@ -11,8 +11,7 @@
 <%@ page import="org.jfree.chart.ChartFactory" %>
 <%@ page import="javax.servlet.http.HttpServletResponse" %>
 <%@ page import="org.jfree.chart.ChartUtils" %>
- 
-
+<%@ page import="org.jfree.chart.plot.PlotOrientation" %>
 <!doctype html>
 <html lang="en"> 
   <head>
@@ -154,7 +153,7 @@
               		
 				List<Ingreso> listaingresos = Ingreso.ListarTodosIngresos();
 			for(Ingreso ingreso: listaingresos){
-				out.println(listaingresos);
+				
 	%>
 	
 <tr>
@@ -209,11 +208,28 @@
      
     </script> 
     
-   //<% 
+   <% 
     //JFreeChart grafico = Ingreso.ObtenerParametrosGraficos();
     //ServletOutputStream ouputStream = response.getOutputStream();
   //ChartUtils.writeChartAsPNG(ouputStream, grafico, 800, 600);
+  
+
+  DefaultCategoryDataset dataset = new DefaultCategoryDataset();
+  List<Ingreso> listavariables = Ingreso.ListarTodosIngresos();
+			for(Ingreso ingreso: listavariables){
+				
    
+	
+
+
+	  dataset.setValue(ingreso.getCoste(),"grafica 1","uno");
+	}
+	 JFreeChart chart = ChartFactory.createBarChart("Coste por diagnostico","Diagnostico","Dinero",dataset, PlotOrientation.HORIZONTAL,true,false,false);
+
+	 
+	
+			
+			  
  
   // ouputStream.close();
  %>

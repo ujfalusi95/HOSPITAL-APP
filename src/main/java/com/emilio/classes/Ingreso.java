@@ -230,24 +230,12 @@ public  void eliminarIngreso() throws URISyntaxException, SQLException {
   
 }
 
-public static JFreeChart ObtenerParametrosGraficos() throws URISyntaxException, SQLException {
+public static List<Ingreso> ObtenerParametrosGraficos() throws URISyntaxException, SQLException {
 	JDBCHelper<Ingreso> helper = new JDBCHelper<Ingreso>();
 	String sql = "Select coste,diagnostico from ingreso";
 	List<Ingreso> lista = helper.seleccionarRegistros(sql, Ingreso.class);
 
- Iterator<Ingreso> it = lista.iterator();
-	DefaultCategoryDataset dataset = new DefaultCategoryDataset();
-
-	while (it.hasNext()) {
-	  Ingreso parametrosgraficos= (Ingreso)it.next();
-	  dataset.setValue(parametrosgraficos.getCoste(),"grafica 1","uno");
-	}
-	 JFreeChart chart = ChartFactory.createBarChart("Coste por diagnostico","Diagnostico","Dinero",dataset, PlotOrientation.HORIZONTAL,true,false,false);
-
-	 
-	 return chart;
-			
-			  
+ return lista;
 			  
 			  
 			

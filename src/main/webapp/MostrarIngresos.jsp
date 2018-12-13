@@ -172,7 +172,7 @@
 
 <a href="FormularioEditarIngreso.jsp?nhistorial=<%=ingreso.getNhistorial()%>">Editar</a>
 <a href="EliminarIngreso.jsp?nhistorial=<%=ingreso.getNhistorial()%>">Eliminar</a>
-<td> <%out.println(Ingreso.ObtenerParametrosGraficos());%></td> 
+<td> <%out.println(Ingreso.ListarTodosIngresos());%></td> 
 
 </tr>
 	<%

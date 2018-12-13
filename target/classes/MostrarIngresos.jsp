@@ -143,14 +143,15 @@
                   <th>Coste</th>
                   <th>Diagnostico</th>
                   <th>Nhistorial</th>
-               
+                
                  <th> Acciones</th>
                 </tr>
               </thead>
               <tbody>
+              
               		<%
 
-	       
+              		System.out.println("Soy estupido a mas no poder");
 				List<Ingreso> listaingresos = Ingreso.ListarTodosIngresos();
 			for(Ingreso ingreso: listaingresos){
 	%>

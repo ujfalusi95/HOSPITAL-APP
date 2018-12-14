@@ -34,14 +34,15 @@ double coste=0;
 	}
 	for(Ingreso ingreso :listavariables){
 		for(Ingreso ingresorepetido :listavariablesrepetidas){
+			
 			if(ingreso.getDiagnostico()==ingresorepetido.getDiagnostico()&& ingreso.getCoste() != ingresorepetido.getCoste())
 			coste= ingreso.getCoste()+ ingresorepetido.getCoste();
-               
-			
+		}  
+
 			
 	  dataset.setValue(coste,"Total de Euros",ingreso.getDiagnostico());
-			}
-	}
+	}		
+	
 	 JFreeChart chart = ChartFactory.createBarChart("Coste por diagnostico","Diagnostico","Dinero",dataset, PlotOrientation.HORIZONTAL,true,false,false);
 
 	 response.setContentType("image/png");

@@ -27,7 +27,7 @@
 
   DefaultCategoryDataset dataset = new DefaultCategoryDataset();
   List<Ingreso> listavariables = Ingreso.ListarTodosIngresos();
-  List<Ingreso> listavariablesrepetidas = null;
+  List<Ingreso> listavariablesrepetidas= new ArrayList<Ingreso>();
 double coste=0;
 	for(Ingreso ingreso :listavariables){
 		listavariablesrepetidas.add(ingreso);

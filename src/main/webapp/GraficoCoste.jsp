@@ -29,6 +29,7 @@
   List<Ingreso> listavariables = Ingreso.ListarTodosIngresos();
   List<Ingreso> listavariablesrepetidas= new ArrayList<Ingreso>();
 double coste=0;
+int k=0;
 	for(Ingreso ingreso :listavariables){
 		listavariablesrepetidas.add(ingreso);
 	}
@@ -36,13 +37,14 @@ double coste=0;
 		for(Ingreso ingresorepetido :listavariablesrepetidas){
 			
 			if(ingreso.getDiagnostico()==ingresorepetido.getDiagnostico()&& ingreso.getCoste() != ingresorepetido.getCoste())
-			coste= ingreso.getCoste()+ ingresorepetido.getCoste();
-		}  
+			coste= ingreso.getCoste()+ingresorepetido.getCoste();
+			listavariablesrepetidas.remove(ingresorepetido);
+		
 
 			
 	  dataset.setValue(coste,"Total de Euros",ingreso.getDiagnostico());
 	}		
-	
+	}  
 	 JFreeChart chart = ChartFactory.createBarChart("Coste por diagnostico","Diagnostico","Dinero",dataset, PlotOrientation.HORIZONTAL,true,false,false);
 
 	 response.setContentType("image/png");

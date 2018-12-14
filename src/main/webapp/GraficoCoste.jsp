@@ -37,8 +37,8 @@ int k=0;
 		for(Ingreso ingresorepetido :listavariablesrepetidas){
 			
 			if(ingreso.getDiagnostico()==ingresorepetido.getDiagnostico()&& ingreso.getCoste() != ingresorepetido.getCoste())
-			coste= ingreso.getCoste()+ingresorepetido.getCoste();
-			listavariablesrepetidas.remove(ingresorepetido);
+			coste= ingreso.getCoste()+ ingresorepetido.getCoste();
+			listavariablesrepetidas.remove(ingreso);
 		
 
 			

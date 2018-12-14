@@ -298,13 +298,13 @@ public class Paciente {
 }
    public  Paciente buscarPacientePorDNI() throws URISyntaxException, SQLException {
 	   JDBCHelper<Paciente> helper = new JDBCHelper<Paciente>();
-		String sql= "SELECT * FROM paciente WHERE nhistorial="+this.nhistorial;
+		String sql= "SELECT * FROM paciente WHERE nhistorial="+nhistorial;
 		List<Paciente> lista = helper.seleccionarRegistros(sql, Paciente.class);
 		return lista.get(0);
    }
 		   public  Paciente buscarPacientePorNombre() throws URISyntaxException, SQLException {
 			   JDBCHelper<Paciente> helper = new JDBCHelper<Paciente>();
-				String sql= "SELECT * FROM paciente WHERE nombrepaciente='"+this.dni+"'";
+				String sql= "SELECT * FROM paciente WHERE nombrepaciente="+nombrepaciente;
 				List<Paciente> lista = helper.seleccionarRegistros(sql, Paciente.class);
 				return lista.get(0);
    

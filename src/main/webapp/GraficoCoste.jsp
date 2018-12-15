@@ -29,7 +29,7 @@
   List<Ingreso> listavariables = Ingreso.ListarTodosIngresos();
   List<Ingreso> listavariablesrepetidas= new ArrayList<Ingreso>();
   
-Integer coste=0;
+int coste=0;
 int i =0;
 int k=0;
 	for(Ingreso ingreso1 :listavariables){

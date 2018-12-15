@@ -42,7 +42,7 @@ int k=0;
 			
 			
 	
-	if(ingreso.getDiagnostico()==ingreso2.getDiagnostico())
+	if(ingreso.getDiagnostico()==ingreso2.getDiagnostico() && ingreso.getCoste() != ingreso2.getCoste())
 		listadiagnosticos.add(ingreso);
 		}
 	}

@@ -73,6 +73,12 @@
               Coste por Diagnotico
                 </a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="MedicosEspecilidad.jsp">
+                  <span data-feather="file"></span>
+             Medico por Especialidad
+                </a>
+              </li>
             </ul>
 </div>
         </nav>

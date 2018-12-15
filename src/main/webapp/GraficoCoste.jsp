@@ -38,11 +38,11 @@ int k=0;
 	}
 	for(Ingreso ingreso :listavariables){
 		
-		for(Ingreso ingreso2: listavariablesrepetidas){
+		for(Ingreso abc: listavariablesrepetidas){
 			
 			
 	
-	if(ingreso.getDiagnostico()==ingreso2.getDiagnostico() && ingreso.getCoste() != ingreso2.getCoste())
+	if(ingreso.getDiagnostico()==ingreso2.getDiagnostico() && ingreso.getCoste() != abc.getCoste())
 		listadiagnosticos.add(ingreso);
 		}
 	}

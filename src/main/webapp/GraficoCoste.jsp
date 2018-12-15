@@ -47,7 +47,7 @@ int k=0;
 		}
 	}
 	for (Ingreso diagnostico: listadiagnosticos )
-		out.println(diagnostico);
+		out.println(diagnostico.getDiagnostico());
 	//out.println("los diagnosticos repetidos son: " +ingreso.getDiagn);
 	  //dataset.setValue(coste,"Total de Euros",ingreso.getDiagnostico());
 		

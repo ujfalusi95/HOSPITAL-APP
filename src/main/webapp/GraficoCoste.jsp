@@ -43,16 +43,16 @@ int k=0;
 		coste=ingreso.getCoste()+ingreso2.getCoste();
 	
 	  dataset.setValue(coste,"Total de Euros",ingreso.getDiagnostico());
-	}
+		}
 	}
 	
-	 //JFreeChart chart = ChartFactory.createBarChart("Coste por diagnostico","Diagnostico","Dinero",dataset, PlotOrientation.HORIZONTAL,true,false,false);
+	 JFreeChart chart = ChartFactory.createBarChart("Coste por diagnostico","Diagnostico","Dinero",dataset, PlotOrientation.HORIZONTAL,true,false,false);
 
-	 //response.setContentType("image/png");
-	 //ServletOutputStream ouputStream = response.getOutputStream();
+	 response.setContentType("image/png");
+	 ServletOutputStream ouputStream = response.getOutputStream();
 
-	 //ChartUtils.writeChartAsPNG(ouputStream, chart, 800, 600);
-	// ouputStream.close();
+	 ChartUtils.writeChartAsPNG(ouputStream, chart, 800, 600);
+	 ouputStream.close();
 			
 			  
  

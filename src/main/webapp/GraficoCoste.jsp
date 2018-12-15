@@ -41,7 +41,7 @@ int k=0;
 			
 			k++;	
 	
-	if(ingreso.getDiagnostico()==ingreso2.getDiagnostico()&& ingreso.getCoste()!= ingreso2.getCoste())
+	if(ingreso.getDiagnostico()==ingreso2.getDiagnostico()&& (ingreso.getCoste()!= ingreso2.getCoste()))
 		coste= ingreso.getCoste()+ ingreso2.getCoste();
 	
 	out.println("la i es: " +i);

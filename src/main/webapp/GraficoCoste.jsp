@@ -31,11 +31,11 @@
   Iterator<Ingreso> it = listavariables.iterator();
 double coste=0;
 
-	
+	for(int i=0; i<listavariable.size(); i++){
 	for(Ingreso ingreso :listavariables){
 	
-			
-
+	if(ingreso.getCoste()==listavariable(i).getcoste())		
+coste=ingreso.getCoste()+listavariable.getcoste();
 			
 	  dataset.setValue(ingreso.getCoste(),"Total de Euros",ingreso.getDiagnostico());
 	}		

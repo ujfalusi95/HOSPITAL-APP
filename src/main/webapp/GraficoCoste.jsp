@@ -33,7 +33,7 @@ double coste=0;
 
 	
 	for(Ingreso ingreso :listavariables){
-	out.println(ingreso);
+	out.println(ingreso.getCoste());
 	
 	  dataset.setValue(ingreso.getCoste(),"Total de Euros",ingreso.getDiagnostico());
 	}

@@ -36,12 +36,15 @@ int k=0;
 		listavariablesrepetidas.add(ingreso1);
 	}
 	for(Ingreso ingreso :listavariables){
+		i++;
 		for(Ingreso ingreso2: listavariablesrepetidas){
-	i++;
-	k++;
+			k++;
+	
 	if(ingreso.getDiagnostico()== ingreso2.getDiagnostico()&& i!=k)
 		coste=ingreso.getCoste()+ingreso2.getCoste();
 	out.println(coste);
+	out.println("Esta es la i:"+ i);
+	out.println("Esta es la k" + k);
 	  dataset.setValue(coste,"Total de Euros",ingreso.getDiagnostico());
 		}
 	}

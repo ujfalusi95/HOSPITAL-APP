@@ -41,8 +41,9 @@ int k=0;
 			k++;
 	
 	if(ingreso.getDiagnostico()== ingreso2.getDiagnostico()&& i !=k ) 
-	out.println("el coste es: " +coste +i +k);
-	
+	out.println("el coste es: " +coste);
+	out.println("la i es: " +i);
+	out.println("la k es: " +k);
 	  dataset.setValue(coste,"Total de Euros",ingreso.getDiagnostico());
 		}
 	}

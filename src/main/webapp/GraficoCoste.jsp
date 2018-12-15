@@ -31,26 +31,24 @@
   Iterator<Ingreso> it = listavariables.iterator();
 double coste=0;
 
-	for(int i=0; i<listavariable.size(); i++){
+	
 	for(Ingreso ingreso :listavariables){
+	out.println(ingreso);
 	
-	if(ingreso.getCoste()==listavariable(i).getcoste())		
-coste=ingreso.getCoste()+listavariable.getcoste();
-			
 	  dataset.setValue(ingreso.getCoste(),"Total de Euros",ingreso.getDiagnostico());
-	}		
+	}
 	
-	 JFreeChart chart = ChartFactory.createBarChart("Coste por diagnostico","Diagnostico","Dinero",dataset, PlotOrientation.HORIZONTAL,true,false,false);
+	 //JFreeChart chart = ChartFactory.createBarChart("Coste por diagnostico","Diagnostico","Dinero",dataset, PlotOrientation.HORIZONTAL,true,false,false);
 
-	 response.setContentType("image/png");
-	 ServletOutputStream ouputStream = response.getOutputStream();
+	 //response.setContentType("image/png");
+	 //ServletOutputStream ouputStream = response.getOutputStream();
 
-	 ChartUtils.writeChartAsPNG(ouputStream, chart, 800, 600);
-	 ouputStream.close();
+	 //ChartUtils.writeChartAsPNG(ouputStream, chart, 800, 600);
+	// ouputStream.close();
 			
 			  
  
-  ouputStream.close();
+
  %>
 
 </body>

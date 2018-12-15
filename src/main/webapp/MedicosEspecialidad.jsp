@@ -35,8 +35,9 @@
      i++;
 lista.add(medico.getEspecialidad());
   
-  out.println(lista);
+
   }
+  out.println(lista);
 	//out.println("los diagnosticos repetidos son: " +ingreso.getDiagn);
 	  //dataset.setValue(coste,"Total de Euros",ingreso.getDiagnostico());
 		

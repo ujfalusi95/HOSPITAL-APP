@@ -40,7 +40,8 @@ int k=0;
 		for(Ingreso ingreso2: listavariablesrepetidas){
 			k++;
 	
-	if(ingreso.getDiagnostico()== ingreso2.getDiagnostico()&& i !=k ) 
+	if(ingreso.getDiagnostico()== ingreso2.getDiagnostico()&& i !=k || k!=i ) 
+		coste= ingreso.getCoste()+ ingreso2.getCoste();
 	out.println("el coste es: " +coste);
 	out.println("la i es: " +i);
 	out.println("la k es: " +k);

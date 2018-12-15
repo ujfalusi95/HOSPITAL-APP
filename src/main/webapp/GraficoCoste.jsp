@@ -34,7 +34,7 @@ int i =0;
 int k=0;
 	for(Ingreso ingreso1 :listavariables){
 		listavariablesrepetidas.add(ingreso1);
-		out.println(ingreso1.getCoste());
+		
 	}
 	for(Ingreso ingreso :listavariables){
 		i++;
@@ -42,9 +42,9 @@ int k=0;
 			
 			k++;	
 	
-	if(ingreso.getDiagnostico()==ingreso2.getDiagnostico()&& (ingreso.getCoste()!=ingreso2.getCoste()))
+	if(ingreso.getDiagnostico()==ingreso2.getDiagnostico()&& ingreso.getCoste()!= ingreso2.getCoste())
 		coste= ingreso.getCoste()+ ingreso2.getCoste();
-	
+	out.println(ingreso2.getCoste());
 	out.println("la i es: " +i);
 	out.println("la k es: " +k);
 	out.println("el coste es: " +coste);

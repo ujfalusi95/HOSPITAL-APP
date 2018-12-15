@@ -39,7 +39,7 @@ int k=0;
 		i++;
 		for(Ingreso ingreso2: listavariablesrepetidas){
 			
-			k=i;	
+			k=k-i;	
 	
 	if((ingreso.getDiagnostico()==ingreso2.getDiagnostico() )&& (i !=k ))
 		coste= ingreso.getCoste()+ ingreso2.getCoste();

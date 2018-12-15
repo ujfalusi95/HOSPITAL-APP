@@ -30,10 +30,11 @@
   List<Ingreso> listavariablesrepetidas= new ArrayList<Ingreso>();
   Iterator<Ingreso> it = listavariables.iterator();
 double coste=0;
-
+int i =0;
 	
 	for(Ingreso ingreso :listavariables){
-	out.println(ingreso.getCoste());
+	i++;
+	out.println(ingreso.getCoste()+i);
 	
 	  dataset.setValue(ingreso.getCoste(),"Total de Euros",ingreso.getDiagnostico());
 	}

@@ -37,6 +37,7 @@ Set<String> rep = new HashSet<String>(especialidades);
 for(Medico medico :listavariables){
 	especialidades.add(medico.getEspecialidad());
 }
+out.println(especialdidades);
 for(String key :rep){
 	out.println(key + " : " + Collections.frequency(especialidades,key));
 }

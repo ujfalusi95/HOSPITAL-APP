@@ -27,25 +27,20 @@
 
   List<Medico> listavariables = Medico.ListarTodosMedicos();
 List<String> especialidades = new LinkedList<String>();
-List<String> especialidadesrepetidas = new LinkedList<String>();
-List<String> repetidas =new ArrayList<String>();
+List<String> rep = new LinkedList<String>();
+
 int i=0;
 for(Medico medico :listavariables){
 	especialidades.add(medico.getEspecialidad());
 }
-for(String especialidad :especialidades)
-especialidadesrepetidas.add(especialidad);
-
-for(String a :especialidades){
-	for(String b:especialidadesrepetidas){
-		if(a==b)
-			i++;
-			
-	}
+for(String especialidad: especialidades){
+	if(especialidades.indexOf(especialidad)!=especialidades.lastIndexOf(especialidad))
+		i++;
+		rep.add(i,especialidad);
 }
 
 
-out.println(i);		
+out.println(rep);		
 
   
 

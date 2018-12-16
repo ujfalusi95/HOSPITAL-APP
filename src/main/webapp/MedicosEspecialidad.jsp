@@ -33,9 +33,9 @@ int i=0;
 for(Medico medico :listavariables){
 	especialidades.add(medico.getEspecialidad());
 }
-for(String especialidad :rep)
+for(String especialidad :rep){
 	out.println(especialidad + " : " + Collections.frequency(especialidades, especialidad));
-
+}
 
 	
 

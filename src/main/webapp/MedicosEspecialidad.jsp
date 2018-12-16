@@ -27,7 +27,7 @@
 
   List<Medico> listavariables = Medico.ListarTodosMedicos();
 LinkedList<String> especialidades = new LinkedList<String>();
-Set<String> repetidas =new HashSet<String>();
+List<String> repetidas =new ArrayList<String>();
 int i=0;
 for(Medico medico :listavariables){
 	especialidades.add(medico.getEspecialidad());

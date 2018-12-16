@@ -37,11 +37,12 @@ DefaultCategoryDataset dataset = new DefaultCategoryDataset();
 for(Medico medico :listavariables){
 	especialidades.add(medico.getEspecialidad());
 }
-for(String esp :especialidades)
-	
-out.println(rep);
+for(String esp :especialidades){
+	rep.add(esp);
+//out.println(rep);
+}
 for(String key :rep){
-	 dataset.setValue(Collections.frequency(especialidades,key),"Total de Euros",key);
+	 dataset.setValue(Collections.frequency(especialidades,key),"Numero",key);
 	
 }
 

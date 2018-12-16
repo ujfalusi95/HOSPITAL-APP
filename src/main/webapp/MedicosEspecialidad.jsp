@@ -25,28 +25,23 @@
   
   
 
-  DefaultCategoryDataset dataset = new DefaultCategoryDataset();
   List<Medico> listavariables = Medico.ListarTodosMedicos();
-  ArrayList<String> lista = new ArrayList<String>(); 
-  int totalmedicos=0;
-  int i=0;
-  for(Medico medico : listavariables){
-	totalmedicos++;
-     i++;
-lista.add(medico.getEspecialidad());
+LinkedList<String> especialidades = new LinkedList();
+Set<String> repetidas =new HashSet<String>();
+for(Medico medico :listavariables){
+	especialidades.add(medico.getEspecialidad());
+}
+	
+for(String especialidad: especialidades){
+	if(especialidades.indexOf(especialidad)!=especialidades.lastIndexOf(especialidad))
+		repetidas.add(especialidad);
+}
+out.println(repetidas);
+		
+
   
 
-  }
-  int repetidos=0;
-  int j=0;
-  while(j<lista.size()){
-	  j++;
-	  if(lista.get(i)==lista.get(i+1))
-		  repetidos++;
-	  
-  }
-  out.println(lista);
-	out.println("las especialdades repetidas  son: " +repetidos);
+
 	  //dataset.setValue(coste,"Total de Euros",ingreso.getDiagnostico());
 		
 	

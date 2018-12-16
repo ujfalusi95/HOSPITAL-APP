@@ -36,7 +36,7 @@ for(Medico medico :listavariables){
 for(String especialidad: especialidades){
 	if(especialidades.indexOf(especialidad)!=especialidades.lastIndexOf(especialidad))
 		i++;
-		rep.add(i,especialidad);
+		rep.add(i-1,especialidad);
 }
 
 

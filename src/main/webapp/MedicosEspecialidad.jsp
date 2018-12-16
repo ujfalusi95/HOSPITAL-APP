@@ -1,7 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-        <%@page import="java.util.List"%>
+<%@page import="java.util.List"%>
 <%@page import="java.util.ArrayList"%>
+<%@page import="java.util.Collections"%>
+<%@page import="java.util.HashSet"%>
+<%@page import="java.util.Set"%>
+
 <%@page import= "com.emilio.init.*"%> 
 <%@page import= "com.emilio.classes.Medico"%>
 <%@page import= "com.emilio.classes.Ingreso"%>
@@ -29,7 +33,7 @@
 List<String> especialidades = new ArrayList<String>();
 Set<String> rep = new HashSet<String>(especialidades);
 
-int i=0;
+
 for(Medico medico :listavariables){
 	especialidades.add(medico.getEspecialidad());
 }

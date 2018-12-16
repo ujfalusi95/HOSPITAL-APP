@@ -31,7 +31,7 @@ Set<String> repetidas =new HashSet<String>();
 for(Medico medico :listavariables){
 	especialidades.add(medico.getEspecialidad());
 }
-out.println(especialidades);	
+	
 for(String especialidad: especialidades){
 	if(especialidades.indexOf(especialidad)!=especialidades.lastIndexOf(especialidad))
 		repetidas.add(especialidad);

@@ -26,21 +26,18 @@
   
 
   List<Medico> listavariables = Medico.ListarTodosMedicos();
-List<String> especialidades = new LinkedList<String>();
-List<String> rep = new LinkedList<String>();
+List<String> especialidades = new ArrayList<String>();
+Set<String> rep = new HashSet<String>(especialidades);
 
 int i=0;
 for(Medico medico :listavariables){
 	especialidades.add(medico.getEspecialidad());
 }
-for(String especialidad: especialidades){
-	if(especialidades.indexOf(especialidad)!=especialidades.lastIndexOf(especialidad))
-		i++;
-		rep.add(i-1,especialidad);
-}
+for(String especialidad :rep)
+	out.println(especialidad + " : " + Collections.frequency(especialidades, especialidad));
 
 
-out.println(rep);		
+	
 
   
 

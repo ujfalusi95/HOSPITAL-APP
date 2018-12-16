@@ -33,8 +33,8 @@ int i=0;
 for(Medico medico :listavariables){
 	especialidades.add(medico.getEspecialidad());
 }
-for(String especialidad :rep){
-	out.println(especialidad + " : " + Collections.frequency(especialidades, especialidad));
+for(String key :rep){
+	out.println(key + " : " + Collections.frequency(especialidades,key));
 }
 
 	

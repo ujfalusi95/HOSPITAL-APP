@@ -32,16 +32,17 @@
   List<Medico> listavariables = Medico.ListarTodosMedicos();
 List<String> especialidades = new ArrayList<String>();
 Set<String> rep = new HashSet<String>(especialidades);
-
+DefaultCategoryDataset dataset = new DefaultCategoryDataset();
 
 for(Medico medico :listavariables){
 	especialidades.add(medico.getEspecialidad());
 }
 for(String esp :especialidades)
-	rep.add(esp);
+	
 out.println(rep);
 for(String key :rep){
-	out.println(key + " : " + Collections.frequency(especialidades,key));
+	 dataset.setValue(Collections.frequency(especialidades,key),"Total de Euros",key);
+	
 }
 
 	
@@ -49,17 +50,17 @@ for(String key :rep){
   
 
 
-	  //dataset.setValue(coste,"Total de Euros",ingreso.getDiagnostico());
+	
 		
 	
 	
-	 //JFreeChart chart = ChartFactory.createBarChart("Coste por diagnostico","Diagnostico","Dinero",dataset, PlotOrientation.HORIZONTAL,true,false,false);
+	 JFreeChart chart = ChartFactory.createBarChart("Medicos por Departamento","Especialidad","Numero",dataset, PlotOrientation.HORIZONTAL,true,false,false);
 
-	 //response.setContentType("image/png");
-	 //ServletOutputStream ouputStream = response.getOutputStream();
+	 response.setContentType("image/png");
+	 ServletOutputStream ouputStream = response.getOutputStream();
 
- //ChartUtils.writeChartAsPNG(ouputStream, chart, 800, 600);
-	 //ouputStream.close();
+ ChartUtils.writeChartAsPNG(ouputStream, chart, 800, 600);
+	 ouputStream.close();
 			
 			  
  

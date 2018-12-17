@@ -7,8 +7,8 @@
 <%@page import="java.util.Set"%>
 
 <%@page import= "com.emilio.init.*"%> 
-<%@page import= "com.emilio.classes.Medico"%>
-<%@page import= "com.emilio.classes.Ingreso"%>
+<%@page import= "com.emilio.classes.Paciente"%>
+
 <%@ page import="java.util.*,java.sql.*" %>
 <%@ page import="org.jfree.data.category.DefaultCategoryDataset" %>
 <%@ page import="org.jfree.chart.JFreeChart" %>
@@ -29,20 +29,20 @@
   
   
 
-  List<Medico> listavariables = Medico.ListarTodosMedicos();
-List<String> especialidades = new ArrayList<String>();
-Set<String> rep = new HashSet<String>(especialidades);
+  List<Paciente> listavariables = Paciente.ListarTodosPacientes();
+List<String> poblaciones = new ArrayList<String>();
+Set<String> rep = new HashSet<String>(poblaciones);
 DefaultCategoryDataset dataset = new DefaultCategoryDataset();
 
-for(Medico medico :listavariables){
-	especialidades.add(medico.getEspecialidad());
+for(Paciente paciente :listavariables){
+	poblaciones.add(paciente.getPoblacion());
 }
-for(String esp :especialidades){
-	rep.add(esp);
+for(String pob :poblaciones){
+	rep.add(pob);
 //out.println(rep);
 }
 for(String key :rep){
-	 dataset.setValue(Collections.frequency(especialidades,key),"Numero",key);
+	 dataset.setValue(Collections.frequency(poblaciones,key),"",key);
 	
 }
 
@@ -55,7 +55,7 @@ for(String key :rep){
 		
 	
 	
-	 JFreeChart chart = ChartFactory.createBarChart("Medicos por Departamento","Especialidad","Numero",dataset, PlotOrientation.HORIZONTAL,true,false,false);
+	 JFreeChart chart = ChartFactory.createBarChart("Pacientes por Poblacion","Población","Número",dataset, PlotOrientation.HORIZONTAL,true,false,false);
 
 	 response.setContentType("image/png");
 	 ServletOutputStream ouputStream = response.getOutputStream();

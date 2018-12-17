@@ -68,6 +68,12 @@
              Medico por Especialidad
                 </a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="GraficoPaciente.jsp">
+                  <span data-feather="file"></span>
+             Pacientes por Población
+                </a>
+              </li>
             </ul>
 </div>
         </nav>

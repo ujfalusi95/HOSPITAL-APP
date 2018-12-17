@@ -1,9 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-        <%@page import="java.util.List"%>
+<%@page import="java.util.List"%>
 <%@page import="java.util.ArrayList"%>
+<%@page import="java.util.Collections"%>
+<%@page import="java.util.HashSet"%>
+<%@page import="java.util.Set"%>
+
 <%@page import= "com.emilio.init.*"%> 
-<%@page import= "com.emilio.classes.Paciente"%>
+
 <%@page import= "com.emilio.classes.Ingreso"%>
 <%@ page import="java.util.*,java.sql.*" %>
 <%@ page import="org.jfree.data.category.DefaultCategoryDataset" %>
@@ -25,41 +29,39 @@
   
   
 
-  DefaultCategoryDataset dataset = new DefaultCategoryDataset();
   List<Ingreso> listavariables = Ingreso.ListarTodosIngresos();
-  List<Ingreso> listavariablesrepetidas= new ArrayList<Ingreso>();
-  List<Ingreso> listadiagnosticos= new ArrayList<Ingreso>();
-int coste=0;
-int i =0;
-int k=0;
-	for(Ingreso ingreso1 :listavariables){
-		listavariablesrepetidas.add(ingreso1);
-		
-	}
-	for(Ingreso ingreso :listavariables){
-		
-		for(Ingreso ingreso2: listavariablesrepetidas){
-			
-			
-	
-	if(ingreso.getDiagnostico()==ingreso2.getDiagnostico() & (ingreso.getCoste() < ingreso2.getCoste() || ingreso.getCoste() < ingreso2.getCoste() ))
-		listadiagnosticos.add(ingreso);
-		}
-	}
-	for (Ingreso diagnostico: listadiagnosticos )
-		out.println(diagnostico.getDiagnostico());
-	//out.println("los diagnosticos repetidos son: " +ingreso.getDiagn);
-	  //dataset.setValue(coste,"Total de Euros",ingreso.getDiagnostico());
-		
-	
-	
-	 //JFreeChart chart = ChartFactory.createBarChart("Coste por diagnostico","Diagnostico","Dinero",dataset, PlotOrientation.HORIZONTAL,true,false,false);
+List<Ingreso> diagnosticos = new ArrayList<Ingreso>();
+Set<Ingreso> rep = new HashSet<Ingreso>(diagnosticos);
+DefaultCategoryDataset dataset = new DefaultCategoryDataset();
 
-	 //response.setContentType("image/png");
-	 //ServletOutputStream ouputStream = response.getOutputStream();
+for(Ingreso ingreso :listavariables){
+	diagnosticos.add(ingreso);
+}
+for(Ingreso ing :diagnosticos){
+	rep.add(ing);
+//out.println(rep);
+}
+for(Ingreso key :rep){
+	 dataset.setValue(Collections.frequency(diagnosticos,key.getDiagnostico()),"",key.getDiagnostico());
+	
+}
 
- //ChartUtils.writeChartAsPNG(ouputStream, chart, 800, 600);
-	 //ouputStream.close();
+	
+
+  
+
+
+	
+		
+	
+	
+	 JFreeChart chart = ChartFactory.createBarChart("Coste Medio Diagnosticos","Diagnosticos","Euros",dataset, PlotOrientation.HORIZONTAL,true,false,false);
+
+	 response.setContentType("image/png");
+	 ServletOutputStream ouputStream = response.getOutputStream();
+
+ ChartUtils.writeChartAsPNG(ouputStream, chart, 800, 600);
+	 ouputStream.close();
 			
 			  
  

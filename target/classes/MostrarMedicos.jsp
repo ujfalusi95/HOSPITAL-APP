@@ -65,7 +65,7 @@
                 </a>
               </li>
                <li class="nav-item">
-                <a class="nav-link" href="MedicosEspecialidad.jsp">
+                <a class="nav-link" href="GraficoMedico.jsp">
                   <span data-feather="file"></span>
              Medico por Especialidad
                 </a>

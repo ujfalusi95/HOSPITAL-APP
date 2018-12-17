@@ -55,7 +55,7 @@
                 </a>
               </li>
                <li class="nav-item">
-                <a class="nav-link " href="MostrarMedicos.jsp">
+                <a class="nav-link " href="MostrarPacientes.jsp">
                   <span data-feather="file"></span>
               PACIENTES
                 </a>

@@ -55,7 +55,7 @@
                 </a>
               </li>
                <li class="nav-item">
-                <a class="nav-link " href="MostrarMedicos.jsp">
+                <a class="nav-link " href="MostrarPacientes.jsp">
                   <span data-feather="file"></span>
                PACIENTES
                 </a>
@@ -97,7 +97,7 @@
 
          <div class="col-md-8 ml-sm-auto col-lg-10 pt-3 px-3">
           
-      <canvas class="my-4 w-100" id="chart" width="900" height="380"></canvas>
+      <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
          
         
                   
@@ -259,7 +259,7 @@
    	
    	
    	 JFreeChart chart = ChartFactory.createBarChart("Médicos por Departamento","Especialidad","Número",dataset, PlotOrientation.HORIZONTAL,true,false,false);
-
+    
    	 //response.setContentType("image/png");
    	 //ServletOutputStream ouputStream = response.getOutputStream();
 
@@ -268,6 +268,9 @@
    			
    			  
     %>
+   
+    var myChart = chart;
+    
     </script> 
   </body>
 </html>

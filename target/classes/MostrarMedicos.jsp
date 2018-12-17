@@ -14,7 +14,7 @@
     <meta name="author" content="">
    <!--  <link rel="icon" href="../../../../favicon.ico"> -->
 
-     <title>Gestion de Pacientes</title>  
+     <title>Gestion de Medicos</title>  
 
     <!-- Bootstrap core CSS -->
     <link href="../public/dist/css/bootstrap.min.css" rel="stylesheet">

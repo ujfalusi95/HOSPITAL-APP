@@ -100,7 +100,8 @@
          
          
           <label for="disabledTextInput"> Nombre del paciente</label>
-          <input type="text" id="nombrepaciente" name="nombreapciente" value=""class="form-control" placeholder="Ingrese el nombre" title="Escriba el nombre todo en minuscula">
+          <input type="text"  name="nombreapciente" placeholder="Ingrese el nombre" title="Escriba el nombre todo en minuscula">
+          <button  type="submit"  class="btn btn-primary" value="Guardar">Buscar</button>
         </div>
         <div class="form-group">
         <label for="disabledSelect">Poblacion</label>
@@ -121,7 +122,7 @@
             <p>
 
 
-         <button  type="submit" name="nombrepaciente" id="btnBuscar" class="btn btn-primary" onclick="BuscarPacientePorNombre()">Buscar</button>
+         
          </form>
          </fieldset>
           </div>

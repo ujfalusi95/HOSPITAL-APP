@@ -95,16 +95,13 @@
           <h2>GESTION DE PACIENTES </h2>
           <div>
           <fieldset >
-          <div class="form-group">
            <form method ="post" action="FiltrarPaciente.jsp"  >
-          
+          <div class="form-group">
          
          
           <label for="nombrepaciente"> Nombre del paciente</label>
           <input type="text"  name="nombrepaciente" placeholder="Ingrese el nombre" title="Escriba el nombre todo en minuscula">
-          <input  type="submit"  class="btn btn-primary" value="Buscar" />
-          </fieldset>
-          
+          <button  type="submit"  class="btn btn-primary" >Buscar</button>
         </div>
         <div class="form-group">
         <label for="disabledSelect">Poblacion</label>
@@ -126,8 +123,8 @@
 
 
          
-        
-         
+         </form>
+         </fieldset>
           </div>
           
           <hr>

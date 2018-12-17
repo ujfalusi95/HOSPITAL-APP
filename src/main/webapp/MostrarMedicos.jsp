@@ -261,11 +261,10 @@
 
 	 JFreeChart chart = ChartFactory.createBarChart("Médicos por Departamento","Especialidad","Número",dataset, PlotOrientation.HORIZONTAL,true,false,false);
 
-	 response.setContentType("image/png");
-	 ServletOutputStream ouputStream = response.getOutputStream();
+	
 
 ChartUtils.saveChartAsPNG(new File("grafico1.png"), chart, 900, 380);
-	 ouputStream.close();
+	 
 			
    			  
     %>

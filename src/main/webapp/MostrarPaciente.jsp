@@ -99,8 +99,8 @@
           <div class="form-group">
          
          
-          <label for="disabledTextInput"> Nombre del paciente</label>
-          <input type="text"  name="nombreapciente" placeholder="Ingrese el nombre" title="Escriba el nombre todo en minuscula">
+          <label for="nombrepaciente"> Nombre del paciente</label>
+          <input type="text"  name="nombrepaciente" placeholder="Ingrese el nombre" title="Escriba el nombre todo en minuscula">
           <button  type="submit"  class="btn btn-primary" >Buscar</button>
         </div>
         <div class="form-group">

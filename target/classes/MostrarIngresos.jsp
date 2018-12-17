@@ -33,8 +33,6 @@
   </head>
 
   <body>
-
-
     <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0"> -->
      <!--   --><a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#"></a>  -->
       <!--  <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search"> -->
@@ -44,36 +42,44 @@
         </li> 
      </ul>
     </nav> 
+
     <div class="container-fluid">
       <div class="row">
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
           <div class="sidebar-sticky">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link " href="MostrarPaciente.jsp">
+                <a class="nav-link active" href="MostrarPaciente.jsp">
                   <span data-feather="home"></span>
-                  PACIENTES <span class="sr-only"></span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="MostrarMedicos.jsp">
-                  <span data-feather="file"></span>
-                MEDICOS
+                 Base de Datos del Hospital <span class="sr-only"></span>
                 </a>
               </li>
                <li class="nav-item">
-                <a class="nav-link active" href="MostrarIngresos.jsp">
+                <a class="nav-link " href="MostrarMedicos.jsp">
                   <span data-feather="file"></span>
-              INGRESOS
+               Pacientes
                 </a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="MostrarMedicos.jsp">
+                  <span data-feather="file"></span>
+                MÉDICOS
+                </a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="MostrarIngresos.jsp">
+                  <span data-feather="file"></span>
+               INGRESOS
+                </a>
+              </li>
+            
                <li class="nav-item">
                 <a class="nav-link" href="GraficoCoste.jsp">
                   <span data-feather="file"></span>
               Coste por Diagnotico
                 </a>
               </li>
-              <li class="nav-item">
+               <li class="nav-item">
                 <a class="nav-link" href="GraficoMedico.jsp">
                   <span data-feather="file"></span>
              Medico por Especialidad
@@ -86,9 +92,7 @@
                 </a>
               </li>
             </ul>
-            
 </div>
-        </nav>
 
          <div class="col-md-8 ml-sm-auto col-lg-10 pt-3 px-3">
           

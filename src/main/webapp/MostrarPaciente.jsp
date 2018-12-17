@@ -41,21 +41,28 @@
               <li class="nav-item">
                 <a class="nav-link active" href="MostrarPaciente.jsp">
                   <span data-feather="home"></span>
-                 PACIENTES <span class="sr-only"></span>
+                 Base de Datos del Hospital <span class="sr-only"></span>
+                </a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link " href="MostrarMedicos.jsp">
+                  <span data-feather="file"></span>
+               Pacientes
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="MostrarMedicos.jsp">
+                <a class="nav-link active" href="MostrarMedicos.jsp">
                   <span data-feather="file"></span>
-                MEDICOS
+                MÉDICOS
                 </a>
               </li>
                <li class="nav-item">
                 <a class="nav-link" href="MostrarIngresos.jsp">
                   <span data-feather="file"></span>
-              INGRESOS
+               INGRESOS
                 </a>
               </li>
+            
                <li class="nav-item">
                 <a class="nav-link" href="GraficoCoste.jsp">
                   <span data-feather="file"></span>
@@ -68,7 +75,7 @@
              Medico por Especialidad
                 </a>
               </li>
-              <li class="nav-item">
+               <li class="nav-item">
                 <a class="nav-link" href="GraficoPaciente.jsp">
                   <span data-feather="file"></span>
              Pacientes por Poblacion
@@ -76,8 +83,6 @@
               </li>
             </ul>
 </div>
-        </nav>
-
          <div class="col-md-8 ml-sm-auto col-lg-10 pt-3 px-3">
           
      

@@ -48,7 +48,7 @@
                <li class="nav-item">
                 <a class="nav-link " href="MostrarMedicos.jsp">
                   <span data-feather="file"></span>
-               Pacientes
+               PACIENTES
                 </a>
               </li>
               <li class="nav-item">

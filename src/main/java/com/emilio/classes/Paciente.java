@@ -43,10 +43,7 @@ public class Paciente {
 
 
 
-	public Paciente(String nombrepaciente) {
-		super();
-		this.nombrepaciente = nombrepaciente;
-	}
+	
 
 
 
@@ -69,10 +66,10 @@ public class Paciente {
 
 
 
-	//public Paciente(String dni) {
-		//super();
-		//this.dni = dni;
-	//}
+	public Paciente(String dni) {
+		super();
+		this.dni = dni;
+	}
 
 
 

@@ -5,7 +5,7 @@
 <%@page import="java.util.Collections"%>
 <%@page import="java.util.HashSet"%>
 <%@page import="java.util.Set"%>
-
+<%@page import= "java.io.File"%>
 <%@page import= "com.emilio.init.*"%> 
 <%@page import= "com.emilio.classes.Medico"%>
 
@@ -60,7 +60,7 @@ for(String key :rep){
 	 response.setContentType("image/png");
 	 ServletOutputStream ouputStream = response.getOutputStream();
 
- ChartUtils.writeChartAsPNG(ouputStream, chart, 800, 600);
+ ChartUtils.saveChartAsPNG(new File("grafico1.png"), chart, 900, 380);
 	 ouputStream.close();
 			
 			  

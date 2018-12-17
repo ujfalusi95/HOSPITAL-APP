@@ -28,36 +28,29 @@
    
   
   
-
-  List<Ingreso> listavariables = Ingreso.ListarTodosIngresos();
-List<Ingreso> diagnosticos = new ArrayList<Ingreso>();
-Set<Ingreso> rep = new HashSet<Ingreso>(diagnosticos);
+List<Ingreso> listavariables = Ingreso.ListarTodosIngresos();
+List<String> diagnosticos= new ArrayList<String>();
+Set<String> rep = new HashSet<String>(diagnosticos);
 DefaultCategoryDataset dataset = new DefaultCategoryDataset();
 
 for(Ingreso ingreso :listavariables){
-	diagnosticos.add(ingreso);
+	diagnosticos.add(ingreso.getDiagnostico());
+}
+for(String esp :diagnosticos){
+	rep.add(esp);
+//out.println(rep);
+}
+for(String key :rep){
+	 dataset.setValue(Collections.frequency(diagnosticos,key),"",key);
 	
 }
-for(Ingreso ing :diagnosticos){
-	rep.add(ing);
-out.println(ing.getDiagnostico());
-out.println(ing.getCoste());
-}
-for(Ingreso key :rep){
-	 dataset.setValue(Collections.frequency(diagnosticos,key),"",key.getDiagnostico());
-	
-}
-
-	
-
-  
 
 
 	
 		
 	
 	
-	JFreeChart chart = ChartFactory.createBarChart("Coste Medio Diagnosticos","Diagnosticos","Euros",dataset, PlotOrientation.HORIZONTAL,true,false,false);
+	JFreeChart chart = ChartFactory.createBarChart("Total Diagnosticos","Diagnosticos","Numero",dataset, PlotOrientation.HORIZONTAL,true,false,false);
 
 	response.setContentType("image/png");
 	ServletOutputStream ouputStream = response.getOutputStream();

@@ -49,7 +49,7 @@
           <div class="sidebar-sticky">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link active" href="MostrarPaciente.jsp">
+                <a class="nav-link " href="MostrarPaciente.jsp">
                   <span data-feather="home"></span>
                  Base de Datos del Hospital <span class="sr-only"></span>
                 </a>
@@ -61,13 +61,13 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="MostrarMedicos.jsp">
+                <a class="nav-link " href="MostrarMedicos.jsp">
                   <span data-feather="file"></span>
                 MÉDICOS
                 </a>
               </li>
                <li class="nav-item">
-                <a class="nav-link" href="MostrarIngresos.jsp">
+                <a class="nav-link active" href="MostrarIngresos.jsp">
                   <span data-feather="file"></span>
                INGRESOS
                 </a>

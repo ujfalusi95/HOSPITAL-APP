@@ -310,7 +310,7 @@ public class Paciente {
    }
 		   public  List<Paciente> buscarPacientePorNombre() throws URISyntaxException, SQLException {
 			   JDBCHelper<Paciente> helper = new JDBCHelper<Paciente>();
-				String sql= "SELECT * FROM paciente WHERE nombrepaciente="+this.nombrepaciente;
+				String sql= "SELECT * FROM paciente WHERE nombrepaciente='"+this.nombrepaciente+"'";
 				List<Paciente> lista = helper.seleccionarRegistros(sql, Paciente.class);
 				return lista;
    

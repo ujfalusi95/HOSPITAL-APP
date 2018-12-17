@@ -82,7 +82,7 @@
                <li class="nav-item">
                 <a class="nav-link" href="GraficoPaciente.jsp">
                   <span data-feather="file"></span>
-             Pacientes por Población
+             Pacientes por Poblacion
                 </a>
               </li>
             </ul>

@@ -42,7 +42,7 @@ for(Ingreso ing :diagnosticos){
 //out.println(rep);
 }
 for(Ingreso key :rep){
-	 dataset.setValue(Collections.frequency(diagnosticos,key.getDiagnostico()),"",key.getDiagnostico());
+	 dataset.setValue(Collections.frequency(diagnosticos,key),"",key.getDiagnostico());
 	
 }
 

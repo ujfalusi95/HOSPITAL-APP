@@ -42,11 +42,17 @@
               <li class="nav-item">
                 <a class="nav-link active" href="MostrarPaciente.jsp">
                   <span data-feather="home"></span>
-                  PACIENTES <span class="sr-only"></span>
+                 Base de Datos del Hospital <span class="sr-only"></span>
+                </a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link active" href="MostrarMedicos.jsp">
+                  <span data-feather="file"></span>
+               Pacientes
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="MostrarMedicos.jsp">
+                <a class="nav-link active" href="MostrarMedicos.jsp">
                   <span data-feather="file"></span>
                 MÉDICOS
                 </a>

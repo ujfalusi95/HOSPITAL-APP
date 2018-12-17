@@ -50,19 +50,19 @@
           <div class="sidebar-sticky">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link active" href="MostrarPaciente.jsp">
+                <a class="nav-link " href="MostrarPaciente.jsp">
                   <span data-feather="home"></span>
                   PACIENTES <span class="sr-only"></span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="MostrarMedicos.jsp">
+                <a class="nav-link " href="MostrarMedicos.jsp">
                   <span data-feather="file"></span>
                 MEDICOS
                 </a>
               </li>
                <li class="nav-item">
-                <a class="nav-link" href="MostrarIngresos.jsp">
+                <a class="nav-link active" href="MostrarIngresos.jsp">
                   <span data-feather="file"></span>
               INGRESOS
                 </a>

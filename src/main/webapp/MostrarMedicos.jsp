@@ -98,7 +98,7 @@
          <div class="col-md-8 ml-sm-auto col-lg-10 pt-3 px-3">
           
      
-       <img src="grafico1.png"  height="42" width="42">
+       <img src="grafico1.png"  height="900" width="380">
         
                   
           

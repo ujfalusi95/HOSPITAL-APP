@@ -8,7 +8,7 @@
 
 <%@page import= "com.emilio.init.*"%> 
 <%@page import= "com.emilio.classes.Medico"%>
-<%@page import= "com.emilio.classes.Ingreso"%>
+
 <%@ page import="java.util.*,java.sql.*" %>
 <%@ page import="org.jfree.data.category.DefaultCategoryDataset" %>
 <%@ page import="org.jfree.chart.JFreeChart" %>

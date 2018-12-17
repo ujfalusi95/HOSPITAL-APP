@@ -1,10 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    <%@page import="java.util.List"%>
-<%@page import="java.util.ArrayList"%>
-<%@page import= "com.emilio.init.*"%>
+ 
 <%@page import= "com.emilio.classes.Paciente"%>
 <%@page import= "com.emilio.classes.Medico"%>
+<%@page import="java.util.List"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="java.util.Collections"%>
+<%@page import="java.util.HashSet"%>
+<%@page import="java.util.Set"%>
+<%@ page import="org.jfree.data.category.DefaultCategoryDataset" %>
+<%@ page import="org.jfree.chart.JFreeChart" %>
+<%@ page import="org.jfree.chart.ChartFactory" %>
+<%@ page import="javax.servlet.http.HttpServletResponse" %>
+<%@ page import="org.jfree.chart.ChartUtils" %>
+<%@ page import="org.jfree.chart.plot.PlotOrientation" %>
 <!doctype html>
 <html lang="en">
   <head>
@@ -88,7 +97,7 @@
 
          <div class="col-md-8 ml-sm-auto col-lg-10 pt-3 px-3">
           
-      <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+      <canvas class="my-4 w-100" id="Chart" width="900" height="380"></canvas>
          
         
                   
@@ -217,33 +226,48 @@
 <!--   Graphs -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
      <script>
-      var ctx = document.getElementById("myChart");
-      var myChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: ["W1", "W2", "W3", "W4", "W5", "W6", "W7"],
-          datasets: [{
-            data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
-            lineTension: 0,
-            backgroundColor: 'transparent',
-            borderColor: '#007bff',
-            borderWidth: 4,
-            pointBackgroundColor: '#007bff'
-          }]
-        },
-        options: {
-          scales: {
-            yAxes: [{
-              ticks: {
-                beginAtZero: false
-              }
-            }]
-          },
-          legend: {
-            display: false,
-          }
-        }
-      });
+     <% 
+     
+     
+     
+     
+
+     List<Medico> listavariables = Medico.ListarTodosMedicos();
+   List<String> especialidades = new ArrayList<String>();
+   Set<String> rep = new HashSet<String>(especialidades);
+   DefaultCategoryDataset dataset = new DefaultCategoryDataset();
+
+   for(Medico medico :listavariables){
+   	especialidades.add(medico.getEspecialidad());
+   }
+   for(String esp :especialidades){
+   	rep.add(esp);
+   //out.println(rep);
+   }
+   for(String key :rep){
+   	 dataset.setValue(Collections.frequency(especialidades,key),"",key);
+   	
+   }
+
+   	
+
+     
+
+
+   	
+   		
+   	
+   	
+   	 JFreeChart chart = ChartFactory.createBarChart("Médicos por Departamento","Especialidad","Número",dataset, PlotOrientation.HORIZONTAL,true,false,false);
+
+   	 //response.setContentType("image/png");
+   	 //ServletOutputStream ouputStream = response.getOutputStream();
+
+    //ChartUtils.writeChartAsPNG(ouputStream, chart, 800, 600);
+   	 //ouputStream.close();
+   			
+   			  
+    %>
     </script> 
   </body>
 </html>

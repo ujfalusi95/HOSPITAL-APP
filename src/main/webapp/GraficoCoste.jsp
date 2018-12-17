@@ -36,10 +36,12 @@ DefaultCategoryDataset dataset = new DefaultCategoryDataset();
 
 for(Ingreso ingreso :listavariables){
 	diagnosticos.add(ingreso);
+	out.println(ingreso);
 }
 for(Ingreso ing :diagnosticos){
 	rep.add(ing);
-//out.println(rep);
+out.println(ing.getDiagnostico());
+out.println(ing.getCoste());
 }
 for(Ingreso key :rep){
 	 dataset.setValue(Collections.frequency(diagnosticos,key),"",key.getDiagnostico());
@@ -55,13 +57,13 @@ for(Ingreso key :rep){
 		
 	
 	
-	 JFreeChart chart = ChartFactory.createBarChart("Coste Medio Diagnosticos","Diagnosticos","Euros",dataset, PlotOrientation.HORIZONTAL,true,false,false);
+	 //JFreeChart chart = ChartFactory.createBarChart("Coste Medio Diagnosticos","Diagnosticos","Euros",dataset, PlotOrientation.HORIZONTAL,true,false,false);
 
-	 response.setContentType("image/png");
-	 ServletOutputStream ouputStream = response.getOutputStream();
+	// response.setContentType("image/png");
+	 //ServletOutputStream ouputStream = response.getOutputStream();
 
- ChartUtils.writeChartAsPNG(ouputStream, chart, 800, 600);
-	 ouputStream.close();
+ //ChartUtils.writeChartAsPNG(ouputStream, chart, 800, 600);
+	// ouputStream.close();
 			
 			  
  

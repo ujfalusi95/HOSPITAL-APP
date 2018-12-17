@@ -36,7 +36,7 @@ DefaultCategoryDataset dataset = new DefaultCategoryDataset();
 
 for(Ingreso ingreso :listavariables){
 	diagnosticos.add(ingreso);
-	out.println(ingreso);
+	
 }
 for(Ingreso ing :diagnosticos){
 	rep.add(ing);

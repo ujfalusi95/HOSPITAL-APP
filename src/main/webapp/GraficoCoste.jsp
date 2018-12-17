@@ -57,13 +57,13 @@ for(Ingreso key :rep){
 		
 	
 	
-	 //JFreeChart chart = ChartFactory.createBarChart("Coste Medio Diagnosticos","Diagnosticos","Euros",dataset, PlotOrientation.HORIZONTAL,true,false,false);
+	JFreeChart chart = ChartFactory.createBarChart("Coste Medio Diagnosticos","Diagnosticos","Euros",dataset, PlotOrientation.HORIZONTAL,true,false,false);
 
-	// response.setContentType("image/png");
-	 //ServletOutputStream ouputStream = response.getOutputStream();
+	response.setContentType("image/png");
+	ServletOutputStream ouputStream = response.getOutputStream();
 
- //ChartUtils.writeChartAsPNG(ouputStream, chart, 800, 600);
-	// ouputStream.close();
+ ChartUtils.writeChartAsPNG(ouputStream, chart, 800, 600);
+	 ouputStream.close();
 			
 			  
  

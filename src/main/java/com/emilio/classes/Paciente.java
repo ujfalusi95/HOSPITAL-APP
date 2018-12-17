@@ -37,10 +37,6 @@ public class Paciente {
 	
 
 
-	public Paciente(String nombrepaciente) {
-		super();
-		this.nombrepaciente = nombrepaciente;
-	}
 
 
 
@@ -57,10 +53,10 @@ public class Paciente {
 
 
 
-	//public Paciente(String dni) {
-		//super();
-		//this.dni = dni;
-	//}
+	public Paciente(String dni) {
+		super();
+		this.dni = dni;
+	}
 
 
 
@@ -312,11 +308,11 @@ public class Paciente {
 		List<Paciente> lista = helper.seleccionarRegistros(sql, Paciente.class);
 		return lista.get(0);
    }
-		   public  Paciente buscarPacientePorNombre() throws URISyntaxException, SQLException {
+		   public  List<Paciente> buscarPacientePorNombre() throws URISyntaxException, SQLException {
 			   JDBCHelper<Paciente> helper = new JDBCHelper<Paciente>();
 				String sql= "SELECT * FROM paciente WHERE nombrepaciente="+this.nombrepaciente;
 				List<Paciente> lista = helper.seleccionarRegistros(sql, Paciente.class);
-				return lista.get(0);
+				return lista;
    
 }
   public  void eliminarPaciente() throws URISyntaxException, SQLException {

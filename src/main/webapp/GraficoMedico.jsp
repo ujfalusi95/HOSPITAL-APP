@@ -36,16 +36,19 @@
 List<String> especialidades = new ArrayList<String>();
 Set<String> rep = new HashSet<String>(especialidades);
 DefaultCategoryDataset dataset = new DefaultCategoryDataset();
-
+int total=0;
+String totalmedicos="0";
 for(Medico medico :listavariables){
 	especialidades.add(medico.getEspecialidad());
+	total++;
+	totalmedicos=Integer.toString(total);
 }
 for(String esp :especialidades){
 	rep.add(esp);
 //out.println(rep);
 }
 for(String key :rep){
-	 dataset.setValue(Collections.frequency(especialidades,key),"",key);
+	 dataset.setValue(Collections.frequency(especialidades,key),totalmedicos,key);
 	
 }
 

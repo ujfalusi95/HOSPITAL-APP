@@ -60,7 +60,8 @@ for(String key :rep){
 	 response.setContentType("image/png");
 	 ServletOutputStream ouputStream = response.getOutputStream();
 
- ChartUtils.saveChartAsPNG(new File("grafico1.png"), chart, 900, 380);
+	 ChartUtils.writeChartAsPNG(ouputStream, chart, 800, 600);
+	
 	 ouputStream.close();
 			
 			  

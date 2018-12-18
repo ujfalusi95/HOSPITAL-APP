@@ -8,7 +8,10 @@
 <%@page import= "java.io.File"%>
 <%@page import= "com.emilio.init.*"%> 
 <%@page import= "com.emilio.classes.Medico"%>
-
+<%@ page import="java.io.*" %>
+<%@ page import="java.io.FileInputStream"%>
+<%@ page import="java.io.FileOutputStream"%>
+<%@ page import ="java.io.IOException"%>
 <%@ page import="java.util.*,java.sql.*" %>
 <%@ page import="org.jfree.data.category.DefaultCategoryDataset" %>
 <%@ page import="org.jfree.chart.JFreeChart" %>
@@ -57,7 +60,11 @@ for(String key :rep){
 	
 	 JFreeChart chart = ChartFactory.createBarChart("Médicos por Departamento","Especialidad","Número",dataset, PlotOrientation.HORIZONTAL,true,false,false);
 
-	 response.setContentType("image/png");
+	
+	 
+	 
+	 
+	response.setContentType("image/png");
 	 ServletOutputStream ouputStream = response.getOutputStream();
 
 	 ChartUtils.writeChartAsPNG(ouputStream, chart, 800, 600);
@@ -66,7 +73,7 @@ for(String key :rep){
 			
 			  
  
-
+	 
  %>
 
 </body>

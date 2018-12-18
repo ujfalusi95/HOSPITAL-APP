@@ -100,7 +100,7 @@
          <div class="col-md-8 ml-sm-auto col-lg-10 pt-3 px-3">
           
      
-       <img src="https://whispering-retreat-65233.herokuapp.com/GraficoMedico.jsp" /> 
+       <img src="https://whispering-retreat-65233.herokuapp.com/GraficoMedico.jsp" width="400" height="300"/> 
         
                   
           

@@ -48,7 +48,7 @@ for(String esp :especialidades){
 //out.println(rep);
 }
 for(String key :rep){
-	 dataset.setValue(Collections.frequency(especialidades,key),"Elnumero total es:"+total,key);
+	 dataset.setValue(Collections.frequency(especialidades,key),"Total de Medicos:"+total,key);
 	
 }
 
@@ -70,7 +70,7 @@ for(String key :rep){
 	response.setContentType("image/png");
 	 ServletOutputStream ouputStream = response.getOutputStream();
 
-	 ChartUtils.writeChartAsPNG(ouputStream, chart, 800, 600);
+	 ChartUtils.writeChartAsPNG(ouputStream, chart, 900, 380);
 	
 	 ouputStream.close();
 			

@@ -96,7 +96,7 @@
 </nav>
          <div class="col-md-8 ml-sm-auto col-lg-10 pt-3 px-3">
           
-     <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+     <img src="https://whispering-retreat-65233.herokuapp.com/GraficoCoste.jsp" width="900" height="380"/> 
          
         
                   

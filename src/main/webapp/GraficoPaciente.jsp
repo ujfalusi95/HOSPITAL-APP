@@ -33,9 +33,10 @@
 List<String> poblaciones = new ArrayList<String>();
 Set<String> rep = new HashSet<String>(poblaciones);
 DefaultCategoryDataset dataset = new DefaultCategoryDataset();
-
+int total=0;
 for(Paciente paciente :listavariables){
 	poblaciones.add(paciente.getPoblacion());
+	total++;
 }
 for(String pob :poblaciones){
 	rep.add(pob);
@@ -55,12 +56,12 @@ for(String key :rep){
 		
 	
 	
-	 JFreeChart chart = ChartFactory.createBarChart("Pacientes por Poblacion","Población","Número",dataset, PlotOrientation.HORIZONTAL,true,false,false);
+	 JFreeChart chart = ChartFactory.createBarChart("Pacientes por Poblacion","Total de Pacientes:"+total,"Número",dataset, PlotOrientation.HORIZONTAL,true,false,false);
 
 	 response.setContentType("image/png");
 	 ServletOutputStream ouputStream = response.getOutputStream();
 
- ChartUtils.writeChartAsPNG(ouputStream, chart, 800, 600);
+	 ChartUtils.writeChartAsPNG(ouputStream, chart, 900, 380);
 	 ouputStream.close();
 			
 			  

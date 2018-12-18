@@ -32,16 +32,19 @@ List<Ingreso> listavariables = Ingreso.ListarTodosIngresos();
 List<String> diagnosticos= new ArrayList<String>();
 Set<String> rep = new HashSet<String>(diagnosticos);
 DefaultCategoryDataset dataset = new DefaultCategoryDataset();
+int total=0;
 
 for(Ingreso ingreso :listavariables){
 	diagnosticos.add(ingreso.getDiagnostico());
+	total++;
+	
 }
 for(String esp :diagnosticos){
 	rep.add(esp);
 //out.println(rep);
 }
 for(String key :rep){
-	 dataset.setValue(Collections.frequency(diagnosticos,key),"",key);
+	 dataset.setValue(Collections.frequency(diagnosticos,key),"Numero de ingresos:"+total,key);
 	
 }
 
@@ -55,8 +58,10 @@ for(String key :rep){
 	response.setContentType("image/png");
 	ServletOutputStream ouputStream = response.getOutputStream();
 
- ChartUtils.writeChartAsPNG(ouputStream, chart, 800, 600);
+	 ChartUtils.writeChartAsPNG(ouputStream, chart, 900, 380);
+	
 	 ouputStream.close();
+			
 			
 			  
  

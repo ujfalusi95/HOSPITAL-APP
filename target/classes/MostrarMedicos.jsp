@@ -100,7 +100,7 @@
          <div class="col-md-8 ml-sm-auto col-lg-10 pt-3 px-3">
           
      
-       <img src="https://whispering-retreat-65233.herokuapp.com/MostrarMedicos.jsp" /> 
+       <img src="https://whispering-retreat-65233.herokuapp.com/GraficoMedico.jsp" /> 
         
                   
           
@@ -261,13 +261,13 @@
    	
    	
 
-	 JFreeChart chart = ChartFactory.createBarChart("Médicos por Departamento","Especialidad","Número",dataset, PlotOrientation.HORIZONTAL,true,false,false);
+	 //JFreeChart chart = ChartFactory.createBarChart("Médicos por Departamento","Especialidad","Número",dataset, PlotOrientation.HORIZONTAL,true,false,false);
 
-	 response.setContentType("image/png");
-	 ServletOutputStream ouputStream = response.getOutputStream();
+	 //response.setContentType("image/png");
+	 //ServletOutputStream ouputStream = response.getOutputStream();
 
 	
-	 ChartUtils.writeChartAsPNG(ouputStream, chart, 900, 380);
+	 //ChartUtils.writeChartAsPNG(ouputStream, chart, 900, 380);
 			
    			  
     %>

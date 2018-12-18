@@ -14,6 +14,8 @@
 <%@ page import="javax.servlet.http.HttpServletResponse" %>
 <%@ page import="org.jfree.chart.ChartUtils" %>
 <%@ page import="org.jfree.chart.plot.PlotOrientation" %>
+<%@ page import= "java.awt.image.BufferedImage"%>
+  <%@ page import="javax.imageio.ImageIO"%>
 <!doctype html>
 <html lang="en">
   <head>
@@ -263,13 +265,13 @@
 
 	
 
-ChartUtils.saveChartAsPNG(new File("grafico1.png"), chart, 900, 380);
-	 
+	 BufferedImage image = chart.createBufferedImage(600, 400);
+	 ChartUtils.saveChartAsPNG(new File("grafico1.png"), chart, 900, 380);
 			
    			  
     %>
    
-   
+   <img src="grafica1.png"/>
     
     </script> 
   </body>

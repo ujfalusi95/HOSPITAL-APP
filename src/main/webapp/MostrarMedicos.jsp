@@ -100,7 +100,7 @@
          <div class="col-md-8 ml-sm-auto col-lg-10 pt-3 px-3">
           
      
-       <img src="/GraficoMedico.jsp/grafico1.png"  height="900" width="380">
+       <img src="https://whispering-retreat-65233.herokuapp.com/MostrarMedicos.jsp" /> 
         
                   
           
@@ -263,15 +263,16 @@
 
 	 JFreeChart chart = ChartFactory.createBarChart("Médicos por Departamento","Especialidad","Número",dataset, PlotOrientation.HORIZONTAL,true,false,false);
 
-	
+	 response.setContentType("image/png");
+	 ServletOutputStream ouputStream = response.getOutputStream();
 
-	 BufferedImage image = chart.createBufferedImage(600, 400);
-	 ChartUtils.saveChartAsPNG(new File("grafico1.png"), chart, 900, 380);
+	
+	 ChartUtils.writeChartAsPNG(ouputStream, chart, 900, 380);
 			
    			  
     %>
    
-   <img src="grafica1.png"/>
+   
     
     </script> 
   </body>

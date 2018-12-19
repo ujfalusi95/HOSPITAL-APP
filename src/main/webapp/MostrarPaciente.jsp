@@ -23,6 +23,7 @@
     
       <script src="public/custom/js/BuscadorTabla.js" type="text/javascript"></script>
        <script src="public/custom/js/Ordenar.js" type="text/javascript"></script>
+       <script type="text/javascript" src="public/custom/js/jquery-1.3.2.js"></script>
        <script type="text/javascript" src="public/custom/js/jquery.tablesorter.js"></script>
   </head>
 

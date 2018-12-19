@@ -20,6 +20,8 @@
 
     <!-- Custom styles for this template -->
     <link href="public/custom/css/dashboard.css" rel="stylesheet">
+    
+      <script src="public/custom/js/BuscadorTabla.js" type="text/javascript"></script>
   </head>
 
   <body>
@@ -99,9 +101,9 @@
           <div class="form-group">
          
          
-          <label for="nombrepaciente"> Nombre del paciente</label>
-          <input type="text"  name="nombrepaciente" placeholder="Ingrese el nombre" title="Escriba el nombre todo en minuscula">
-          <button  type="submit"  class="btn btn-primary" >Buscar</button>
+          <label>Buscar  Por Dni:</label>
+          
+          <input  id="searchTerm" type="text" onkeyup="doSearch()" class="btn btn-primary" >
         </div>
         <div class="form-group">
         <label for="disabledSelect">Poblacion</label>
@@ -150,7 +152,7 @@
           <div class="table-responsive">
         
  
-            <table class="table table-striped table-sm" >
+            <table class="table table-striped table-sm"  id="datos">
             
               <thead>
                 <tr>

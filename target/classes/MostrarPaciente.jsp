@@ -22,6 +22,7 @@
     <link href="public/custom/css/dashboard.css" rel="stylesheet">
     
       <script src="public/custom/js/BuscadorTabla.js" type="text/javascript"></script>
+       <script src="public/custom/js/Ordenar.js" type="text/javascript"></script>
   </head>
 
   <body>
@@ -64,7 +65,12 @@
                INGRESOS
                 </a>
               </li>
-            
+             <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Saved reports</span>
+              <a class="d-flex align-items-center text-muted" href="#">
+                <span data-feather="plus-circle"></span>
+              </a>
+            </h6>
                <li class="nav-item">
                 <a class="nav-link" href="GraficoCoste.jsp">
                   <span data-feather="file"></span>

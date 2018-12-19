@@ -21,15 +21,15 @@
 			<legend>Agregar Paciente</legend>
 			<p>
 			<label for="nombrepaciente">Nombre del Paciente </label>
-			<input type="text" name="nombrepaciente" />
+			<input type="text" name="nombrepaciente" class="field"/>
 			</p>
 			<p>
 			<label for="apellidospaciente">Apellidos del Paciente </label>
-			<input type="text" name="apellidospaciente" />
+			<input type="text" name="apellidospaciente" class="field"/>
 			</p>
 			<p>
 			<label for="domicilio">Domicilio</label>
-			<input type="text" name="domicilio" />
+			<input type="text" name="domicilio"  class="field"/>
 			</p>
 			<p>
 			<label for="poblacion">Poblacion: </label> 
@@ -43,15 +43,15 @@
 			</p>
 			<p>
 			<label for="cp">CP</label>
-			<input type="text" name="cp" />
+			<input type="text" name="cp" class="field"/>
 			</p>
 			<p>
 			<label for="telefono">Telefono </label>
-			<input type="text" name="telefono" />
+			<input type="text" name="telefono" class="field" />
 			</p>
 			<p>
 			<label for="fechanacimiento">Fecha de nacimiento </label>
-			<input type="text" name="fechanacimiento" />
+			<input type="text" name="fechanacimiento" class="field"/>
 			</p>
 			<p>
 			<label for="sexo">Sexo </label>
@@ -61,18 +61,18 @@
 			</select>
 			</p><p>
 			<label for="dni">DNI </label>
-			<input type="text" name="dni" />
+			<input type="text" name="dni" class="field"/>
 			</p>
 			<p>
 			<label for="nss">Numero de la seguridad social</label>
-			<input type="text" name="nss" />
+			<input type="text" name="nss" class="field"/>
 			</p>
 			
 			
 			
 			
 			<p>
-				<input type="submit" value="Guardar"/>
+				<input type="submit" value="Guardar" class="btn btn-green"/>
 			</p>
 			
 		</fieldset>

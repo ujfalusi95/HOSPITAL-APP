@@ -15,6 +15,7 @@
 
 </head>
 <body>
+body{font-family: Arial; background-color: #256999; box-sizing: border-box; padding: 100px;}
 <div class="form">
 	<form action="AgregarPaciente.jsp" method="post">
 		<fieldset>

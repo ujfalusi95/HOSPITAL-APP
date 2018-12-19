@@ -96,8 +96,8 @@
 
           <h2>GESTION DE PACIENTES </h2>
           <div>
-          <fieldset >
-           <form method ="post" action="FiltrarPaciente.jsp"  >
+          
+          
           <div class="form-group">
          
          
@@ -106,28 +106,7 @@
           <input  id="searchTerm" type="text" onkeyup="doSearch()" class="btn btn-primary" >
           </p>
         </div>
-        <div class="form-group">
-        <label for="disabledSelect">Poblacion</label>
-        <select id="poblacion" class="form-control">
-         <option value="seleccionar">seleccionar</option>
-		<%
-		
-		List<String> listapoblacion =  Paciente.ListarTodasPoblaciones();
-			for (String poblacion: listapoblacion){
-		%>
-		<option value="<%=poblacion%>">
- 			<%=poblacion%>
- 				</option>
-		<% } %>
       
-        </select>
-            </div>
-            <p>
-
-
-         
-         </form>
-         </fieldset>
           </div>
           
           <hr>

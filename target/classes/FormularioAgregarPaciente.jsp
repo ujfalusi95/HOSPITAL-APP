@@ -9,13 +9,13 @@
 <head> 
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>NUEVO PACIENTE</title>
-
+ <link href="public/custom/css/formulario.css" rel="stylesheet">
 
 
 
 </head>
 <body>
-<div class="content center padding">
+<div class="form">
 	<form action="AgregarPaciente.jsp" method="post">
 		<fieldset>
 			<legend>Agregar Paciente</legend>

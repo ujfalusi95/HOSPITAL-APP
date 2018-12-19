@@ -151,8 +151,8 @@
             
               <thead>
                 <tr>
-                 <th><span>Numero Historial Clinico</span></th>
-                  <th><span>Nombre Paciente</span></th>
+                 <th>Numero Historial Clinico</th>
+                  <th>Nombre Paciente</th>
                   <th>Apellidos Paciente</th>
                   <th>Domiclio</th>
                    <th>Poblacion</th>

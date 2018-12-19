@@ -148,7 +148,7 @@ $(document).ready(function() {
 </script>
         
  
-            <table class="table table-striped table-sm"  id="datos">
+            <table class="tablesorter"  id="datos">
             
               <thead>
                 <tr>

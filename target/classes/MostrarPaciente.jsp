@@ -143,12 +143,12 @@
  <script type="text/javascript">
      $(function(){
       //Cuando la página se cargue convertimos la tabla con id "myTable" en una tabla ordenable
-      $("#datos").tablesorter();
+      $('#datos').tablesorter();
     });
     </script>
         
  
-            <table class="tablesorter"  id="datos">
+            <table class="table table-striped table-sm"  id="datos">
             
               <thead>
                 <tr>

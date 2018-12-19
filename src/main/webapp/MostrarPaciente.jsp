@@ -22,7 +22,7 @@
     <link href="public/custom/css/dashboard.css" rel="stylesheet">
     
       <script src="public/custom/js/BuscadorTabla.js" type="text/javascript"></script>
-       <script src="public/custom/js/Ordenar.js" type="text/javascript"></script>
+      
        <script type="text/javascript" src="public/custom/js/jquery-1.3.2.js"></script>
        <script type="text/javascript" src="public/custom/js/jquery.tablesorter.js"></script>
   </head>
@@ -68,7 +68,7 @@
                 </a>
               </li>
              <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-              <span>Saved reports</span>
+              <span>REPORTES</span>
               <a class="d-flex align-items-center text-muted" >
                
               </a>
@@ -139,13 +139,13 @@
           
           <div class="table-responsive">
           
-
- <script type="text/javascript">
- $(function(){
-	  $('#datos').tablesorter(); 
-	});
-    </script>
-        
+<script>
+ $(document).ready(function() 
+    { 
+        $("#datos").tablesorter(); 
+    } 
+);
+    </script>   
  
             <table class="table table-striped table-sm"  id="datos">
             

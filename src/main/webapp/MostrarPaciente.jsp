@@ -140,12 +140,12 @@
           <div class="table-responsive">
           
 
-<script>
-$(document).ready(function() {
-  //cuando la página se cargue convertimos la tabla con id "datos" en una tabla ordenable
-	$("#datos").tableSorter();
-});
-</script>
+ <script type="text/javascript">
+     $(function(){
+      //Cuando la página se cargue convertimos la tabla con id "myTable" en una tabla ordenable
+      $("#datos").tablesorter();
+    });
+    </script>
         
  
             <table class="tablesorter"  id="datos">

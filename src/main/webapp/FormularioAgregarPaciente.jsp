@@ -11,11 +11,11 @@
 <title>NUEVO PACIENTE</title>
  <link href="public/custom/css/formulario.css" rel="stylesheet">
 
-
-
+<style> body{font-family: Arial; background-color: #256999; box-sizing: border-box; padding: 100px;}
+<style>
 </head>
 <body>
-body{font-family: Arial; background-color: #256999; box-sizing: border-box; padding: 100px;}
+
 <div class="form">
 	<form action="AgregarPaciente.jsp" method="post">
 		<fieldset>

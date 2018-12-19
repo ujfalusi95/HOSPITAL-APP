@@ -33,7 +33,7 @@
 			</p>
 			<p>
 			<label for="poblacion">Poblacion: </label> 
-			<select class="form-control" id="poblacion">
+			<select class="field" id="poblacion">
 			<option>Alcala de Henares </option>
 			<option>Madrid </option>
 			<option>Daganzo </option>
@@ -55,7 +55,7 @@
 			</p>
 			<p>
 			<label for="sexo">Sexo </label>
-			<select class="form-control" id="sexo">
+			<select class="field" id="sexo">
 			<option>Masculino</option>
 			<option>Femenino</option>
 			</select>

@@ -193,7 +193,7 @@
 <td>
 
 
-<a href="FormularioEditarPaciente.jsp?nhistorial=<%=paciente.getNhistorial()%>">Editar</a>
+<a href="FormularioEditarPaciente.jsp?dnil=<%=paciente.getDni()%>">Editar</a>
 <a href="EliminarPaciente.jsp?dni=<%=paciente.getDni()%>">Eliminar</a>
 </td>
 </tr>

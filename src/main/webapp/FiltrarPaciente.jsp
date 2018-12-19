@@ -9,9 +9,9 @@
  </head>
 <body>
 	<%
-		String nombrepaciente = request.getParameter("nombrepaciente");
-		Paciente paciente= new Paciente(nombrepaciente);
-		paciente.buscarPacientePorNombre();
+		String dni = request.getParameter("dni");
+		Paciente paciente= new Paciente(dni);
+		paciente.buscarPacientePorDNI();
 		response.sendRedirect("MostrarPaciente.jsp");
 	%>
 </body>

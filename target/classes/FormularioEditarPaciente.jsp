@@ -15,11 +15,11 @@
 	<%
 		
 			
-			String nhistorial = request.getParameter("nhistorial");
+			String dni = request.getParameter("dni");
 			
 		
 		
-		Paciente paciente= new Paciente(Integer.parseInt(nhistorial));
+		Paciente paciente= new Paciente(dni);
 		paciente = paciente.buscarPacientePorDNI();
 		
 	%>

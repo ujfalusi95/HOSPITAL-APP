@@ -101,9 +101,10 @@
           <div class="form-group">
          
          
-          <label>Buscar  Por Dni:</label>
-          
+          <label>BUSCADOR</label>
+          <p>
           <input  id="searchTerm" type="text" onkeyup="doSearch()" class="btn btn-primary" >
+          </p>
         </div>
         <div class="form-group">
         <label for="disabledSelect">Poblacion</label>

@@ -67,8 +67,8 @@
               </li>
              <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
               <span>Saved reports</span>
-              <a class="d-flex align-items-center text-muted" href="#">
-                <span data-feather="plus-circle"></span>
+              <a class="d-flex align-items-center text-muted" >
+               
               </a>
             </h6>
                <li class="nav-item">
@@ -136,6 +136,14 @@
 
           
           <div class="table-responsive">
+          <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tablesorter.js"></script>
+<script>
+$(document).ready(function() {
+  //cuando la página se cargue convertimos la tabla con id "datos" en una tabla ordenable
+	$("#datos").tableSorter();
+});
+</script>
         
  
             <table class="table table-striped table-sm"  id="datos">

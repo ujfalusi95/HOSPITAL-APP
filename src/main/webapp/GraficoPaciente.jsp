@@ -43,7 +43,7 @@ for(String pob :poblaciones){
 //out.println(rep);
 }
 for(String key :rep){
-	 dataset.setValue(Collections.frequency(poblaciones,key),"Total de Pacientes"+total,key);
+	 dataset.setValue(Collections.frequency(poblaciones,key),"Total de Pacientes: "+total,key);
 	
 }
 
@@ -52,7 +52,7 @@ for(String key :rep){
   
 
 
-	
+	//Creamos la tabla
 		
 	
 	

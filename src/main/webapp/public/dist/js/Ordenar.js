@@ -1,3 +1,3 @@
 $(function(){
-  $('#datos').tablesorter(); 
+  $('#mi-tabla').tablesorter(); 
 });

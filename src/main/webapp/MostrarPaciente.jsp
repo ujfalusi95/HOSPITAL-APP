@@ -23,6 +23,7 @@
     
       <script src="public/custom/js/BuscadorTabla.js" type="text/javascript"></script>
        <script src="public/custom/js/Ordenar.js" type="text/javascript"></script>
+       <script type="text/javascript" src="public/custom/js/jquery.tablesorter.js"></script>
   </head>
 
   <body>
@@ -136,8 +137,8 @@
 
           
           <div class="table-responsive">
-          <script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="jquery.tablesorter.js"></script>
+          
+
 <script>
 $(document).ready(function() {
   //cuando la página se cargue convertimos la tabla con id "datos" en una tabla ordenable

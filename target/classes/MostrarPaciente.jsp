@@ -110,9 +110,9 @@
           <div class="form-group">
          
          
-          <label>BUSCADOR</label>
+         <h2> <label>BUSCADOR</label> </h2>
           <p>
-          <input  id="searchTerm" type="text" onkeyup="doSearch()" class="btn btn-primary" >
+          <input  id="searchTerm" type="text" onkeyup="doSearch()" class="btn btn-primary" placeholder="Escriba aqui...">
           </p>
         </div>
       
@@ -131,8 +131,8 @@
           
              
            <div class="aligne-right">
-           
-           <a href="FormularioAgregarPaciente.jsp"> Nuevo Paciente</a> 
+            <h2>
+           <a href="FormularioAgregarPaciente.jsp">NUEVO PACIENTE: Pulse aqui</a> </h2>
            </div>
          
                   

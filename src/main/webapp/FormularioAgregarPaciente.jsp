@@ -21,7 +21,7 @@
 <div class="form">
 	<form action="AgregarPaciente.jsp" method="post">
 		<fieldset>
-			<legend>AGREGAR PACIENTE</legend>
+			<legend>DATOS DEL PACIENTE</legend>
 			<p>
 			<label for="nombrepaciente">Nombre del Paciente </label>
 			<input type="text" name="nombrepaciente" class="field"/>

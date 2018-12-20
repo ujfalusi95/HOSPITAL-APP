@@ -110,8 +110,8 @@
           <div class="form-group">
          
          
-         <label>BUSCADOR</label> 
-          <p><input  id="searchTerm" type="text" onkeyup="doSearch()" class="btn btn-primary" placeholder="Escriba aqui..." color="white">
+         <label font-size= "0.8em" />BUSCADOR: 
+          <input  id="searchTerm" type="text" onkeyup="doSearch()" class="btn btn-primary" placeholder="Escriba aqui..." color="#000000">
           
         </div>
       

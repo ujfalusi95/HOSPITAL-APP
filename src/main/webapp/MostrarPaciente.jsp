@@ -25,7 +25,71 @@
       
        <script type="text/javascript" src="public/custom/js/jquery-1.3.2.js"></script>
        <script type="text/javascript" src="public/custom/js/jquery.tablesorter.js"></script>
-  </head>
+       <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script> 
+  <style type="text/css">
+  /* para 980px o menos */
+@media screen and (max-width: 980px) {
+	
+	#pagewrap {
+		width: 94%;
+	}
+	#content {
+		width: 65%;
+	}
+	#sidebar {
+		width: 30%;
+	}
+
+}
+
+/* para 700px o menos */
+@media screen and (max-width: 700px) {
+
+	#content {
+		width: auto;
+		float: none;
+	}
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+
+}
+
+/* para 480px o menos */
+@media screen and (max-width: 480px) {
+
+	#header {
+		height: auto;
+	}
+	h1 {
+		font-size: 24px;
+	}
+	#sidebar {
+		display: none;
+	}
+
+}
+
+/* borde & guideline (puedes ignorarlo) */
+#content {
+	background: #f8f8f8;
+}
+#sidebar {
+	background: #f0efef;
+}
+#header, #content, #sidebar {
+	margin-bottom: 5px;
+}
+#pagewrap, #header, #content, #sidebar, #footer {
+	border: solid 1px #ccc;
+}
+  
+  </style>
+  
+  
+  
+</head>
 
   <body >
  

@@ -77,7 +77,7 @@
                <li class="nav-item">
                 <a class="nav-link" href="GraficoCoste.jsp">
                   <span data-feather="file"></span>
-              Coste por Diagnotico
+              Numero de Ingresos
                 </a>
               </li>
                <li class="nav-item">
@@ -111,7 +111,7 @@
          
          
          <label>BUSCADOR</label> 
-          <p><input  id="searchTerm" type="text" onkeyup="doSearch()" class="btn btn-primary" placeholder="Escriba aqui...">
+          <p><input  id="searchTerm" type="text" onkeyup="doSearch()" class="btn btn-primary" placeholder="Escriba aqui..." color="white">
           
         </div>
       

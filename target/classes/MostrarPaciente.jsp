@@ -28,7 +28,7 @@
        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script> 
   <style type="text/css">
   /* para 980px o menos */
-@media screen and (max-width: 980px) {
+@media screen and (min-width: 1024px) {
 	
 	#nav {
 		width: 94%;
@@ -42,8 +42,8 @@
 
 }
 
-/* para 700px o menos */
-@media screen and (max-width: 700px) {
+/* enter 1024 y 640px o menos */
+@media screen and (max-width:1024px) and (min-width:640px) {
 
 	#content {
 		width: auto;
@@ -57,7 +57,7 @@
 }
 
 /* para 480px o menos */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px){
 
 	#nav {
 		height: auto;

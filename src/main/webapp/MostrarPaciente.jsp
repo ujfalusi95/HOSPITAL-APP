@@ -30,13 +30,13 @@
   /* para 980px o menos */
 @media screen and (max-width: 980px) {
 	
-	#pagewrap {
+	#nav {
 		width: 94%;
 	}
 	#content {
 		width: 65%;
 	}
-	#sidebar {
+	#datos{
 		width: 30%;
 	}
 
@@ -49,7 +49,7 @@
 		width: auto;
 		float: none;
 	}
-	#sidebar {
+	#datos {
 		width: auto;
 		float: none;
 	}
@@ -59,13 +59,13 @@
 /* para 480px o menos */
 @media screen and (max-width: 480px) {
 
-	#header {
+	#nav {
 		height: auto;
 	}
 	h1 {
 		font-size: 24px;
 	}
-	#sidebar {
+	#datos {
 		display: none;
 	}
 
@@ -75,13 +75,13 @@
 #content {
 	background: #f8f8f8;
 }
-#sidebar {
+#datos {
 	background: #f0efef;
 }
-#header, #content, #sidebar {
+#nav, #content, #datos {
 	margin-bottom: 5px;
 }
-#pagewrap, #header, #content, #sidebar, #footer {
+#nav,  #content, #datos, {
 	border: solid 1px #ccc;
 }
   
@@ -103,7 +103,7 @@
      </ul>
     </nav> 
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="nav">
       <div class="row">
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
           <div class="sidebar-sticky">
@@ -159,7 +159,7 @@
             </ul>
 </div>
 </nav>
-         <div class="col-md-8 ml-sm-auto col-lg-10 pt-3 px-3">
+         <div class="col-md-8 ml-sm-auto col-lg-10 pt-3 px-3" id="content">
           
      
           <img src="https://whispering-retreat-65233.herokuapp.com/GraficoPaciente.jsp" width="900" height="380"/> 

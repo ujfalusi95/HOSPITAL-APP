@@ -103,14 +103,14 @@
                   
           
 
-          <h2>GESTION DE PACIENTES </h2>
+          <h2> <ins>GESTION DE PACIENTES </ins></h2>
           <div>
           
           
           <div class="form-group">
          
          
-         <label  >BUSCADOR: </label>
+         <label  ><b>BUSCADOR: </b> </label>
           <input  id="searchTerm" type="text" onkeyup="doSearch()" class="btn btn-primary" placeholder="Escriba aqui..." >
           
         </div>

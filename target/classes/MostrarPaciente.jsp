@@ -31,13 +31,13 @@
 @media screen and (min-width: 1024px) {
 	
 	#nav {
-		width: 94%;
+		width: 100%;
 	}
 	#content {
-		width: 65%;
+		width: 90%;
 	}
 	#datos{
-		width: 30%;
+		width: 50%;
 	}
 
 }
@@ -60,14 +60,13 @@
 @media screen and (max-width: 640px){
 
 	#nav {
+	width :10%;
 		height: auto;
 	}
 	h1 {
 		font-size: 24px;
 	}
-	#datos {
-		display: none;
-	}
+	
 
 }
 

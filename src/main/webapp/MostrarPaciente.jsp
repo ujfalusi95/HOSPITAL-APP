@@ -60,7 +60,7 @@
 @media screen and (max-width: 640px){
 
 	#nav {
-	width :10%;
+	width :60%;
 		height: auto;
 	}
 	h1 {

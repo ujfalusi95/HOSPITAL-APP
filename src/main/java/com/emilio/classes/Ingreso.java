@@ -213,7 +213,7 @@ public  void editarIngreso() throws URISyntaxException, SQLException {
 }
 public  Ingreso buscarHistorial() throws URISyntaxException, SQLException {
    JDBCHelper<Ingreso> helper = new JDBCHelper<Ingreso>();
-	String sql= "SELECT * FROM ingreso WHERE nexpediente="+this.nexpediente;
+	String sql= "SELECT * FROM ingreso WHERE nexpediente='"+this.nexpediente+"'";
 	List<Ingreso> lista = helper.seleccionarRegistros(sql, Ingreso.class);
 	return lista.get(0);
 

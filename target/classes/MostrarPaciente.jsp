@@ -31,13 +31,13 @@
 @media screen and (min-width: 1024px) {
 	
 	#nav {
-		width: 90%;
+		width: 100%;
 	}
 	#content {
-		width: 90%;
+		width: 100%;
 	}
 	#datos{
-		width: 90%;
+		width: 100%;
 	}
 
 }

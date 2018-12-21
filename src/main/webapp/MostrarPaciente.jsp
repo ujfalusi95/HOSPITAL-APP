@@ -36,7 +36,7 @@
 	#content {
 		width: 100%;
 	}
-	#datos{
+	#tabla{
 		width: 100%;
 	}
 
@@ -51,7 +51,7 @@
 	#content {
 		width: 60%;
 	}
-	#datos{
+	#tabla{
 		width: 100%;
 	}
 
@@ -66,7 +66,7 @@
 	#content {
 		width: 60%;
 	}
-	#datos{
+	#tabla{
 		width: 100%;
 	}
 
@@ -202,7 +202,7 @@
                   
 
           
-          <div class="table-responsive" id="datos">
+          <div class="table-responsive" id=tabla">
           
 <script>
  $(document).ready(function() 

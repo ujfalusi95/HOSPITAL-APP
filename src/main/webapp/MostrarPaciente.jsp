@@ -60,6 +60,7 @@
 	}
 	#grafico{
 	width: 60%;
+	align:left;
 	}
 
 }

@@ -32,7 +32,7 @@
 	
 	#nav {
 		width: 100%;
-		
+		}
 	#content {
 		width: 100%;
 	}
@@ -48,7 +48,7 @@
 	#nav {
 		width: 100%;
 		height: 90%;
-		text-align:right;
+		text-align:center;
 	}
 	#content {
 		width: 100%;
@@ -65,7 +65,7 @@
 @media screen and (max-width: 640px){
 
 	#nav {
-	text-align:right;
+	text-align:center;
 		width: 100%;
 		height: 90%;
 	}

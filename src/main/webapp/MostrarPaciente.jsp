@@ -49,7 +49,7 @@
 		width: 90%;
 	}
 	#content {
-		width: 60%;
+		width: 100%;
 	}
 	#tabla{
 		width: 100%;
@@ -64,7 +64,7 @@
 		width: 90%;
 	}
 	#content {
-		width: 60%;
+		width: 100%;
 	}
 	#tabla{
 		width: 100%;

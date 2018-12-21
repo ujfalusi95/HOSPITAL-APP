@@ -32,8 +32,7 @@
 	
 	#nav {
 		width: 100%;
-		height: auto;
-	}
+		
 	#content {
 		width: 100%;
 	}
@@ -48,13 +47,15 @@
 
 	#nav {
 		width: 100%;
-		height: auto;
+		height: 90%:
 	}
 	#content {
 		width: 100%;
+		height: 90%:
 	}
 	#tabla{
 		width: 100%;
+		height: 90%:
 	}
 
 }
@@ -64,12 +65,15 @@
 
 	#nav {
 		width: 100%;
+		height: 90%:
 	}
 	#content {
 		width: 100%;
+		height: 90%:
 	}
 	#tabla{
 		width: 100%;
+		height: 90%:
 	}
 
 }

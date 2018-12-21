@@ -14,9 +14,14 @@
 <head> 
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Actualizar Medico</title>
+<link href="public/custom/css/formulario.css" rel="stylesheet">
 
+<link href="../public/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body background="public\custom\images\hospital_perspective_perspectiva_architecture_arquitectura_woman_mujer_color-752878.png" >
+
+
+
 	<%
 		
 			
@@ -28,22 +33,24 @@
 		medico = medico.buscarMedicoPorCodigo();
 		
 	%>
-	
+	<div class="product-device shadow-sm d-none d-md-block"></div>
+      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+<div class="form">
 	<form action="EditarMedico.jsp" method="post">
 		<fieldset>
 			<legend>Edita el paciente aqui</legend>
 			<p>
 				<label for="nombremedico">Nombre del Medico</label>
-				<input type="text" value="<%=medico.getNombremedico()%>" name="nombremedico"  />
+				<input type="text" value="<%=medico.getNombremedico()%>" name="nombremedico" class="field" />
 			</p>
 			<p>
 				<label for="apellidosmedico">Apellidos del Medico </label>
-				<input type="text" value="<%=medico.getApellidosmedico()%>" name="apellidosmedico" />
+				<input type="text" value="<%=medico.getApellidosmedico()%>" name="apellidosmedico" class="field" />
 			</p>
 			
 			<p>
 			<label for="especialidad">Especialidad </label> 
-			<select class="form-control" id="especialidad" name="especialidad">
+			<select class="form-control" id="especialidad" name="especialidad" class="field">
 			<option value="<%=medico.getEspecialidad()%>"><%=medico.getEspecialidad()%></option>
 			<option>Traumatologia </option>
 			<option>Hematologia</option>
@@ -54,16 +61,16 @@
 			</select>
 			</p>
 			<p>
-				<label for="numerocolegiado">Numero Colegiado </label>
-				<input type="text" value="<%=medico.getNumerocolegiado()%>" name="numerocolegiado" />
+				<label for="numerocolegiado">Numero Colegiado  </label>
+				<input type="text" value="<%=medico.getNumerocolegiado()%>" name="numerocolegiado" class="field"/>
 			</p>
 			<p>
 				<label for="cargo">Cargo </label>
-				<input type="text" value="<%=medico.getCargo()%>" name="cargo" />
+				<input type="text" value="<%=medico.getCargo()%>" name="cargo" class="field" />
 			</p>
 			<p>
 				<label for="codigomedico">Codigo Medico </label>
-				<input type="text" value="<%=medico.getCodigomedico()%>" name="codigomedico" />
+				<input type="text" value="<%=medico.getCodigomedico()%>" name="codigomedico" class="field" />
 			</p>
 			
 			
@@ -71,12 +78,12 @@
 			
 			
 			<p>
-				<input type="submit" value="Guardar" />
+				<input type="submit" value="Guardar" class="btn btn-primary"/>
 			</p>
 
 		</fieldset>
 	</form>
-
+</div>
 	
 </body>
 </html>

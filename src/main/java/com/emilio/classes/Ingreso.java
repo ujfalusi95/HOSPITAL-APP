@@ -222,7 +222,7 @@ public  Ingreso buscarHistorial() throws URISyntaxException, SQLException {
 }
 public  void eliminarIngreso() throws URISyntaxException, SQLException {
   JDBCHelper<Ingreso> helper = new JDBCHelper<Ingreso>();
-  String sql = "DELETE FROM ingreso WHERE nhistorial='"+this.nhistorial+"'";
+  String sql = "DELETE FROM ingreso WHERE nexpediente='"+this.nexpediente+"'";
   helper.modificarRegistro(sql);
   
 }

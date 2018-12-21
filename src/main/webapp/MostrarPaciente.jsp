@@ -45,13 +45,14 @@
 /* enter 1024 y 640px o menos */
 @media screen and (max-width:1024px) and (min-width:640px) {
 
-	#content {
-		width: auto;
-		float: none;
+	#nav {
+		width: 90%;
 	}
-	#datos {
-		width: auto;
-		float: none;
+	#content {
+		width: 90%;
+	}
+	#datos{
+		width: 30%;
 	}
 
 }
@@ -60,15 +61,13 @@
 @media screen and (max-width: 640px){
 
 	#nav {
-		height: auto;
-		width:auto;
+		width: 90%;
 	}
-	h1 {
-		font-size: 24px;
+	#content {
+		width: 90%;
 	}
-	#datos {
-		height:auto;
-		width: auto;
+	#datos{
+		width: 30%;
 	}
 
 }

@@ -48,7 +48,7 @@
 	#sidebar {
 		width: 100%;
 		height: 90%;
-		text-align:center;
+		
 	}
 	#content {
 		width: 100%;
@@ -57,6 +57,9 @@
 	#tabla{
 		width: 100%;
 		height: 90%;
+	}
+	#grafico{
+	width: 60%;
 	}
 
 }

@@ -33,19 +33,19 @@
 			<legend>Edita el paciente aqui</legend>
 			<p>
 				<label for="nombrepaciente">Nombre del paciente</label>
-				<input type="text" value="<%=paciente.getNombrepaciente()%>" name="nombrepaciente"  />
+				<input type="text" value="<%=paciente.getNombrepaciente()%>" name="nombrepaciente" class="field" />
 			</p>
 			<p>
 				<label for="apellidospaciente">Apellidos del paciente </label>
-				<input type="text" value="<%=paciente.getApellidospaciente()%>" name="apellidospaciente" />
+				<input type="text" value="<%=paciente.getApellidospaciente()%>" name="apellidospaciente" class="field"/>
 			</p>
 			<p>
 				<label for="domicilio">Domicilio </label>
-				<input type="text" value="<%=paciente.getDomicilio()%>" name="domicilio" />
+				<input type="text" value="<%=paciente.getDomicilio()%>" name="domicilio" class="field"/>
 			</p>
 			<p>
 			<label for="poblacion">Poblacion: </label> 
-			<select class="form-control" id="poblacion" name="poblacion">
+			<select class="field" id="poblacion" name="poblacion">
 			<option value="<%=paciente.getPoblacion()%>"><%=paciente.getPoblacion()%></option>
 			<option>Alcala de Henares </option>
 			<option>Madrid </option>
@@ -56,19 +56,19 @@
 			</p>
 			<p>
 				<label for="cp">CP </label>
-				<input type="text" value="<%=paciente.getCp()%>" name="cp" />
+				<input type="text" value="<%=paciente.getCp()%>" name="cp" class="field"/>
 			</p>
 			<p>
 				<label for="telefono">Telefono </label>
-				<input type="text" value="<%=paciente.getTelefono()%>" name="telefono" />
+				<input type="text" value="<%=paciente.getTelefono()%>" name="telefono" class="field"/>
 			</p>
 			<p>
 				<label for="fechanacimiento">Fecha Nacimiento </label>
-				<input type="text" value="<%=paciente.getFechanacimiento()%>" name="fechanacimiento" />
+				<input type="text" value="<%=paciente.getFechanacimiento()%>" name="fechanacimiento"class="field" />
 			</p>
 			<p>
 			<label for="sexo">Sexo </label> 
-			<select class="form-control" id="sexo" name="sexo">
+			<select class="field" id="sexo" name="sexo" class="field">
 			<option value="<%=paciente.getSexo()%>"><%=paciente.getSexo()%></option>
 			<option>Masculino </option>
 			<option>Femenino</option>
@@ -78,14 +78,14 @@
 			</p>
 			<p>
 				<label for="dni">DNI</label>
-				<input type="text" value="<%=paciente.getDni()%>" name="dni"  />
+				<input type="text" value="<%=paciente.getDni()%>" name="dni" class="field" />
 			</p>
 			<p>
 				<label for="nss">Numero de la seguridad Social</label>
-				<input type="text" value="<%=paciente.getNss()%>" name="nss" />
+				<input type="text" value="<%=paciente.getNss()%>" name="nss" class="field" />
 			</p>
 			<p>
-				<input type="hidden" value="<%=paciente.getNhistorial()%>" name="nhistorial" />
+				<input type="hidden" value="<%=paciente.getNhistorial()%>" name="nhistorial" class="field" />
 			</p>
 			
 			

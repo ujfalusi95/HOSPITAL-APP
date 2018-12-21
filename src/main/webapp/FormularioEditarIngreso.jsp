@@ -20,11 +20,11 @@
 	<%
 		
 			 
-			String nhistorial = request.getParameter("nhistorial");
+			String nexpediente = request.getParameter("nexpediente");
 			
 		
 		
-		Ingreso ingreso= new Ingreso(Integer.parseInt(nhistorial));
+		Ingreso ingreso= new Ingreso(Integer.parseInt(nexpediente));
 		ingreso = ingreso.buscarHistorial();
 		
 	%>

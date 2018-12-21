@@ -194,8 +194,8 @@
 <td>
 
 
-<a href="FormularioEditarIngreso.jsp?nhistorial=<%=ingreso.getNhistorial()%>">Editar</a>
-<a href="EliminarIngreso.jsp?nhistorial=<%=ingreso.getNhistorial()%>">Eliminar</a>
+<a href="FormularioEditarIngreso.jsp?nhistorial=<%=ingreso.getNexpediente()%>">Editar</a>
+<a href="EliminarIngreso.jsp?nhistorial=<%=ingreso.getNexpediente()%>">Eliminar</a>
 
 
 </tr>

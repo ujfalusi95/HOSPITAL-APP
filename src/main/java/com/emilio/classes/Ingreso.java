@@ -36,9 +36,9 @@ public Ingreso(Integer coste, String diagnostico) {
 
 
 
-public Ingreso(Integer nhistorial) {
+public Ingreso(Integer nexpediente) {
 	super();
-	this.nhistorial = nhistorial;
+	this.nhistorial = nexpediente;
 } 
 
 

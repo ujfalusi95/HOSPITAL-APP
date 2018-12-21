@@ -81,7 +81,7 @@
                <li class="nav-item">
                 <a class="nav-link" href="GraficoCoste.jsp">
                   <span data-feather="file"></span>
-              Coste por Diagnotico
+             Número de Ingresos
                 </a>
               </li>
                <li class="nav-item">
@@ -137,7 +137,7 @@
              
            <div class="aligne-right">
             
-           <a href="FormularioAgregarPaciente.jsp">NUEVO PACIENTE: Pulse aqui</a> 
+           <a href="FormularioAgregarIngreso.jsp">NUEVO INGRESO: Pulse aqui</a> 
            </div>
          
                   

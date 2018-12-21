@@ -159,7 +159,7 @@
                <li class="nav-item">
                 <a class="nav-link" href="GraficoCoste.jsp">
                   <span data-feather="file"></span>
-              Numero de Ingresos
+              Número de Ingresos
                 </a>
               </li>
                <li class="nav-item">

@@ -30,7 +30,7 @@
   /* para 980px o menos */
 @media screen and (min-width: 1024px) {
 	
-	#nav {
+	#sidebar {
 		width: 100%;
 		}
 	#content {
@@ -45,7 +45,7 @@
 /* enter 1024 y 640px o menos */
 @media screen and (max-width:1024px) and (min-width:640px) {
 
-	#nav {
+	#sidebar {
 		width: 100%;
 		height: 90%;
 		text-align:center;
@@ -64,7 +64,7 @@
 /* para 480px o menos */
 @media screen and (max-width: 640px){
 
-	#nav {
+	#sidebar{
 	text-align:left;
 		width: 100%;
 		height: 100%;
@@ -118,7 +118,7 @@
     <div class="container-fluid" >
       <div class="row">
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-          <div class="sidebar-sticky" id="nav">
+          <div class="sidebar-sticky" id="sidebar">
             <ul class="nav flex-column">
               <li class="nav-item">
                 <a class="nav-link active" href="MostrarPaciente.jsp">

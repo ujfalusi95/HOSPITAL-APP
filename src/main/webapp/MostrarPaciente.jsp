@@ -59,7 +59,7 @@
 		height: 90%;
 	}
 	#grafico{
-	width: 60%;
+	width: 100%;
 	align:left;
 	}
 
@@ -180,7 +180,7 @@
          <div class="col-md-8 ml-sm-auto col-lg-10 pt-3 px-3" id="content">
           
           <div id="grafico">
-          <img src="https://whispering-retreat-65233.herokuapp.com/GraficoPaciente.jsp" width="900" height="380"/> 
+          <img src="https://whispering-retreat-65233.herokuapp.com/GraficoPaciente.jsp" width="900" height="380" style="width:100%;"/> 
         </div>
         
                   

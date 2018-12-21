@@ -65,7 +65,7 @@
 @media screen and (max-width: 640px){
 
 	#nav {
-	text-align:center;
+	text-align:left;
 		width: 100%;
 		height: 90%;
 	}

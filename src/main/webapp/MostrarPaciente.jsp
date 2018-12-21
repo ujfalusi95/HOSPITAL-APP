@@ -67,7 +67,7 @@
 	#nav {
 	text-align:left;
 		width: 100%;
-		height: 90%;
+		height: 100%;
 	}
 	#content {
 		width: 100%;

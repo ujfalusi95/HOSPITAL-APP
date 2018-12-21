@@ -31,7 +31,7 @@
 @media screen and (min-width: 1024px) {
 	
 	#nav {
-		width: 30%;
+		width: 90%;
 	}
 	#content {
 		width: 90%;

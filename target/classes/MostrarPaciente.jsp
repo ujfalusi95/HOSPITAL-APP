@@ -64,7 +64,7 @@
 		width: 90%;
 	}
 	#content {
-		width: 60%;
+		width: 90%;
 	}
 	#datos{
 		width: 90%;
@@ -202,7 +202,7 @@
                   
 
           
-          <div class="table-responsive">
+          <div class="table-responsive" id="datos">
           
 <script>
  $(document).ready(function() 

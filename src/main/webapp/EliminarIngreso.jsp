@@ -9,8 +9,8 @@
  </head>
 <body>
 	<%
-		String nhistorial = request.getParameter("nhistorial");
-		Ingreso ingreso= new Ingreso(Integer.parseInt(nhistorial));
+	String nexpediente = request.getParameter("nexpediente");
+		Ingreso ingreso= new Ingreso(Integer.parseInt(nexpediente));
 		ingreso.eliminarIngreso();
 		response.sendRedirect("MostrarIngresos.jsp");
 	%>

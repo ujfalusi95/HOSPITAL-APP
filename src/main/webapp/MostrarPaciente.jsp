@@ -39,9 +39,6 @@
 	#datos{
 		width: 30%;
 	}
-	#grafico{
-		width: 90%;
-	}
 
 }
 
@@ -162,18 +159,18 @@
               </li>
             </ul>
 </div>
-
-         <div class="col-md-8 ml-sm-auto col-lg-10 pt-3 px-3" id="grafico">
+</nav>
+         <div class="col-md-8 ml-sm-auto col-lg-10 pt-3 px-3" id="content">
           
      
           <img src="https://whispering-retreat-65233.herokuapp.com/GraficoPaciente.jsp" width="900" height="380"/> 
         
-           </div>        
+                  
           
 
-          
-          <div id="content">
           <h2> <ins>GESTION DE PACIENTES </ins></h2>
+          <div>
+          
           
           <div class="form-group">
          
@@ -271,7 +268,7 @@
 	 </tbody>
             </table>
           </div>
-       </nav>
+        </div>
      
     </div>
  </div>

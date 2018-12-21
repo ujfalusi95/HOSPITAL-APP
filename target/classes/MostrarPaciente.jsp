@@ -46,7 +46,7 @@
 @media screen and (max-width:1024px) and (min-width:640px) {
 
 	#nav {
-		width: 90%;
+		width: 100%;
 	}
 	#content {
 		width: 100%;
@@ -61,7 +61,7 @@
 @media screen and (max-width: 640px){
 
 	#nav {
-		width: 90%;
+		width: 100%;
 	}
 	#content {
 		width: 100%;

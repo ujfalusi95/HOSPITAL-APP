@@ -168,8 +168,9 @@
 </nav>
          <div class="col-md-8 ml-sm-auto col-lg-10 pt-3 px-3" id="content">
           
-     
+          <div id="grafico">
           <img src="https://whispering-retreat-65233.herokuapp.com/GraficoPaciente.jsp" width="900" height="380"/> 
+        </div>
         
                   
           

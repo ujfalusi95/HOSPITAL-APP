@@ -31,13 +31,13 @@
 @media screen and (min-width: 1024px) {
 	
 	#nav {
-		width: 100%;
+		width: 30%;
 	}
 	#content {
 		width: 90%;
 	}
 	#datos{
-		width: 50%;
+		width: 30%;
 	}
 
 }
@@ -60,13 +60,16 @@
 @media screen and (max-width: 640px){
 
 	#nav {
-	width :60%;
 		height: auto;
+		width:auto;
 	}
 	h1 {
 		font-size: 24px;
 	}
-	
+	#datos {
+		height:auto;
+		width: auto;
+	}
 
 }
 
@@ -102,10 +105,10 @@
      </ul>
     </nav> 
 
-    <div class="container-fluid" id="nav">
+    <div class="container-fluid" >
       <div class="row">
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-          <div class="sidebar-sticky">
+          <div class="sidebar-sticky" id="nav">
             <ul class="nav flex-column">
               <li class="nav-item">
                 <a class="nav-link active" href="MostrarPaciente.jsp">

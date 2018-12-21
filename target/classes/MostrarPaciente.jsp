@@ -32,6 +32,7 @@
 	
 	#nav {
 		width: 100%;
+		height: auto;
 	}
 	#content {
 		width: 100%;
@@ -47,6 +48,7 @@
 
 	#nav {
 		width: 100%;
+		height: auto;
 	}
 	#content {
 		width: 100%;

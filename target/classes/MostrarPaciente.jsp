@@ -37,7 +37,7 @@
 		width: 90%;
 	}
 	#datos{
-		width: 30%;
+		width: 90%;
 	}
 
 }

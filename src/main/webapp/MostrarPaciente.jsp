@@ -72,10 +72,12 @@
 	#content {
 		width: 100%;
 		height: 90%;
+		display: none;
 	}
 	#tabla{
 		width: 100%;
 		height: 90%;
+		display:none;
 	}
 	#grafico{
 		display: none;

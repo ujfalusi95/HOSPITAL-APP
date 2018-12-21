@@ -49,7 +49,7 @@
 		width: 90%;
 	}
 	#content {
-		width: 90%;
+		width: 60%;
 	}
 	#datos{
 		width: 30%;
@@ -64,7 +64,7 @@
 		width: 90%;
 	}
 	#content {
-		width: 90%;
+		width: 60%;
 	}
 	#datos{
 		width: 30%;

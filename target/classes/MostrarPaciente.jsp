@@ -162,7 +162,7 @@
               </li>
             </ul>
 </div>
-</nav>
+
          <div class="col-md-8 ml-sm-auto col-lg-10 pt-3 px-3" id="grafico">
           
      
@@ -271,7 +271,7 @@
 	 </tbody>
             </table>
           </div>
-       
+       </nav>
      
     </div>
  </div>

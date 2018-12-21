@@ -8,10 +8,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Actualizar Paciente</title>
-  
+<title>ACTUALIZAR PACIENTE</title>
+  <link href="public/custom/css/formulario.css" rel="stylesheet">
+
+<link href="../public/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body background="public\custom\images\hospital_perspective_perspectiva_architecture_arquitectura_woman_mujer_color-752878.png" >
 	<%
 		
 			
@@ -23,7 +25,9 @@
 		paciente = paciente.buscarPacientePorDNI();
 		
 	%>
-	
+	<div class="product-device shadow-sm d-none d-md-block"></div>
+      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+<div class="form">
 	<form action="EditarPaciente.jsp" method="post">
 		<fieldset>
 			<legend>Edita el paciente aqui</legend>
@@ -95,6 +99,6 @@
 		</fieldset>
 	</form>
 
-	
+	<div>
 </body>
 </html>

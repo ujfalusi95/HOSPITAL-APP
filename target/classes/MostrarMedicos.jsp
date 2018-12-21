@@ -140,7 +140,7 @@
              
            <div class="aligne-right">
             
-           <a href="FormularioAgregarMedico.jsp">NUEVO MÉDICO: Pulse aqui</a> 
+           <a href="FormularioAgregarMedicos.jsp">NUEVO MÉDICO: Pulse aqui</a> 
            </div>
          
                   

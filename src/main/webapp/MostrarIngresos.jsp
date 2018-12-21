@@ -23,23 +23,28 @@
 
      <title>Gestion de Ingresos</title>  
 
-    <!-- Bootstrap core CSS -->
+   <!-- Bootstrap core CSS -->
     <link href="../public/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="public/custom/css/dashboard.css" rel="stylesheet">
     
+      <script src="public/custom/js/BuscadorTabla.js" type="text/javascript"></script>
+      
+       <script type="text/javascript" src="public/custom/js/jquery-1.3.2.js"></script>
+       <script type="text/javascript" src="public/custom/js/jquery.tablesorter.js"></script>
+       <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
    
   </head>
 
   <body>
-    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0"> -->
-     <!--   --><a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#"></a>  -->
+      <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0"> -->
+     <!--   <a class="navbar-brand col-sm-3 col-md-2 mr-0" ></a>  -->
       <!--  <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search"> -->
      <ul class="navbar-nav px-3"> 
-        <li class="nav-item text-nowrap">
+      <!--  <li class="nav-item text-nowrap"> -->
         <!--  <a class="nav-link" href="#">Sign out</a> -->
-        </li> 
+        
      </ul>
     </nav> 
 
@@ -94,39 +99,28 @@
             </ul>
 </div>
 </nav>
-         <div class="col-md-8 ml-sm-auto col-lg-10 pt-3 px-3">
+      <div class="col-md-8 ml-sm-auto col-lg-10 pt-3 px-3" id="content">
+          
+          <div id="grafico">
           
      <img src="https://whispering-retreat-65233.herokuapp.com/GraficoCoste.jsp" width="900" height="380"/> 
-         
+         </div>
         
                   
           
 
-          <h2>GESTION DE INGRESOS </h2>
+          <h2><ins>GESTION DE INGRESOS </ins></h2>
           <div>
-          <fieldset >
+         
+          
           <div class="form-group">
-          <label for="disabledTextInput"> fechaingreso</label>
-          <input type="text" id="nombrepaciente" class="form-control" placeholder="Ingrese el nombre">
+         
+         
+         <label  ><b>BUSCADOR: </b> </label>
+          <input  id="searchTerm" type="text" onkeyup="doSearch()" class="btn btn-primary" placeholder="Escriba aqui..." >
+          
         </div>
-        <div class="form-group">
-        <label for="disabledSelect">Diagnostico</label>
-        <select id="poblacion" class="form-control">
-         <option value="seleccionar">seleccionar</option>
-		<%
-		
-		List<String> listapoblacion =  Paciente.ListarTodasPoblaciones();
-			for (String poblacion: listapoblacion){
-		%>
-		<option value="<%=poblacion%>">
- 			<%=poblacion%>
- 				</option>
-		<% } %>
       
-        </select>
-            </div>
-            <button id="btnBuscar" class="btn btn-primary">Buscar</button>
-         </fieldset>
           </div>
           
           <hr>
@@ -142,17 +136,24 @@
           
              
            <div class="aligne-right">
-           
-           <a href="FormularioAgregarIngreso.jsp"> Nuevo Ingreso</a> 
+            
+           <a href="FormularioAgregarPaciente.jsp">NUEVO PACIENTE: Pulse aqui</a> 
            </div>
          
                   
 
           
-          <div class="table-responsive">
-        
+          <div class="table-responsive" id="tabla">
+          
+<script>
+ $(document).ready(function() 
+    { 
+        $("#datos").tablesorter(); 
+    } 
+);
+    </script>   
  
-            <table class="table table-striped table-sm" >
+            <table class="table table-striped table-sm"  id="datos">
             
               <thead>
                 <tr>

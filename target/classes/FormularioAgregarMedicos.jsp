@@ -39,7 +39,7 @@
 			
 			<p>
 			<label for="especialidad">Especialidad: </label> 
-			<select class="form-control" id="especilidad" class="field">
+			<select class="form-control" id="especilidad" name="especialidad" class="field">
 			<option>Traumatologia </option>
 			<option>Hematologia</option>
 			<option>Neurologia</option>

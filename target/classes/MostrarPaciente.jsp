@@ -48,7 +48,7 @@ width:100%;}
 #content{
 width:100%;}
 #sidebar{
-width:100%;}
+width:70%;}
 }
 }
 /* para tablets pequeñas y moviles grandes*/
@@ -56,7 +56,7 @@ width:100%;}
 #content{
 width:70%;}
 #sidebar{
-width:30%;}
+width:70%;}
 }
 }
 /* para la mayoria de moviles del mercado*/
@@ -64,7 +64,7 @@ width:30%;}
 #content{
 width:70%;}
 #sidebar{
-width:30%;}
+width:70%;}
 }
 }
 

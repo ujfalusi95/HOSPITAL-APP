@@ -28,11 +28,7 @@
 <body>
 <% 
     
-   
-  
-  
-
-  List<Medico> listavariables = Medico.ListarTodosMedicos();
+List<Medico> listavariables = Medico.ListarTodosMedicos();
 List<String> especialidades = new ArrayList<String>();
 Set<String> rep = new HashSet<String>(especialidades);
 DefaultCategoryDataset dataset = new DefaultCategoryDataset();
@@ -54,19 +50,8 @@ for(String key :rep){
 
 	
 
-  
-
-
-	
-		
-	
 	
 	 JFreeChart chart = ChartFactory.createBarChart("Médicos por Departamento","Especialidad","Número",dataset, PlotOrientation.HORIZONTAL,true,false,false);
-
-	
-	 
-	 
-	 
 	response.setContentType("image/png");
 	 ServletOutputStream ouputStream = response.getOutputStream();
 
@@ -76,7 +61,7 @@ for(String key :rep){
 			
 			  
  
-	 
+	
  %>
 
 </body>

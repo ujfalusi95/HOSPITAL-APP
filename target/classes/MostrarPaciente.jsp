@@ -27,67 +27,23 @@
        <script type="text/javascript" src="public/custom/js/jquery.tablesorter.js"></script>
        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script> 
   <style type="text/css">
-  /* para 980px o menos */
-@media screen and (min-width: 1024px) {
-	
-	#sidebar {
-		width: 100%;
-		}
-	#content {
-		width: 100%;
-	}
-	#tabla{
-		width: 100%;
-	}
-
+  
+ /* para pantallas grandes de 2000px o más */
+@media screen and (min-width: 2000px) {
+}
+ /* para portatiles y ordenadores mas pequeños*/
+@media screen and (max-width:2000px) and (min-width:1500px) {
+}
+/* para tablets y ipads*/
+@media screen and (max-width:1500px) and (min-width:1000px) {
+}
+/* para tablets pequeñas y moviles grandes*/
+@media screen and (max-width:1000px) and (min-width:700px) {
+}
+/* para la mayoria de moviles del mercadp*/
+@media screen and (max-width: 700px) {
 }
 
-/* enter 1024 y 640px o menos */
-@media screen and (max-width:1024px) and (min-width:640px) {
-
-	#sidebar {
-		width: 100%;
-		height: 90%;
-		
-	}
-	#content {
-		width: 100%;
-		height: 90%;
-	}
-	#tabla{
-		width: 100%;
-		height: 90%;
-	}
-	#grafico{
-	width: 100%;
-	align:left;
-	}
-
-}
-
-/* para 480px o menos */
-@media screen and (max-width: 640px){
-
-	#sidebar{
-	text-align:left;
-		width:30%;
-		height: 30%;
-	}
-	#content {
-		width: 100%;
-		height: 90%;
-		display: none;
-	}
-	#tabla{
-		width: 100%;
-		height: 90%;
-		display:none;
-	}
-	#grafico{
-		display: none;
-	}
-
-}
 
 /* borde & guideline (puedes ignorarlo) */
 #content {
@@ -177,7 +133,7 @@
             </ul>
 </div>
 </nav>
-         <div class="col-md-8 ml-sm-auto col-lg-10 pt-3 px-3" id="content">
+         <div class="col-md-8 ml-sm-auto col-lg-10 pt-3 px-3" >
           
           <div id="grafico">
           <img src="https://whispering-retreat-65233.herokuapp.com/GraficoPaciente.jsp" width="900" height="380" /> 
@@ -207,11 +163,6 @@
           
           
           
-          
-          
-         
-          
-             
            <div class="aligne-right">
             
            <a href="FormularioAgregarPaciente.jsp">NUEVO PACIENTE: Pulse aqui</a> 
@@ -229,7 +180,7 @@
     } 
 );
     </script>   
- 
+ <div id="tabla">
             <table class="table table-striped table-sm"  id="datos">
             
               <thead>
@@ -285,6 +236,7 @@
 	%>
 	 </tbody>
             </table>
+            </div>
           </div>
         </div>
      

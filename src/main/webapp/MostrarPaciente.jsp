@@ -37,15 +37,35 @@ width:100%;}
 }
  /* para portatiles y ordenadores mas pequeños*/
 @media screen and (max-width:2000px) and (min-width:1500px) {
+#content{
+width:100%;}
+#sidebar{
+width:100%;}
+}
 }
 /* para tablets y ipads*/
 @media screen and (max-width:1500px) and (min-width:1000px) {
+#content{
+width:100%;}
+#sidebar{
+width:100%;}
+}
 }
 /* para tablets pequeñas y moviles grandes*/
 @media screen and (max-width:1000px) and (min-width:700px) {
+#content{
+width:70%;}
+#sidebar{
+width:30%;}
+}
 }
 /* para la mayoria de moviles del mercado*/
 @media screen and (max-width: 700px) {
+#content{
+width:70%;}
+#sidebar{
+width:30%;}
+}
 }
 
 

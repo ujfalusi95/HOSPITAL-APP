@@ -90,9 +90,9 @@ width:70%;}
     </nav> 
 
     <div class="container-fluid" >
-      <div class="row">
+      <div class="row" id="sidebar">
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-          <div class="sidebar-sticky" id="sidebar">
+          <div class="sidebar-sticky" >
             <ul class="nav flex-column">
               <li class="nav-item">
                 <a class="nav-link active" href="MostrarPaciente.jsp">

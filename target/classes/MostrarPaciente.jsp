@@ -30,6 +30,10 @@
   
  /* para pantallas grandes de 2000px o más */
 @media screen and (min-width: 2000px) {
+#content{
+width:100%;}
+#sidebar{
+width:100%;}
 }
  /* para portatiles y ordenadores mas pequeños*/
 @media screen and (max-width:2000px) and (min-width:1500px) {
@@ -40,24 +44,12 @@
 /* para tablets pequeñas y moviles grandes*/
 @media screen and (max-width:1000px) and (min-width:700px) {
 }
-/* para la mayoria de moviles del mercadp*/
+/* para la mayoria de moviles del mercado*/
 @media screen and (max-width: 700px) {
 }
 
 
-/* borde & guideline (puedes ignorarlo) */
-#content {
-	background: #f8f8f8;
-}
-#datos {
-	background: #f0efef;
-}
-#nav, #content, #datos {
-	margin-bottom: 5px;
-}
-#nav,  #content, #datos, {
-	border: solid 1px #ccc;
-}
+
   
   </style>
   
@@ -133,7 +125,7 @@
             </ul>
 </div>
 </nav>
-         <div class="col-md-8 ml-sm-auto col-lg-10 pt-3 px-3" >
+         <div class="col-md-8 ml-sm-auto col-lg-10 pt-3 px-3"  id="content">
           
           <div id="grafico">
           <img src="https://whispering-retreat-65233.herokuapp.com/GraficoPaciente.jsp" width="900" height="380" /> 

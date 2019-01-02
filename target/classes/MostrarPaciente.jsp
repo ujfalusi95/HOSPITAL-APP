@@ -78,7 +78,7 @@ width:70%;}
 </head>
 
   <body >
- 
+ <div id="contenedor">
     <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0"> -->
      <!--   <a class="navbar-brand col-sm-3 col-md-2 mr-0" ></a>  -->
       <!--  <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search"> -->
@@ -90,7 +90,7 @@ width:70%;}
     </nav> 
 
     <div class="container-fluid" >
-      <div class="row" id="sidebar">
+      <div class="row" >
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
           <div class="sidebar-sticky" >
             <ul class="nav flex-column">
@@ -271,6 +271,5 @@ width:70%;}
     <!-- Graphs -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
    
-    
-  </body>
+     </div>
 </html>

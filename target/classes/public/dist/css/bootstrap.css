@@ -6352,7 +6352,7 @@ button.bg-dark:focus {
 
 @media (min-width: 768px) {
   .d-md-none {
-    display: none !important;
+    display: block !important;
   }
   .d-md-inline {
     display: inline !important;

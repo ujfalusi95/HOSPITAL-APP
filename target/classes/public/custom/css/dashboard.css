@@ -218,6 +218,9 @@ body{
     flex: 0 0 83.333333%;
     max-width: 83.333333%;
 }
+.grafico{
+	display:none;
+}
 }
 /* para tablets  y moviles grandes*/
 @media screen and (max-width:1000px) and (min-width:700px) {

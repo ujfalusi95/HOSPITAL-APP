@@ -244,7 +244,7 @@ body{
 }
 .navbar{
 	width:100%;
-	
+	min-width:700px;
 }
 }
 /* para la mayoria de moviles del mercado*/
@@ -277,7 +277,7 @@ body{
 }
 .navbar{
 	width:100%;
-	
+	min-width:300px;
 }
 }
 @media screen and (max-width: 300px) {

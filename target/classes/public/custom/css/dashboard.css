@@ -33,6 +33,7 @@ body {
   padding-top: .5rem;
   overflow-x: auto;
   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  color:#0000ff
 }
 
 .sidebar .nav-link {
@@ -187,7 +188,7 @@ body{
 	background:#ff8080;
 }
 sidebar{
-	background:#ffff80;
+	color:#ffff80;
 }	
 }
 

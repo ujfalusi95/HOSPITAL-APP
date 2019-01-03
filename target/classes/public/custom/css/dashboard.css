@@ -252,6 +252,7 @@ body{
 }	
 .sidebar-sticky, .sidebar{
 	width:100%;
+	min-width:100px;
 }
 
 .col-sm-2 {

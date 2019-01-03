@@ -46,7 +46,7 @@
 
     <div class="container-fluid" >
       <div class="row" >
-        <nav class="col-md-2 col-sm-2 display-min1 d-md-block bg-light sidebar">
+        <nav class="col-sm-2 display-min1 d-md-block bg-light sidebar">
           <div class="sidebar-sticky" >
             <ul class="nav flex-column">
               <li class="nav-item">
@@ -100,7 +100,8 @@
             </ul>
 </div>
 </nav>
-         <div class="col-md-10 col-sm-10 ml-sm-auto col-lg-10 pt-3 px-3"  id="content">
+
+         <div class="col-sm-10 ml-sm-auto col-lg-10 pt-3 px-3"  id="content">
           
           <div id="grafico">
           <img src="https://whispering-retreat-65233.herokuapp.com/GraficoPaciente.jsp" width="900" height="380" /> 

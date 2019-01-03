@@ -220,7 +220,7 @@ body{
 	background:#ffffff;
 	
 }	
-.sidebar-sticky{
+.sidebar-sticky, .sidebar{
 	width:100%;
 }
 }

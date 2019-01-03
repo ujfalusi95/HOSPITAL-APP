@@ -148,7 +148,7 @@
     } 
 );
     </script>   
- <div id="tabla">
+ <div class="col-sm-10" id="tabla">
             <table class="table table-striped table-sm"  id="datos">
             
               <thead>

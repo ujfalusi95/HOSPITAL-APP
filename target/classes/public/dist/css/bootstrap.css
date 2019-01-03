@@ -6279,7 +6279,9 @@ button.bg-dark:focus {
 .d-none {
   display: inline !important;
 }
-
+.display-min1 {
+  display: inline !important;
+}
 .d-inline {
   display: inline !important;
 }

@@ -209,19 +209,19 @@ body{
 	background:#80ff80;
 }	
 .sidebar-sticky{
-	width:70%;
+	width:100%;
 }
 
 }
 /* para la mayoria de moviles del mercado*/
 @media screen and (max-width: 700px) {
 	body{
-	width:70%
+	width:100%
 	background:#ffffff;
 	
 }	
 .sidebar-sticky{
-	width:70%;
+	width:100%;
 }
 }
 

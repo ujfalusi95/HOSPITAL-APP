@@ -185,16 +185,19 @@ body{
 @media screen and (max-width:2000px) and (min-width:1500px) {
 body{
 	background:#ff8080;
+}
+sidebar{
+	background:#ffff80;
 }	
 }
 
-/* para tablets y ipads*/
+/* para ordenadores*/
 @media screen and (max-width:1500px) and (min-width:1000px) {
 body{
 	background:#ffff80;
 }	
 }
-/* para tablets pequeñas y moviles grandes*/
+/* para tablets  y moviles grandes*/
 @media screen and (max-width:1000px) and (min-width:700px) {
 	body{
 	background:#80ff80;

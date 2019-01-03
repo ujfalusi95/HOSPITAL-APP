@@ -6361,7 +6361,7 @@ button.bg-dark:focus {
     display: inline-block !important;
   }
   .d-md-block {
-    display: block !important;
+    display: inline !important;
   }
   .d-md-table {
     display: table !important;

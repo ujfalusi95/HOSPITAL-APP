@@ -217,7 +217,7 @@ body{
 
 }
 /* para la mayoria de moviles del mercado*/
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) and and (min-width:300px){
 	body{
 	width:70%
 	background:#ffffff;
@@ -241,6 +241,29 @@ body{
     max-width: 83.333333%;
 }
 }
+@media screen and (max-width: 300px) {
+	body{
+	width:70%
+	background:#ff8080;
+	
+}	
+.sidebar-sticky, .sidebar{
+	width:100%;
+}
 
+.col-sm-2 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+.col-sm-10 {
+	margin-left:50px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+}
+}
 
 	

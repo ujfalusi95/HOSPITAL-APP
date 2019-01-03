@@ -295,6 +295,10 @@ body{
     flex: 0 0 83.333333%;
     max-width: 83.333333%;
 }
+.navbar{
+	width:100%;
+	
+}
 }
 
 	

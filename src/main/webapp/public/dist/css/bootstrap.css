@@ -6277,7 +6277,7 @@ button.bg-dark:focus {
 }
 
 .d-none {
-  display: block !important;
+  display: inline !important;
 }
 
 .d-inline {

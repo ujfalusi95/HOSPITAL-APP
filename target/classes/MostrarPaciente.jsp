@@ -101,7 +101,7 @@
 </div>
 </nav>
 
-         <div class="col-sm-10 ml-sm-auto col-lg-10 pt-3 px-3"  id="content">
+         <div class="col-sm-10 col-lg-10 pt-3 px-3"  id="content">
           
           <div id="grafico">
           <img src="https://whispering-retreat-65233.herokuapp.com/GraficoPaciente.jsp" width="900" height="380" /> 
@@ -148,7 +148,7 @@
     } 
 );
     </script>   
- <div class="col-sm-10" id="tabla">
+ <div id="tabla">
             <table class="table table-striped table-sm"  id="datos">
             
               <thead>

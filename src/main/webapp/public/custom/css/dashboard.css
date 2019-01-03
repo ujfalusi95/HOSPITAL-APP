@@ -224,7 +224,7 @@ body{
 	
 }	
 .sidebar-sticky, .sidebar{
-	width:100%;
+	width:70%;
 }
 
 .col-sm-2 {
@@ -234,7 +234,7 @@ body{
     max-width: 16.666667%;
 }
 .col-sm-10 {
-	margin-left:100px;
+	margin-left:90px;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 83.333333%;
     flex: 0 0 83.333333%;

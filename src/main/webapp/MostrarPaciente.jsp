@@ -26,52 +26,7 @@
        <script type="text/javascript" src="public/custom/js/jquery-1.3.2.js"></script>
        <script type="text/javascript" src="public/custom/js/jquery.tablesorter.js"></script>
        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script> 
-  <style type="text/css">
   
- /* para pantallas grandes de 2000px o más */
-@media screen and (min-width: 2000px) {
-#content{
-width:100%;}
-#sidebar{
-width:100%;}
-}
- /* para portatiles y ordenadores mas pequeños*/
-@media screen and (max-width:2000px) and (min-width:1500px) {
-#content{
-width:100%;}
-#sidebar{
-width:100%;}
-}
-}
-/* para tablets y ipads*/
-@media screen and (max-width:1500px) and (min-width:1000px) {
-#content{
-width:100%;}
-#sidebar{
-width:70%;}
-}
-}
-/* para tablets pequeñas y moviles grandes*/
-@media screen and (max-width:1000px) and (min-width:700px) {
-#content{
-width:70%;}
-#sidebar{
-width:70%;}
-}
-}
-/* para la mayoria de moviles del mercado*/
-@media screen and (max-width: 700px) {
-#content{
-width:70%;}
-#sidebar{
-width:70%;}
-}
-}
-
-
-
-  
-  </style>
   
   
   

@@ -28,7 +28,7 @@ body {
 .sidebar-sticky {
   position: -webkit-sticky;
   position: sticky;
-  top: 60px; /* Height of navbar */
+  top: 48px; /* Height of navbar */
   height: calc(100vh - 48px);
   padding-top: .5rem;
   overflow-x: auto;

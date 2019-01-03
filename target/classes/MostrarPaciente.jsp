@@ -47,8 +47,8 @@
     <div class="container-fluid" >
       <div class="row" >
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-          <div class="sidebar" >
-            <ul class="nav flex-column">
+          <div class="sidebar-sticky" >
+            <ul >
               <li class="nav-item">
                 <a class="nav-link active" href="MostrarPaciente.jsp">
                   <span data-feather="home"></span>

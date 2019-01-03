@@ -209,10 +209,11 @@ body{
 /* para tablets  y moviles grandes*/
 @media screen and (max-width:1000px) and (min-width:700px) {
 	body{
+	width:100%;
 	background:#80ff80;
 }	
-.sidebar-sticky{
-	width:100%;
+.sidebar-sticky, .sidebar{
+	width:70%;
 }
 .col-sm-2 {
     -webkit-box-flex: 0;

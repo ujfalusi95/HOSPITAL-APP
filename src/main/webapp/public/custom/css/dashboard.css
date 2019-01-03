@@ -197,6 +197,9 @@ sidebar{
 body{
 	background:#ffff80;
 }	
+.sidebar-sticky{
+	width:30%;
+}
 }
 /* para tablets  y moviles grandes*/
 @media screen and (max-width:1000px) and (min-width:700px) {

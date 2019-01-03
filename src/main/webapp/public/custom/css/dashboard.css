@@ -214,6 +214,7 @@ body{
 /* para la mayoria de moviles del mercado*/
 @media screen and (max-width: 700px) {
 	body{
+	width:70%
 	background:#ffffff;
 	
 }	

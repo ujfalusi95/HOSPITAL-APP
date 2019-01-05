@@ -42,7 +42,7 @@
 			<input type="text" name="cama" class="field"/>
 			</p>
 			<p>
-			<label for="coste">Coste</label><br id="saltoLinea"></br>
+			<label for="coste">Coste</label>nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<input type="text" name="coste" class="field" />
 			</p>
 			<p>
@@ -55,7 +55,7 @@
 			</p>
 			
 			<p>
-				<button type="submit" class="btn btn-primary botonForm">Guardar</button>
+				<button type="submit" class="btn btn-primary botonForm">Guardar como</button>
 <!-- 				<input type="submit" value="Guardar" class="btn btn-primary botonForm" align="center"/> -->
 			</p>
 			

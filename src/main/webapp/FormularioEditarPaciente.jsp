@@ -31,7 +31,7 @@
 <div class="form2">
 	<form action="EditarPaciente.jsp" method="post">
 		<fieldset>
-			<legend>Edita el paciente aqui</legend>
+			<legend style="font-size: 2.5em;">Edición de paciente</legend>
 			<p>
 				<label for="nombrepaciente">Nombre del paciente</label>
 				<input type="text" value="<%=paciente.getNombrepaciente()%>" name="nombrepaciente" class="field" />
@@ -45,7 +45,7 @@
 				<input type="text" value="<%=paciente.getDomicilio()%>" name="domicilio" class="field"/>
 			</p>
 			<p>
-			<label for="poblacion">Poblacion: </label> 
+			<label for="poblacion">Población </label> 
 			<select class="field" id="poblacion" name="poblacion">
 			<option value="<%=paciente.getPoblacion()%>"><%=paciente.getPoblacion()%></option>
 			<option>Alcala de Henares </option>
@@ -60,11 +60,11 @@
 				<input type="text" value="<%=paciente.getCp()%>" name="cp" class="field"/>
 			</p>
 			<p>
-				<label for="telefono">Telefono </label>
+				<label for="telefono">Teléfono </label>
 				<input type="text" value="<%=paciente.getTelefono()%>" name="telefono" class="field"/>
 			</p>
 			<p>
-				<label for="fechanacimiento">Fecha Nacimiento </label>
+				<label for="fechanacimiento">Fecha de nacimiento </label>
 				<input type="text" value="<%=paciente.getFechanacimiento()%>" name="fechanacimiento"class="field" placeholder="(YYYY/MM/DD)" />
 			</p>
 			<p>
@@ -82,7 +82,7 @@
 				<input type="text" value="<%=paciente.getDni()%>" name="dni" class="field" />
 			</p>
 			<p>
-				<label for="nss">Numero de la seguridad Social</label>
+				<label for="nss">Número de la Seguridad Social</label>
 				<input type="text" value="<%=paciente.getNss()%>" name="nss" class="field" />
 			</p>
 			<p>
@@ -90,11 +90,11 @@
 			</p>
 			
 			
-			
+			<div>&nbsp;</div>
 			
 			
 			<p>
-				<input type="submit" value="Guardar" class="btn btn-primary"/>
+				<button type="submit" class="btn btn-primary botonForm">Guardar</button>
 			</p>
 
 		</fieldset>

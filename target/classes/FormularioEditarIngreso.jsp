@@ -33,17 +33,17 @@
 <div class="form2">
 	<form action="EditarIngreso.jsp" method="post">
 		<fieldset>
-			<legend>Edita el paciente aqui</legend>
+			<legend style="font-size: 2.5em;">Edición de ingreso</legend>
 			<p>
-				<label for="fechaingreso">Fecha de Ingreso</label>
+				<label for="fechaingreso">Fecha de ingreso</label>
 				<input type="text" value="<%=ingreso.getFechaingreso()%>" name="fechaingreso" class="field" placeholder="(YYYY/MM/DD)" />
 			</p>
 			<p>
-				<label for="fechasalida">Fecha de Alta </label>
+				<label for="fechasalida">Fecha de alta </label>
 				<input type="text" value="<%=ingreso.getFechasalida()%>" name="fechasalida" class="field" placeholder="(YYYY/MM/DD)" />
 			</p>
 			<p>
-				<label for="codigomedico">Codigo del Medico </label>
+				<label for="codigomedico">Código del médico </label>
 				<input type="text" value="<%=ingreso.getCodigomedico()%>" name="codigomedico" class="field"  />
 			</p>
 			<p>
@@ -60,23 +60,23 @@
 				<input type="text" value="<%=ingreso.getCoste()%>" name="coste" class="field"  />
 			</p>
 			<p>
-				<label for="diagnostico">Diagnostico </label>
+				<label for="diagnostico">Diagnóstico </label>
 				<input type="text" value="<%=ingreso.getDiagnostico()%>" name="diagnostico" class="field"  />
 			</p>
 			
 			<p>
-				<label for="nhistorial">Numero del historial</label>
+				<label for="nhistorial">Número del historial</label>
 				<input type="text" value="<%=ingreso.getNhistorial()%>" name="nhistorial" class="field"  />
 			</p>
 			<p>
 				<input type="hidden" value="<%=ingreso.getNexpediente()%>" name="nexpediente" class="field"  />
 			</p>
 			
-			
+			<div>&nbsp;</div>
 			
 			
 			<p>
-				<input type="submit" value="Guardar" class="btn btn-primary"/>
+				<button type="submit" class="btn btn-primary botonForm">Guardar</button>
 			</p>
 
 		</fieldset>

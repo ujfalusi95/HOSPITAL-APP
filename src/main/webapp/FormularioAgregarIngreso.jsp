@@ -20,7 +20,7 @@
 
 	<form action="InsertarIngreso.jsp" method="post">
 		<fieldset>
-			<legend style="font-size: 2 em;">Nuevo ingreso</legend>
+			<legend style="font-size: 2.1 em;">Nuevo ingreso</legend>
 			<p>
 			<label for="fechaingreso">Fecha de ingreso </label>
 			<input type="text" name="fechaingreso" class="field" placeholder="(YYYY/MM/DD)" />
@@ -53,7 +53,7 @@
 			<label for="nhistorial">N del historial </label>
 			<input type="text" name="nhistorial" class="field"/>
 			</p>
-			
+			<div>&nbsp;</div>
 			<p>
 				<button type="submit" class="btn btn-primary botonForm">Guardar</button>
 <!-- 				<input type="submit" value="Guardar" class="btn btn-primary botonForm" align="center"/> -->

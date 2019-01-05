@@ -105,7 +105,7 @@
           
      <img src="https://whispering-retreat-65233.herokuapp.com/GraficoCoste.jsp" width="900" height="380"/> 
          </div>
-        
+        <div>&nbsp;</div>
                   
           
 

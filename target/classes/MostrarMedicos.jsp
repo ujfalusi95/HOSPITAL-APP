@@ -110,7 +110,7 @@
      
        <img src="https://whispering-retreat-65233.herokuapp.com/GraficoMedico.jsp" width="900" height="380"/> 
         </div>
-                  
+            <div>&nbsp;</div>      
           
 
           <h2><ins>GESTION DE MEDICOS</ins></h2>

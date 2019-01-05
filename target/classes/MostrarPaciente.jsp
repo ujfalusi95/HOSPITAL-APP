@@ -106,7 +106,7 @@
           <div id="grafico">
           <img src="https://whispering-retreat-65233.herokuapp.com/GraficoPaciente.jsp" width="900" height="380" /> 
         </div>
-        
+        <div>&nbsp;</div>
                   
           
 

@@ -240,7 +240,7 @@ body{
     max-width: 16.666667%;
 }
 .col-sm-10 {
-	margin-left:250px;
+	margin-left:200px;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 83.333333%;
     flex: 0 0 83.333333%;
@@ -251,7 +251,7 @@ body{
 	min-width:700px;
 }
 img{
-	width:70%;
+	width:85%;
 }
 }
 /* para la mayoria de moviles del mercado*/

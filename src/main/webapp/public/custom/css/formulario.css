@@ -56,12 +56,9 @@ legend{
 }
 select{
 	width:500px !important;
-	
+	font-size: 30px !important;
 }
 
-.field{
-	font-size: 2.2em !important;
-}
 /* input.value{ */
 /* 	font-size:1.5em; */
 /* } */

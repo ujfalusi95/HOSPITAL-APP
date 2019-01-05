@@ -109,7 +109,7 @@
                   
           
 
-          <h2><ins>GESTIóN DE INGRESOS </ins></h2>
+          <h2><ins>GESTIÓN DE INGRESOS </ins></h2>
           <div>
          
           

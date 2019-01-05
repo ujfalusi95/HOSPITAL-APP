@@ -10,7 +10,11 @@ body {
   height: 16px;
   vertical-align: text-bottom;
 }
-
+.botongris{
+	background-color: #c0c0c0 !important;
+	border-color: #007bff;
+	color: #fff;
+}
 /*
  * Sidebar
  */
@@ -308,9 +312,5 @@ body{
 	
 }
 }
-.botongris{
-	background-color: #c0c0c0 !important;
-	border-color: #007bff;
-	color: #fff;
-}
+
 	

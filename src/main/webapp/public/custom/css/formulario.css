@@ -46,7 +46,7 @@ form{
 		width:450px;
 		}
 .botonForm{
-	width:450px; height:100px;margin: 0 auto;font-size:30 pt;align:center;
+	width:450px; height:100px;margin: 0 auto;font-size:2 rem !important;align:center;
 }
 #saltoLinea{
 		display: inline;}

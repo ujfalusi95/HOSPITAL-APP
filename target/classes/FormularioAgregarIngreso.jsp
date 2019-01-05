@@ -20,9 +20,9 @@
 
 	<form action="InsertarIngreso.jsp" method="post">
 		<fieldset>
-			<legend style="font-size: 2.1em;">Nuevo Ingreso</legend>
+			<legend style="font-size: 2 em;">Nuevo ingreso</legend>
 			<p>
-			<label for="fechaingreso">Fecha de Ingreso </label>
+			<label for="fechaingreso">Fecha de ingreso </label>
 			<input type="text" name="fechaingreso" class="field" placeholder="(YYYY/MM/DD)" />
 			</p>
 			<p>
@@ -30,23 +30,23 @@
 			<input type="text" name="fechasalida" class="field" placeholder="(YYYY/MM/DD)"/>
 			</p>
 			<p>
-			<label for="codigomedico">Codigo del Medico</label>
+			<label for="codigomedico">Código del médico</label>
 			<input type="text" name="codigomedico" class="field"/>
 			</p>
 			<p>
-			<label for="planta">Planta</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<label for="planta">Planta</label>
 			<input type="text" name="planta" class="field" />
 			</p>
 			<p>
-			<label for="cama">Cama</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<label for="cama">Cama</label>
 			<input type="text" name="cama" class="field"/>
 			</p>
 			<p>
-			<label for="coste">Coste</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<label for="coste">Coste</label>
 			<input type="text" name="coste" class="field" />
 			</p>
 			<p>
-			<label for="diagnostico">Diagnostico </label>&nbsp;&nbsp;&nbsp;&nbsp;
+			<label for="diagnostico">Diagnóstico </label>
 			<input type="text" name="diagnostico" class="field" />
 			</p>
 			<p>
@@ -55,7 +55,7 @@
 			</p>
 			
 			<p>
-				<button type="submit" class="btn btn-primary botonForm">Guardar como</button>
+				<button type="submit" class="btn btn-primary botonForm">Guardar</button>
 <!-- 				<input type="submit" value="Guardar" class="btn btn-primary botonForm" align="center"/> -->
 			</p>
 			

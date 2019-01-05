@@ -31,7 +31,7 @@
 <div class="form2">
 	<form action="EditarPaciente.jsp" method="post">
 		<fieldset>
-			<legend style="font-size: 2.5em;">Edición de paciente</legend>
+			<legend style="font-size: 2.4em;">Edición del paciente</legend>
 			<p>
 				<label for="nombrepaciente">Nombre del paciente</label>
 				<input type="text" value="<%=paciente.getNombrepaciente()%>" name="nombrepaciente" class="field" />

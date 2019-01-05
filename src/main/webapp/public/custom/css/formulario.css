@@ -38,21 +38,21 @@ form{
 			font-size: 2.2em;
 			padding: 20px;
 			margin: 0 auto;
-			width: 500px;
+			width: 550px;
 			height: 1600px;
 		
 		}
 		input{
-		width:450px;
+		width:500px;
 		}
 .botonForm{
-	width:450px; height:100px;margin: 0 auto;
+	width:500px; height:100px;margin: 0 auto;
 }
 .btn{
-font-size:3rem !important;	
+font-size:2.7rem !important;	
 }
 legend{
-	font-size: 1.9em !important;
+	font-size: 1.5em !important;
 }
 /* input.value{ */
 /* 	font-size:1.5em; */

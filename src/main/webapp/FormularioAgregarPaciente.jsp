@@ -21,13 +21,13 @@
 <div class="form">
 	<form action="AgregarPaciente.jsp" method="post">
 		<fieldset>
-			<legend>DATOS DEL PACIENTE</legend>
+			<legend style="font-size: 2.4em;">Datos del paciente</legend>
 			<p>
-			<label for="nombrepaciente">Nombre del Paciente </label>
+			<label for="nombrepaciente">Nombre del paciente </label>
 			<input type="text" name="nombrepaciente" class="field"/>
 			</p>
 			<p>
-			<label for="apellidospaciente">Apellidos del Paciente </label>
+			<label for="apellidospaciente">Apellidos del paciente </label>
 			<input type="text" name="apellidospaciente" class="field"/>
 			</p>
 			<p>
@@ -35,7 +35,7 @@
 			<input type="text" name="domicilio"  class="field"/>
 			</p>
 			<p>
-			<label for="poblacion">Poblacion: </label> 
+			<label for="poblacion">Población </label> 
 			<select class="field" id="poblacion" name="poblacion">
 			<option>Alcala de Henares </option>
 			<option>Madrid </option>
@@ -49,7 +49,7 @@
 			<input type="text" name="cp" class="field"/>
 			</p>
 			<p>
-			<label for="telefono">Telefono </label>
+			<label for="telefono">Teléfono </label>
 			<input type="text" name="telefono" class="field" />
 			</p>
 			<p>
@@ -67,15 +67,15 @@
 			<input type="text" name="dni" class="field"/>
 			</p>
 			<p>
-			<label for="nss">Numero de la seguridad social</label>
+			<label for="nss">Número de la Seguridad Social</label>
 			<input type="text" name="nss" class="field"/>
 			</p>
 			
 			
-			
+			<div>&nbsp;</div>
 			
 			<p>
-				<input type="submit" value="Guardar" class="btn btn-primary"/>
+				<button type="submit" class="btn btn-primary botonForm">Guardar</button>
 			</p>
 			
 		</fieldset>

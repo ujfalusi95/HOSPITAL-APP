@@ -38,13 +38,13 @@
 <div class="form">
 	<form action="EditarMedico.jsp" method="post">
 		<fieldset>
-			<legend>Edita el paciente aqui</legend>
+			<legend  style="font-size: 2.4em;">Edición del médico</legend>
 			<p>
-				<label for="nombremedico">Nombre del Medico</label>
+				<label for="nombremedico">Nombre del médico</label>
 				<input type="text" value="<%=medico.getNombremedico()%>" name="nombremedico" class="field" />
 			</p>
 			<p>
-				<label for="apellidosmedico">Apellidos del Medico </label>
+				<label for="apellidosmedico">Apellidos del médico </label>
 				<input type="text" value="<%=medico.getApellidosmedico()%>" name="apellidosmedico" class="field" />
 			</p>
 			
@@ -61,7 +61,7 @@
 			</select>
 			</p>
 			<p>
-				<label for="numerocolegiado">Numero Colegiado  </label>
+				<label for="numerocolegiado">Número de colegiado  </label>
 				<input type="text" value="<%=medico.getNumerocolegiado()%>" name="numerocolegiado" class="field"/>
 			</p>
 			<p>
@@ -69,16 +69,16 @@
 				<input type="text" value="<%=medico.getCargo()%>" name="cargo" class="field" />
 			</p>
 			<p>
-				<label for="codigomedico">Codigo Medico </label>
+				<label for="codigomedico">Codigo médico </label>
 				<input type="text" value="<%=medico.getCodigomedico()%>" name="codigomedico" class="field" />
 			</p>
 			
 			
-			
+			<div>&nbsp;</div>
 			
 			
 			<p>
-				<input type="submit" value="Guardar" class="btn btn-primary"/>
+				<button type="submit" class="btn btn-primary botonForm">Guardar</button>
 			</p>
 
 		</fieldset>

@@ -34,15 +34,15 @@
 			<input type="text" name="codigomedico" class="field"/>
 			</p>
 			<p>
-			<label for="planta">Planta</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<label for="planta">Planta</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<input type="text" name="planta" class="field" />
 			</p>
 			<p>
-			<label for="cama">Cama</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<label for="cama">Cama</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<input type="text" name="cama" class="field"/>
 			</p>
 			<p>
-			<label for="coste">Coste</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<label for="coste">Coste</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<input type="text" name="coste" class="field" />
 			</p>
 			<p>

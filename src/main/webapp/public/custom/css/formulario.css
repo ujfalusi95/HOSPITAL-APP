@@ -39,7 +39,7 @@ form{
 			padding: 20px;
 			margin: 0 auto;
 			width: 550px;
-			height: 1800px;
+			height: 1700px;
 		
 		}
 		input{
@@ -56,7 +56,7 @@ legend{
 }
 select{
 	width:500px !important;
-	font-size: 30px !important;
+	font-size: 37px !important;
 }
 
 /* input.value{ */

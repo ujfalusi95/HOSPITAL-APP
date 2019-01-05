@@ -67,7 +67,7 @@
 			</p>
 			<p>
 				<label for="cargo">Cargo </label>
-				<input type="text" value="<%=medico.getCargo()%>" name="cargo" class="field" />
+				<input type="text" value="<%=medico.getCargo()%>" name="cargo" class="field" /><br></br>
 			</p>
 			<p>
 				<label for="codigomedico">Codigo médico </label>

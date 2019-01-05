@@ -34,6 +34,7 @@
 	<form action="EditarIngreso.jsp" method="post">
 		<fieldset>
 			<legend style="font-size: 2.4em;">Edición del ingreso</legend>
+			<div>&nbsp;</div>
 			<p>
 				<label for="fechaingreso">Fecha de ingreso</label>
 				<input type="text" value="<%=ingreso.getFechaingreso()%>" name="fechaingreso" class="field" placeholder="(YYYY/MM/DD)" />

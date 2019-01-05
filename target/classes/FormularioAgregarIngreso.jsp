@@ -20,7 +20,7 @@
 
 	<form action="InsertarIngreso.jsp" method="post">
 		<fieldset>
-			<legend>Nuevo Ingreso</legend>
+			<legend style="font-size: 2.3em;">Nuevo Ingreso</legend>
 			<p>
 			<label for="fechaingreso">Fecha de Ingreso </label>
 			<input type="text" name="fechaingreso" class="field" placeholder="(YYYY/MM/DD)" />
@@ -34,15 +34,15 @@
 			<input type="text" name="codigomedico" class="field"/>
 			</p>
 			<p>
-			<label for="planta">Planta</label>
+			<label for="planta">Planta</label><div id="saltoLinea">&nbsp;&nbsp;&nbsp;&nbsp;</div>
 			<input type="text" name="planta" class="field" />
 			</p>
 			<p>
-			<label for="cama">Cama</label>
+			<label for="cama">Cama</label><div id="saltoLinea">&nbsp;&nbsp;&nbsp;&nbsp;</div>
 			<input type="text" name="cama" class="field"/>
 			</p>
 			<p>
-			<label for="coste">Coste</label>
+			<label for="coste">Coste</label><div id="saltoLinea">&nbsp;&nbsp;&nbsp;&nbsp;</div>
 			<input type="text" name="coste" class="field" />
 			</p>
 			<p>

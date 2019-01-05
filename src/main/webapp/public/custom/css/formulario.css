@@ -39,7 +39,7 @@ form{
 			padding: 20px;
 			margin: 0 auto;
 			width: 500px;
-			height: 1500px;
+			height: 1600px;
 		
 		}
 		input{
@@ -49,9 +49,11 @@ form{
 	width:450px; height:100px;margin: 0 auto;
 }
 .btn{
-font-size:3rem;	
+font-size:3rem !important;	
 }
-
+legend{
+	font-size: 1.9em;
+}
 /* input.value{ */
 /* 	font-size:1.5em; */
 /* } */

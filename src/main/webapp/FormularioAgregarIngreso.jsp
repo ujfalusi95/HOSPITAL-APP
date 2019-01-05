@@ -55,7 +55,7 @@
 			</p>
 			
 			<p>
-				<button type="submit" class="btn btn-primary botonForm" align="center">Guardar</button>
+				<button type="submit" class="btn btn-primary botonForm">Guardar</button>
 <!-- 				<input type="submit" value="Guardar" class="btn btn-primary botonForm" align="center"/> -->
 			</p>
 			

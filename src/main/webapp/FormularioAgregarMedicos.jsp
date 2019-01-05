@@ -27,14 +27,14 @@
 
 	<form action="InsertarMedicos.jsp" method="post">
 		<fieldset>
-			<legend style="font-size: 2.4em;">Agregar médico</legend>
+			<legend style="font-size: 2.4em;">Agregar médico</legend><br></br>
 			<p>
 			<label for="nombremedico">Nombre del médico </label>
-			<input type="text" name="nombremedico" class="field" />
+			<input type="text" name="nombremedico" class="field" /><br></br>
 			</p>
 			<p>
 			<label for="apellidosmedico">Apellidos del médico </label>
-			<input type="text" name="apellidosmedico" class="field" />
+			<input type="text" name="apellidosmedico" class="field" /><br></br>
 			</p>
 			
 			<p>
@@ -45,19 +45,19 @@
 			<option>Neurologia</option>
 			<option>Cardiologia </option>
 			
-			</select>
+			</select><br></br>
 			</p>
 			<p>
 			<label for="numerocolegiado">Número de colegiado</label>
-			<input type="text" name="numerocolegiado" class="field"/>
+			<input type="text" name="numerocolegiado" class="field"/><br></br>
 			</p>
 			<p>
 			<label for="cargo">Cargo </label>
-			<input type="text" name="cargo" class="field" />
+			<input type="text" name="cargo" class="field" /><br></br>
 			</p>
 			<p>
 			<label for="codigomedico">Código del médico </label>
-			<input type="text" name="codigomedico" class="field" />
+			<input type="text" name="codigomedico" class="field" /><br></br>
 			</p>
 			
 			

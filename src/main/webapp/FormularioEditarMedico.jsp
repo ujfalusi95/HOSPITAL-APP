@@ -38,18 +38,18 @@
 <div class="form">
 	<form action="EditarMedico.jsp" method="post">
 		<fieldset>
-			<legend  style="font-size: 2.4em;">Edición del médico</legend>
+			<legend  style="font-size: 2.4em;">Edición del médico</legend><br></br>
 			<p>
-				<label for="nombremedico">Nombre del médico</label><br></br>
-				<input type="text" value="<%=medico.getNombremedico()%>" name="nombremedico" class="field" />
+				<label for="nombremedico">Nombre del médico</label>
+				<input type="text" value="<%=medico.getNombremedico()%>" name="nombremedico" class="field" /><br></br>
 			</p>
 			<p>
-				<label for="apellidosmedico">Apellidos del médico </label><br></br>
-				<input type="text" value="<%=medico.getApellidosmedico()%>" name="apellidosmedico" class="field" />
+				<label for="apellidosmedico">Apellidos del médico </label>
+				<input type="text" value="<%=medico.getApellidosmedico()%>" name="apellidosmedico" class="field" /><br></br>
 			</p>
 			
 			<p>
-			<label for="especialidad">Especialidad </label> <br></br>
+			<label for="especialidad">Especialidad </label> 
 			<select class="form-control" id="especialidad" name="especialidad" class="field">
 			<option value="<%=medico.getEspecialidad()%>"><%=medico.getEspecialidad()%></option>
 			<option>Traumatologia </option>
@@ -58,19 +58,19 @@
 			<option>Cardiologia </option>
 			
 			
-			</select>
+			</select><br></br>
 			</p>
 			<p>
-				<label for="numerocolegiado">Número de colegiado  </label><br></br>
-				<input type="text" value="<%=medico.getNumerocolegiado()%>" name="numerocolegiado" class="field"/>
+				<label for="numerocolegiado">Número de colegiado  </label>
+				<input type="text" value="<%=medico.getNumerocolegiado()%>" name="numerocolegiado" class="field"/><br></br>
 			</p>
 			<p>
-				<label for="cargo">Cargo </label><br></br>
+				<label for="cargo">Cargo </label>
 				<input type="text" value="<%=medico.getCargo()%>" name="cargo" class="field" />
 			</p>
 			<p>
-				<label for="codigomedico">Codigo médico </label><br></br>
-				<input type="text" value="<%=medico.getCodigomedico()%>" name="codigomedico" class="field" />
+				<label for="codigomedico">Codigo médico </label>
+				<input type="text" value="<%=medico.getCodigomedico()%>" name="codigomedico" class="field" /><br></br>
 			</p>
 			
 			

@@ -72,7 +72,7 @@
 			</p>
 			
 			
-			<div>&nbsp;</div>
+			<div></div>
 			
 			<p>
 				<button type="submit" class="btn btn-primary botonForm">Guardar</button>

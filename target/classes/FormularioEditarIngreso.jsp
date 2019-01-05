@@ -33,6 +33,7 @@
 <div class="form2">
 	<form action="EditarIngreso.jsp" method="post">
 		<fieldset>
+		<div>&nbsp;</div>
 			<legend style="font-size: 2.4em;">Edición del ingreso</legend>
 			<div>&nbsp;</div>
 			<p>

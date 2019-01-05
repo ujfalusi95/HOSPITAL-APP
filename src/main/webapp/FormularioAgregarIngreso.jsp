@@ -20,6 +20,7 @@
 
 	<form action="InsertarIngreso.jsp" method="post">
 		<fieldset>
+		<div>&nbsp;</div>
 			<legend style="font-size: 2.4em;">Nuevo ingreso</legend>
 			<div>&nbsp;</div>
 			<p>

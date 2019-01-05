@@ -90,7 +90,7 @@
 			</p>
 			
 			
-			<div>&nbsp;</div>
+			<div></div>
 			
 			
 			<p>

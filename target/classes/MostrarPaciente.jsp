@@ -13,7 +13,7 @@
     <meta name="author" content="">
    <!--  <link rel="icon" href="../../../../favicon.ico"> -->
  
-     <title>Gestion de Pacientes</title>  
+     <title>Gestión de Pacientes</title>  
  
     <!-- Bootstrap core CSS -->
     <link href="../public/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -88,13 +88,13 @@
                <li class="nav-item">
                 <a class="nav-link" href="GraficoMedico.jsp">
                   <span data-feather="file"></span>
-             Medico por Especialidad
+             Médico por Especialidad
                 </a>
               </li>
                <li class="nav-item">
                 <a class="nav-link" href="GraficoPaciente.jsp">
                   <span data-feather="file"></span>
-             Pacientes por Poblacion
+             Pacientes por Población
                 </a>
               </li>
             </ul>
@@ -110,7 +110,7 @@
                   
           
 
-          <h2> <ins>GESTION DE PACIENTES </ins></h2>
+          <h2> <ins>GESTIÓN DE PACIENTES </ins></h2>
           <div>
           
           

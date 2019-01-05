@@ -55,7 +55,7 @@
 			</p>
 			
 			<p>
-				<input type="submit" value="Guardar" class="btn btn-primary botonForm"/>
+				<input type="submit" value="Guardar" class="btn btn-primary botonForm" align="center"/>
 			</p>
 			
 		</fieldset>

@@ -20,7 +20,7 @@
 
 	<form action="InsertarIngreso.jsp" method="post">
 		<fieldset>
-			<legend style="font-size: 2.1 em;">Nuevo ingreso</legend>
+			<legend style="font-size: 2em;">Nuevo ingreso</legend>
 			<p>
 			<label for="fechaingreso">Fecha de ingreso </label>
 			<input type="text" name="fechaingreso" class="field" placeholder="(YYYY/MM/DD)" />

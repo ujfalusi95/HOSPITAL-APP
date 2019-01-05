@@ -16,8 +16,6 @@
 </head>
 <body background="public\custom\images\hospital_perspective_perspectiva_architecture_arquitectura_woman_mujer_color-752878.png">
 
-<div class="product-device shadow-sm d-none d-md-block"></div>
-      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
 <div>
 
 	<form action="InsertarIngreso.jsp" method="post">

@@ -11,12 +11,12 @@ form{
 @media screen and (max-width: 700px) and (min-width:300px){
 	
 form{
-			font-size: 1em;
+			font-size: 6em;
 			padding: 20px;
 			margin: 0 auto;
 			width: 500px;
 			height: 1000px;
-			placeholder { color: white; }
+		
 		}
 }
 		input, textarea{

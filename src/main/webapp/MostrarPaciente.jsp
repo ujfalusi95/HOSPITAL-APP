@@ -135,7 +135,7 @@
             
            <a class="btn btn-primary" href="FormularioAgregarPaciente.jsp" style="color: #ffffff;">NUEVO PACIENTE: Pulse aquí</a> 
            </div>
-           <br></br>
+           <div>&nbsp;</div>
          
                   
 

@@ -25,11 +25,11 @@
 			<legend>Nuevo Ingreso</legend>
 			<p>
 			<label for="fechaingreso">Fecha de Ingreso </label>
-			<input type="text" name="fechaingreso" class="field" />
+			<input type="text" name="fechaingreso" class="field" placeholder="(YYYY/MM/DD)" />
 			</p>
 			<p>
-			<label for="fechasalida">Fecha de salida</label>
-			<input type="text" name="fechasalida" class="field" />
+			<label for="fechasalida">Fecha de salida )</label>
+			<input type="text" name="fechasalida" class="field" placeholder="(YYYY/MM/DD)"/>
 			</p>
 			<p>
 			<label for="codigomedico">Codigo del Medico</label>

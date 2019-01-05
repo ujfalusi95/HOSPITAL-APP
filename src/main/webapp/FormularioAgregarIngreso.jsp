@@ -10,6 +10,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>NUEVO INGRESO</title>
 <link href="public/custom/css/formulario.css" rel="stylesheet">
+<link href="public/custom/css/dashboard.css" rel="stylesheet">
 
 <link href="../public/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -18,7 +19,7 @@
 
 <div class="product-device shadow-sm d-none d-md-block"></div>
       <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-<div class="form">
+<div class="form2">
 
 	<form action="InsertarIngreso.jsp" method="post">
 		<fieldset>

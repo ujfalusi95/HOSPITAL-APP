@@ -42,7 +42,7 @@
 			<input type="text" name="cama" class="field"/>
 			</p>
 			<p>
-			<label for="coste">Coste</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<label for="coste">Coste</label><br id="saltoLinea"></br>
 			<input type="text" name="coste" class="field" />
 			</p>
 			<p>

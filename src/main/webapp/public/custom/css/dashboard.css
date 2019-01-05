@@ -259,14 +259,7 @@ body{
 	
 	
 }	
-.form2{
-			font-size: 1em;
-			padding: 20px;
-			margin: 0 auto;
-			width: 500px;
-			height: 1000px;
-			placeholder { color: white; }
-		}
+
 .sidebar-sticky, .sidebar{
 	width:100%;
 	min-width:100px;

@@ -10,7 +10,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Editar Ingreso</title>
 <link href="public/custom/css/formulario.css" rel="stylesheet">
-<link href="public/custom/css/dashboard.css" rel="stylesheet">
 
 <link href="../public/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>

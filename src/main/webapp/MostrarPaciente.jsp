@@ -118,7 +118,7 @@
          
          
          <label  ><b>BUSCADOR: </b> </label>
-          <input  id="searchTerm" type="text" onkeyup="doSearch()" class="btn boton-primary" placeholder="Escriba aqui..." style="backgroud-color: #e0fcfe!important;border-color: #0080c0;">
+          <input  id="searchTerm" type="text" onkeyup="doSearch()" class="btn btn-primary" placeholder="Escriba aqui..." style="backgroud-color: #e0fcfe;border-color: #0080c0;border-width: 1px;">
           
         </div>
       
@@ -133,7 +133,7 @@
           
            <div class="aligne-right">
             
-           <a href="FormularioAgregarPaciente.jsp">NUEVO PACIENTE: Pulse aqui</a> 
+           <button onclick="FormularioAgregarPaciente.jsp" class="btn btn-primary" style="backgroud-color: #b0b0ff;border-width: 1px;">NUEVO PACIENTE: Pulse aquí</button> 
            </div>
          
                   

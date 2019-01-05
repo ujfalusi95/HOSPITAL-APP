@@ -27,7 +27,8 @@
 
 	<form action="InsertarMedicos.jsp" method="post">
 		<fieldset>
-			<legend style="font-size: 2.4em;">Agregar médico</legend><br></br>
+			<legend style="font-size: 2.4em;">Agregar médico</legend>
+			<div>&nbsp;</div>
 			<p>
 			<label for="nombremedico">Nombre del médico </label>
 			<input type="text" name="nombremedico" class="field" /><br></br>
@@ -39,7 +40,7 @@
 			
 			<p>
 			<label for="especialidad">Especialidad </label> 
-			<select class="form-control" id="especilidad" name="especialidad" class="field">
+			<select id="especilidad" name="especialidad" class="field">
 			<option>Traumatologia </option>
 			<option>Hematologia</option>
 			<option>Neurologia</option>

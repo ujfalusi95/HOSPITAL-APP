@@ -38,7 +38,8 @@
 <div class="form">
 	<form action="EditarMedico.jsp" method="post">
 		<fieldset>
-			<legend  style="font-size: 2.4em;">Edición del médico</legend><br></br>
+			<legend  style="font-size: 2.4em;">Edición del médico</legend>
+           <div>&nbsp;</div>
 			<p>
 				<label for="nombremedico">Nombre del médico</label>
 				<input type="text" value="<%=medico.getNombremedico()%>" name="nombremedico" class="field" /><br></br>
@@ -50,7 +51,7 @@
 			
 			<p>
 			<label for="especialidad">Especialidad </label> 
-			<select class="form-control" id="especialidad" name="especialidad" class="field">
+			<select id="especialidad" name="especialidad" class="field">
 			<option value="<%=medico.getEspecialidad()%>"><%=medico.getEspecialidad()%></option>
 			<option>Traumatologia </option>
 			<option>Hematologia</option>

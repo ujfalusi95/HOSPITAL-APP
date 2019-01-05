@@ -117,7 +117,7 @@
          
          
          <label  ><b>BUSCADOR: </b> </label>
-          <input  id="searchTerm" type="text" onkeyup="doSearch()" class="btn" placeholder="Escriba aqui..." style="background-color: #e0fcfe;border-color: #004080;border-width: 3px;">
+          <input  id="searchTerm" type="text" onkeyup="doSearch()" class="btn" placeholder="Escriba aquí..." style="background-color: #e0fcfe;border-color: #004080;border-width: 3px;">
           
         </div>
       

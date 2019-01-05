@@ -44,14 +44,14 @@ for(String esp :especialidades){
 //out.println(rep);
 }
 for(String key :rep){
-	 dataset.setValue(Collections.frequency(especialidades,key),"Total de Medicos:"+total,key);
+	 dataset.setValue(Collections.frequency(especialidades,key),"Total de médicos:"+total,key);
 	
 }
 
 	
 
 	
-	 JFreeChart chart = ChartFactory.createBarChart("Médicos por Departamento","Especialidad","Número",dataset, PlotOrientation.HORIZONTAL,true,false,false);
+	 JFreeChart chart = ChartFactory.createBarChart("Médicos por departamento","Especialidad","Número",dataset, PlotOrientation.HORIZONTAL,true,false,false);
 	response.setContentType("image/png");
 	 ServletOutputStream ouputStream = response.getOutputStream();
 

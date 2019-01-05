@@ -44,7 +44,7 @@ for(String esp :diagnosticos){
 //out.println(rep);
 }
 for(String key :rep){
-	 dataset.setValue(Collections.frequency(diagnosticos,key),"Numero de ingresos:"+total,key);
+	 dataset.setValue(Collections.frequency(diagnosticos,key),"Número de ingresos:"+total,key);
 	
 }
 
@@ -53,7 +53,7 @@ for(String key :rep){
 		
 	
 	
-	JFreeChart chart = ChartFactory.createBarChart("Total Diagnosticos","Diagnosticos","Numero",dataset, PlotOrientation.HORIZONTAL,true,false,false);
+	JFreeChart chart = ChartFactory.createBarChart("Total diagnósticos","Diagnósticos","Número",dataset, PlotOrientation.HORIZONTAL,true,false,false);
 
 	response.setContentType("image/png");
 	ServletOutputStream ouputStream = response.getOutputStream();

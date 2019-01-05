@@ -36,11 +36,11 @@
 			<legend>Edita el paciente aqui</legend>
 			<p>
 				<label for="fechaingreso">Fecha de Ingreso</label>
-				<input type="text" value="<%=ingreso.getFechaingreso()%>" name="fechaingreso" class="field" />
+				<input type="text" value="<%=ingreso.getFechaingreso()%>" name="fechaingreso" class="field" placeholder="(YYYY/MM/DD)" />
 			</p>
 			<p>
 				<label for="fechasalida">Fecha de Alta </label>
-				<input type="text" value="<%=ingreso.getFechasalida()%>" name="fechasalida" class="field" />
+				<input type="text" value="<%=ingreso.getFechasalida()%>" name="fechasalida" class="field" placeholder="(YYYY/MM/DD)" />
 			</p>
 			<p>
 				<label for="codigomedico">Codigo del Medico </label>

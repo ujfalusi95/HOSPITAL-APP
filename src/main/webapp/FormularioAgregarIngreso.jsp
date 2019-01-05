@@ -28,7 +28,7 @@
 			<input type="text" name="fechaingreso" class="field" placeholder="(YYYY/MM/DD)" />
 			</p>
 			<p>
-			<label for="fechasalida">Fecha de salida )</label>
+			<label for="fechasalida">Fecha de salida </label>
 			<input type="text" name="fechasalida" class="field" placeholder="(YYYY/MM/DD)"/>
 			</p>
 			<p>

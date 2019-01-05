@@ -53,8 +53,8 @@
 			<input type="text" name="telefono" class="field" />
 			</p>
 			<p>
-			<label for="fechanacimiento">Fecha de nacimiento (YYYY/MM/DD)</label>
-			<input type="text" name="fechanacimiento" class="field"/>
+			<label for="fechanacimiento">Fecha de nacimiento </label>
+			<input type="text" name="fechanacimiento" class="field" placeholder="(YYYY/MM/DD)"/>
 			</p>
 			<p>
 			<label for="sexo">Sexo </label>

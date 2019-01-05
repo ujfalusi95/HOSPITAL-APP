@@ -53,7 +53,7 @@
 
     <div class="container-fluid">
       <div class="row">
-        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <nav class="col-sm-2 d-md-block bg-light sidebar">
           <div class="sidebar-sticky">
             <ul class="nav flex-column">
               <li class="nav-item">
@@ -103,7 +103,7 @@
 </div>
         </nav>
 
-      <div class="col-md-8 ml-sm-auto col-lg-10 pt-3 px-3" id="content">
+      <div class="col-sm-10 col-lg-10 pt-3 px-3" id="content">
           
           <div id="grafico">
           

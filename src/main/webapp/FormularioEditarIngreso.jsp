@@ -32,8 +32,9 @@
       <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
 <div class="form2">
 	<form action="EditarIngreso.jsp" method="post">
+	<div>&nbsp;</div>
 		<fieldset>
-		<div>&nbsp;</div>
+		
 			<legend style="font-size: 2.4em;">Edición del ingreso</legend>
 			<div>&nbsp;</div>
 			<p>

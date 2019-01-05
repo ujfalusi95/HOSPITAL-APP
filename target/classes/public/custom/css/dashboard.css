@@ -250,6 +250,9 @@ body{
 	width:100%;
 	min-width:700px;
 }
+img{
+	width:70%;
+}
 }
 /* para la mayoria de moviles del mercado*/
 @media screen and (max-width: 700px) and (min-width:300px){

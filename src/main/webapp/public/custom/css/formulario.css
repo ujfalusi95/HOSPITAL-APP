@@ -39,7 +39,7 @@ form{
 			padding: 20px;
 			margin: 0 auto;
 			width: 550px;
-			height: 1600px;
+			height: 1800px;
 		
 		}
 		input{
@@ -53,6 +53,10 @@ font-size:2.7rem !important;
 }
 legend{
 	font-size: 1.5em !important;
+}
+select{
+	width:500px !important;
+	font-size: 2.2em !important;
 }
 /* input.value{ */
 /* 	font-size:1.5em; */

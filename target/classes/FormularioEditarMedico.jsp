@@ -40,16 +40,16 @@
 		<fieldset>
 			<legend  style="font-size: 2.4em;">Edición del médico</legend>
 			<p>
-				<label for="nombremedico">Nombre del médico</label>
+				<label for="nombremedico">Nombre del médico</label><br></br>
 				<input type="text" value="<%=medico.getNombremedico()%>" name="nombremedico" class="field" />
 			</p>
 			<p>
-				<label for="apellidosmedico">Apellidos del médico </label>
+				<label for="apellidosmedico">Apellidos del médico </label><br></br>
 				<input type="text" value="<%=medico.getApellidosmedico()%>" name="apellidosmedico" class="field" />
 			</p>
 			
 			<p>
-			<label for="especialidad">Especialidad </label> 
+			<label for="especialidad">Especialidad </label> <br></br>
 			<select class="form-control" id="especialidad" name="especialidad" class="field">
 			<option value="<%=medico.getEspecialidad()%>"><%=medico.getEspecialidad()%></option>
 			<option>Traumatologia </option>
@@ -61,15 +61,15 @@
 			</select>
 			</p>
 			<p>
-				<label for="numerocolegiado">Número de colegiado  </label>
+				<label for="numerocolegiado">Número de colegiado  </label><br></br>
 				<input type="text" value="<%=medico.getNumerocolegiado()%>" name="numerocolegiado" class="field"/>
 			</p>
 			<p>
-				<label for="cargo">Cargo </label>
+				<label for="cargo">Cargo </label><br></br>
 				<input type="text" value="<%=medico.getCargo()%>" name="cargo" class="field" />
 			</p>
 			<p>
-				<label for="codigomedico">Codigo médico </label>
+				<label for="codigomedico">Codigo médico </label><br></br>
 				<input type="text" value="<%=medico.getCodigomedico()%>" name="codigomedico" class="field" />
 			</p>
 			

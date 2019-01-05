@@ -82,19 +82,19 @@
                <li class="nav-item">
                 <a class="nav-link" href="GraficoCoste.jsp">
                   <span data-feather="file"></span>
-              Número de Ingresos
+              Número de ingresos
                 </a>
               </li>
                <li class="nav-item">
                 <a class="nav-link" href="GraficoMedico.jsp">
                   <span data-feather="file"></span>
-             Médico por Especialidad
+             Médico por especialidad
                 </a>
               </li>
                <li class="nav-item">
                 <a class="nav-link" href="GraficoPaciente.jsp">
                   <span data-feather="file"></span>
-             Pacientes por Población
+             Pacientes por población
                 </a>
               </li>
             </ul>

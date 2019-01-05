@@ -77,23 +77,28 @@
                INGRESOS
                 </a>
               </li>
-            
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>REPORTES</span>
+              <a class="d-flex align-items-center text-muted" >
+               
+              </a>
+            </h6>
                <li class="nav-item">
                 <a class="nav-link" href="GraficoCoste.jsp">
                   <span data-feather="file"></span>
-             Número de Ingresos
+             Número de ingresos
                 </a>
               </li>
                <li class="nav-item">
                 <a class="nav-link" href="GraficoMedico.jsp">
                   <span data-feather="file"></span>
-             Médico por Especialidad
+             Médico por especialidad
                 </a>
               </li>
                <li class="nav-item">
                 <a class="nav-link" href="GraficoPaciente.jsp">
                   <span data-feather="file"></span>
-             Pacientes por Población
+             Pacientes por población
                 </a>
               </li>
             </ul>

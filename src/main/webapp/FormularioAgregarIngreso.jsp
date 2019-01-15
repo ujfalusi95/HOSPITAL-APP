@@ -33,7 +33,7 @@
 			<p>
 			<label for="fechaingreso">Fecha de ingreso </label>
 			 <div  id="datetimepicker1">
-			<input type="text" name="fechaingreso" class="field" placeholder="(YYYY/MM/DD)" />
+			<input type="text" name="fechaingreso" class="field" placeholder="(YYYY/MM/DD)" id="datetimepicker1" />
 			  <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span> </span>
                     </div>
 			<script>

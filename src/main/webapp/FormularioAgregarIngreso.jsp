@@ -33,7 +33,7 @@
 			<p>
 			<label for="fechaingreso">Fecha de ingreso </label>
 			
-			<vaadin-date-picker name="fechaingreso" class="field" placeholder="(YYYY/MM/DD)"></vaadin-date-picker>
+			<input type="text" name="fechaingreso" class="field" placeholder="(YYYY/MM/DD)"  />
 			  
 			
 

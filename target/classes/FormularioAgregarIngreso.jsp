@@ -3,15 +3,21 @@
 <%@page import="java.util.List"%>
 <%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>NUEVO INGRESO</title>
-<link href="public/custom/css/formulario.css" rel="stylesheet">
+<link href="public/custom/css/formulario.css" rel="stylesheet"> 
 
 <link href="../public/dist/css/bootstrap.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Include Date Range Picker -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
 
 </head>
 <body background="public\custom\images\hospital_perspective_perspectiva_architecture_arquitectura_woman_mujer_color-752878.png">
@@ -27,6 +33,20 @@
 			<p>
 			<label for="fechaingreso">Fecha de ingreso </label>
 			<input type="text" name="fechaingreso" class="field" placeholder="(YYYY/MM/DD)" />
+			<script>
+			<script>
+		    $(document).ready(function(){
+		        var date_input=$('input[name="fechaingreso"]'); //our date input has the name "date"
+		        var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+		        date_input.datepicker({
+		            format: 'mm/dd/yyyy',
+		            container: container,
+		            todayHighlight: true,
+		            autoclose: true,
+		        })
+		    })
+		</script>
+
 			</p>
 			<p>
 			<label for="fechasalida">Fecha de salida </label>

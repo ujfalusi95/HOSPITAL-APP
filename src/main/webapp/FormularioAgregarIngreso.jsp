@@ -33,14 +33,14 @@
 			<p>
 			<label for="fechaingreso">Fecha de ingreso </label>
 			
-			<input type="text" name="fechaingreso" class="field" placeholder="(YYYY/MM/DD)"  />
+			<input type="date" name="fechaingreso" class="field" placeholder="(YYYY/MM/DD)"  />
 			  
 			
 
 			</p>
 			<p>
 			<label for="fechasalida">Fecha de salida </label>
-			<input type="text" name="fechasalida" class="field" placeholder="(YYYY/MM/DD)"/>
+			<input type="date" name="fechasalida" class="field" placeholder="(YYYY/MM/DD)"/>
 			</p>
 			<p>
 			<label for="codigomedico">Código del médico</label>

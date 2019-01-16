@@ -46,15 +46,15 @@
 			</p>
 			<p>
 			<label for="cp">CP</label>
-			<input type="text" name="cp" class="field"/>
+			<input type="number" name="cp" class="field"/>
 			</p>
 			<p>
 			<label for="telefono">Teléfono </label>
-			<input type="text" name="telefono" class="field" />
+			<input type="tel" name="telefono" class="field" />
 			</p>
 			<p>
 			<label for="fechanacimiento">Fecha de nacimiento </label>
-			<input type="text" name="fechanacimiento" class="field" placeholder="(YYYY/MM/DD)"/>
+			<input type="date" name="fechanacimiento" class="field" placeholder="(YYYY/MM/DD)"/>
 			</p>
 			<p>
 			<label for="sexo">Sexo </label>

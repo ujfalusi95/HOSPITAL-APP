@@ -65,7 +65,7 @@
 			</p>
 			<p>
 				<label for="fechanacimiento">Fecha de nacimiento </label>
-				<input type="text" value="<%=paciente.getFechanacimiento()%>" name="fechanacimiento"class="field" placeholder="(YYYY/MM/DD)" />
+				<input type="date" value="<%=paciente.getFechanacimiento()%>" name="fechanacimiento"class="field" placeholder="(YYYY/MM/DD)" />
 			</p>
 			<p>
 			<label for="sexo">Sexo </label> 

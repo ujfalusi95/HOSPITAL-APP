@@ -39,11 +39,11 @@
 			<div>&nbsp;</div>
 			<p>
 				<label for="fechaingreso">Fecha de ingreso</label>
-				<input type="text" value="<%=ingreso.getFechaingreso()%>" name="fechaingreso" class="field" placeholder="(YYYY/MM/DD)" />
+				<input type="date" value="<%=ingreso.getFechaingreso()%>" name="fechaingreso" class="field" placeholder="(YYYY/MM/DD)" />
 			</p>
 			<p>
 				<label for="fechasalida">Fecha de alta </label>
-				<input type="text" value="<%=ingreso.getFechasalida()%>" name="fechasalida" class="field" placeholder="(YYYY/MM/DD)" />
+				<input type="date" value="<%=ingreso.getFechasalida()%>" name="fechasalida" class="field" placeholder="(YYYY/MM/DD)" />
 			</p>
 			<p>
 				<label for="codigomedico">Código del médico </label>

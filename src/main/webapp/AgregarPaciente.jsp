@@ -15,7 +15,7 @@
 		//Recogiendo parámetros
 		String nombrepaciente = request.getParameter("nombrepaciente");
 		String apellidospaciente = request.getParameter("apellidospaciente");
-		String domicilio = request.getParameter("domiclio");
+		String domicilio = request.getParameter("domicilio");
 		String poblacion = request.getParameter("poblacion");
 		String cp = request.getParameter("cp");
 		String telefono = request.getParameter("telefono");

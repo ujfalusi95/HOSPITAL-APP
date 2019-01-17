@@ -17,7 +17,7 @@
 		
 		
 		//Recogiendo parámetros
-		try{
+	
 		String nombremedico = request.getParameter("nombremedico");
 		String apellidosmedico = request.getParameter("apellidosmedico");
 		String especialidad = request.getParameter("especialidad");
@@ -30,10 +30,7 @@
 	
 		medico.insertarMedico();
 			
-		}catch(SQLException e){
-			out.println("Error en la integridad de la base de datos:"+e.getMessage());
-		    e.printStackTrace();
-		}
+	
 			response.sendRedirect("MostrarMedicos.jsp");
 		
 	%>

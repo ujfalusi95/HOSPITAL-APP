@@ -132,10 +132,16 @@ List<String> lista= helper.seleccionarRegistros("select distinct(especialidad) f
 	
 }
 public  void insertarMedico() throws URISyntaxException, SQLException {
+	try {
    JDBCHelper<Medico> helper = new JDBCHelper<Medico>();
    String sql = "INSERT INTO medico (nombremedico,apellidosmedico,especialidad,numerocolegiado,cargo,codigomedico)  VALUES ('"+this.nombremedico+"','"+this.apellidosmedico+"','"+this.especialidad+"','"+this.numerocolegiado+"','"+this.cargo+"','"+this.codigomedico+"')";
    helper.modificarRegistro(sql);
-}
+	}catch(SQLException e){
+		System.out.println("Error en la integridad de la base de datos:"+e.getMessage());
+	    e.printStackTrace();
+	}	
+	}
+
 public  void editarMedico() throws URISyntaxException, SQLException {
    JDBCHelper<Medico> helper = new JDBCHelper<Medico>();
    String sql = "UPDATE medico SET nombremedico='"+this.nombremedico+"',apellidosmedico='"+this.apellidosmedico+"',especialidad='"+this.especialidad+"',numerocolegiado='"+this.numerocolegiado+"',cargo='"+this.cargo+"',codigomedico='"+this.codigomedico+"' WHERE codigomedico='"+this.codigomedico+"'";
@@ -151,10 +157,14 @@ public  Medico buscarMedicoPorCodigo() throws URISyntaxException, SQLException {
 
 }
 public  void eliminarMedico() throws URISyntaxException, SQLException {
+	try {
   JDBCHelper<Medico> helper = new JDBCHelper<Medico>();
   String sql = "DELETE FROM medico WHERE codigomedico='"+this.codigomedico+"'";
   helper.modificarRegistro(sql);
-  
+}catch(SQLException e){
+	System.out.println("Error en la integridad de la base de datos:"+e.getMessage());
+    e.printStackTrace();
+}	
 }
 }
 

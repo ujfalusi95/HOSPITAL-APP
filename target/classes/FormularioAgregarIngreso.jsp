@@ -44,19 +44,19 @@
 			</p>
 			<p>
 			<label for="codigomedico">Código del médico</label>
-			<input type="text" name="codigomedico" class="field"/>
+			<input type="number" name="codigomedico" class="field"/>
 			</p>
 			<p>
 			<label for="planta">Planta</label>
-			<input type="text" name="planta" class="field" />
+			<input type="number" name="planta" class="field" />
 			</p>
 			<p>
 			<label for="cama">Cama</label>
-			<input type="text" name="cama" class="field"/>
+			<input type="number" name="cama" class="field"/>
 			</p>
 			<p>
 			<label for="coste">Coste</label>
-			<input type="text" name="coste" class="field" />
+			<input type="number" name="coste" class="field" />
 			</p>
 			<p>
 			<label for="diagnostico">Diagnóstico </label>

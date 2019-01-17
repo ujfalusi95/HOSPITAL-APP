@@ -2,6 +2,7 @@
 <%@page import= "com.emilio.init.*"%>
 <%@page import= "com.emilio.classes.Paciente"%>
 <%@page import= "com.emilio.classes.Medico"%>
+<%@page import= "java.sql.SQLException"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -15,6 +16,7 @@
 		
 		
 		//Recogiendo parámetros
+		try{
 		String nombremedico = request.getParameter("nombremedico");
 		String apellidosmedico = request.getParameter("apellidosmedico");
 		String especialidad = request.getParameter("especialidad");
@@ -27,7 +29,10 @@
 	
 		medico.insertarMedico();
 			
-			
+		}catch(SQLException e){
+			out.println("Error en la integridad de la base de datos:"+e.getMessage());
+		
+		}
 			response.sendRedirect("MostrarMedicos.jsp");
 		
 	%>

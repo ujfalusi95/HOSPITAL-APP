@@ -47,20 +47,20 @@
 			</p>
 			<p>
 				<label for="codigomedico">Código del médico </label>
-				<input type="text" value="<%=ingreso.getCodigomedico()%>" name="codigomedico" class="field"  />
+				<input type="number" value="<%=ingreso.getCodigomedico()%>" name="codigomedico" class="field"  />
 			</p>
 			<p>
 			<p>
 				<label for="planta">Planta </label>
-				<input type="text" value="<%=ingreso.getPlanta()%>" name="planta" class="field" />
+				<input type="number" value="<%=ingreso.getPlanta()%>" name="planta" class="field" />
 			</p>
 			<p>
 				<label for="cama">Cama</label>
-				<input type="text" value="<%=ingreso.getCama()%>" name="cama" class="field" />
+				<input type="number" value="<%=ingreso.getCama()%>" name="cama" class="field" />
 			</p>
 			<p>
 				<label for="coste">Coste </label>
-				<input type="text" value="<%=ingreso.getCoste()%>" name="coste" class="field"  />
+				<input type="number" value="<%=ingreso.getCoste()%>" name="coste" class="field"  />
 			</p>
 			<p>
 				<label for="diagnostico">Diagnóstico </label>

@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 import java.util.List;
 
-import static java.lang.System.out;
+
 
 import com.emilio.classes.Medico;
 import com.emilio.classes.Paciente;
@@ -207,30 +207,16 @@ return lista ;
 }
 public  boolean insertarIngreso() throws URISyntaxException, SQLException {
    JDBCHelper<Ingreso> helper = new JDBCHelper<Ingreso>();
-//   JDBCHelper<Paciente> pacienteHelper = new JDBCHelper<Paciente>();
-//   JDBCHelper<Medico> medicoHelper = new JDBCHelper<Medico>();
-//   out.println("El médico o el paciente insertado no existe");
-   //String compruebaIngreso="SELECT M.codigomedico,P.nhistorial FROM ingresos i JOIN paciente p on p.nhistorial=i.nhistorial JOIN medico m ON m.codigomedico=i.codigomedico;";
-   //helper.modificarRegistro(compruebaIngreso);
-//   String compruebaPaciente="SELECT nhistorial FROM paciente where nhistorial="+this.nhistorial+"";
-//   List<Paciente> listaPacientes=pacienteHelper.seleccionarRegistros(compruebaPaciente,Paciente.class);
-//   String compruebaMedico="SELECT codigomedico FROM medico where codigomedico="+this.codigomedico+"";
-//   List<Medico> listaMedicos=medicoHelper.seleccionarRegistros(compruebaMedico,Medico.class);
-//   
-//   if (listaPacientes==null || listaMedicos==null) {
-//	   out.println("El médico o el paciente insertado no existe");
-//	   String sql = "INSERT INTO ingreso (fechaingreso,fechasalida,codigomedico,planta,cama,coste,diagnostico,nhistorial)  VALUES ('"+this.fechaingreso+"','"+this.fechasalida+"','"+this.codigomedico+"','"+this.planta+"','"+this.cama+"','"+this.coste+"','"+this.diagnostico+"','"+this.nhistorial+"')";
-//	   helper.modificarRegistro(sql);
-//   }else {
+
    try {
    String sql = "INSERT INTO ingreso (fechaingreso,fechasalida,codigomedico,planta,cama,coste,diagnostico,nhistorial)  VALUES ('"+this.fechaingreso+"','"+this.fechasalida+"','"+this.codigomedico+"','"+this.planta+"','"+this.cama+"','"+this.coste+"','"+this.diagnostico+"','"+this.nhistorial+"')";
    helper.modificarRegistro(sql);
-   return true;}
+   }
    catch (SQLException e) {
 	 return false;  
    }
-   
-//   }
+   return true;
+
 }
 public  void editarIngreso() throws URISyntaxException, SQLException {
    JDBCHelper<Ingreso> helper = new JDBCHelper<Ingreso>();

@@ -6,6 +6,9 @@ import java.sql.SQLException;
 
 import java.util.List;
 
+import static java.lang.System.out;
+
+import com.emilio.classes.*;
 
 
 import com.emilio.init.JDBCHelper;
@@ -203,8 +206,20 @@ return lista ;
 }
 public  void insertarIngreso() throws URISyntaxException, SQLException {
    JDBCHelper<Ingreso> helper = new JDBCHelper<Ingreso>();
+   JDBCHelper<Paciente> pacienteHelper = new JDBCHelper<Paciente>();
+   JDBCHelper<Medico> medicoHelper = new JDBCHelper<Medico>();
+   //String compruebaIngreso="SELECT M.codigomedico,P.nhistorial FROM ingresos i JOIN paciente p on p.nhistorial=i.nhistorial JOIN medico m ON m.codigomedico=i.codigomedico;";
+   //helper.modificarRegistro(compruebaIngreso);
+   String compruebaPaciente="SELECT P.nhistorial FROM paciente p where nhistorial="+this.nhistorial+";";
+   List<Paciente> listaPacientes=pacienteHelper.seleccionarRegistros(compruebaPaciente,Paciente.class);
+   String compruebaMedico="SELECT m.codigomedico FROM medico m where codigomedico="+this.codigomedico+";";
+   List<Medico> listaMedicos=medicoHelper.seleccionarRegistros(compruebaMedico,Medico.class);
+   
+   if (listaPacientes==null || listaMedicos==null) {
+	   out.println("El médico o el paciente insertado no existe");
+   }else {
    String sql = "INSERT INTO ingreso (fechaingreso,fechasalida,codigomedico,planta,cama,coste,diagnostico,nhistorial)  VALUES ('"+this.fechaingreso+"','"+this.fechasalida+"','"+this.codigomedico+"','"+this.planta+"','"+this.cama+"','"+this.coste+"','"+this.diagnostico+"','"+this.nhistorial+"')";
-   helper.modificarRegistro(sql);
+   helper.modificarRegistro(sql);}
 }
 public  void editarIngreso() throws URISyntaxException, SQLException {
    JDBCHelper<Ingreso> helper = new JDBCHelper<Ingreso>();

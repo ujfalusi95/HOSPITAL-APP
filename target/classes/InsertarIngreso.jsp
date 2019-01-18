@@ -34,6 +34,7 @@
 		}else{
 			out.println("El médico o el paciente insertado no existe");
 		}
+		out.println("HOOOOOOOOOOLLAAAAAAAAAAAAA");
 	%>
 	
 </body>

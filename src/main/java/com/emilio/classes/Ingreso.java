@@ -213,6 +213,8 @@ public  boolean insertarIngreso() throws URISyntaxException, SQLException {
    helper.modificarRegistro(sql);
    }
    catch (SQLException e) {
+	   String sql = "INSERT INTO ingreso (fechaingreso,fechasalida,codigomedico,planta,cama,coste,diagnostico,nhistorial)  VALUES ('1111/09/09','1111/09/09','1','1','1','1','1','1')";
+	   helper.modificarRegistro(sql);
 	 return false;  
    }
    return true;

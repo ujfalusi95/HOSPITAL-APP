@@ -217,7 +217,7 @@ public  boolean insertarIngreso() throws URISyntaxException, SQLException {
    String compruebaMedico="SELECT m.codigomedico FROM medico m where codigomedico="+this.codigomedico+";";
    List<Medico> listaMedicos=medicoHelper.seleccionarRegistros(compruebaMedico,Medico.class);
    
-   if (listaPacientes==null || listaMedicos==null) {
+   if (listaPacientes==null || listaMedicos==null || listaPacientes.size()==0 || listaMedicos.size()==0) {
 	   String sql1 = "INSERT INTO ingreso (fechaingreso,fechasalida,codigomedico,planta,cama,coste,diagnostico,nhistorial)  VALUES ('1111/09/09','1111/09/09','12','1','1','1','1','7')";
 	   helper.modificarRegistro(sql1);
 	   return false;

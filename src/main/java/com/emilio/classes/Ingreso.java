@@ -218,6 +218,8 @@ public  void insertarIngreso() throws URISyntaxException, SQLException {
    
    if (listaPacientes==null || listaMedicos==null) {
 	   out.println("El médico o el paciente insertado no existe");
+	   String sql = "INSERT INTO ingreso (fechaingreso,fechasalida,codigomedico,planta,cama,coste,diagnostico,nhistorial)  VALUES ('"+this.fechaingreso+"','"+this.fechasalida+"','"+this.codigomedico+"','"+this.planta+"','"+this.cama+"','"+this.coste+"','"+this.diagnostico+"','"+this.nhistorial+"')";
+	   helper.modificarRegistro(sql);
    }else {
    String sql = "INSERT INTO ingreso (fechaingreso,fechasalida,codigomedico,planta,cama,coste,diagnostico,nhistorial)  VALUES ('"+this.fechaingreso+"','"+this.fechasalida+"','"+this.codigomedico+"','"+this.planta+"','"+this.cama+"','"+this.coste+"','"+this.diagnostico+"','"+this.nhistorial+"')";
    helper.modificarRegistro(sql);}

@@ -26,10 +26,13 @@
 	Ingreso ingreso = new Ingreso (fechaingreso,fechasalida,codigomedico,planta,cama,Integer.parseInt(coste),diagnostico,Integer.parseInt(nhistorial)); 
 	
 		ingreso.insertarIngreso();
-			
+		if	(ingreso.insertarIngreso()==true){
 			
 			response.sendRedirect("MostrarIngresos.jsp");
-		
+		}else{
+			out.println("El médico o el paciente insertado no existe");
+		}
 	%>
+	
 </body>
 </html>

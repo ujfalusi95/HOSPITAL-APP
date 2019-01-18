@@ -30,6 +30,7 @@
 		if	(ingreso.insertarIngreso()==true){
 			
 			response.sendRedirect("MostrarIngresos.jsp");
+			out.println("El médico o el paciente insertado se ha creado");
 		}else{
 			out.println("El médico o el paciente insertado no existe");
 		}

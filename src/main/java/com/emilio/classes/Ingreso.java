@@ -2,6 +2,7 @@ package com.emilio.classes;
 import java.net.URISyntaxException;
 
 import java.sql.SQLException;
+import static java.lang.System.out;
 
 
 import java.util.List;
@@ -207,17 +208,39 @@ return lista ;
 }
 public  boolean insertarIngreso() throws URISyntaxException, SQLException {
    JDBCHelper<Ingreso> helper = new JDBCHelper<Ingreso>();
-
-   try {
-   String sql = "INSERT INTO ingreso (fechaingreso,fechasalida,codigomedico,planta,cama,coste,diagnostico,nhistorial)  VALUES ('"+this.fechaingreso+"','"+this.fechasalida+"','"+this.codigomedico+"','"+this.planta+"','"+this.cama+"','"+this.coste+"','"+this.diagnostico+"','"+this.nhistorial+"')";
-   helper.modificarRegistro(sql);
+   JDBCHelper<Paciente> pacienteHelper = new JDBCHelper<Paciente>();
+   JDBCHelper<Medico> medicoHelper = new JDBCHelper<Medico>();
+   //String compruebaIngreso="SELECT M.codigomedico,P.nhistorial FROM ingresos i JOIN paciente p on p.nhistorial=i.nhistorial JOIN medico m ON m.codigomedico=i.codigomedico;";
+   //helper.modificarRegistro(compruebaIngreso);
+   String compruebaPaciente="SELECT P.nhistorial FROM paciente p where nhistorial="+this.nhistorial+";";
+   List<Paciente> listaPacientes=pacienteHelper.seleccionarRegistros(compruebaPaciente,Paciente.class);
+   String compruebaMedico="SELECT m.codigomedico FROM medico m where codigomedico="+this.codigomedico+";";
+   List<Medico> listaMedicos=medicoHelper.seleccionarRegistros(compruebaMedico,Medico.class);
+   
+   if (listaPacientes==null || listaMedicos==null) {
+	   String sql1 = "INSERT INTO ingreso (fechaingreso,fechasalida,codigomedico,planta,cama,coste,diagnostico,nhistorial)  VALUES ('1111/09/09','1111/09/09','12','1','1','1','1','7')";
+	   helper.modificarRegistro(sql1);
+	   return false;
    }
-   catch (SQLException e) {
-	   String sql = "INSERT INTO ingreso (fechaingreso,fechasalida,codigomedico,planta,cama,coste,diagnostico,nhistorial)  VALUES ('1111/09/09','1111/09/09','12','1','1','1','1','7')";
-	   helper.modificarRegistro(sql);
-	 return false;  
-   }
+   else{String sql2 = "INSERT INTO ingreso (fechaingreso,fechasalida,codigomedico,planta,cama,coste,diagnostico,nhistorial)  VALUES ('"+this.fechaingreso+"','"+this.fechasalida+"','"+this.codigomedico+"','"+this.planta+"','"+this.cama+"','"+this.coste+"','"+this.diagnostico+"','"+this.nhistorial+"')";
+   helper.modificarRegistro(sql2);
    return true;
+   }
+//   try {
+//   String sql = "INSERT INTO ingreso (fechaingreso,fechasalida,codigomedico,planta,cama,coste,diagnostico,nhistorial)  VALUES ('"+this.fechaingreso+"','"+this.fechasalida+"','"+this.codigomedico+"','"+this.planta+"','"+this.cama+"','"+this.coste+"','"+this.diagnostico+"','"+this.nhistorial+"')";
+//   helper.modificarRegistro(sql);
+//   }
+//   catch (SQLException e) {
+//	   String sql = "INSERT INTO ingreso (fechaingreso,fechasalida,codigomedico,planta,cama,coste,diagnostico,nhistorial)  VALUES ('1111/09/09','1111/09/09','12','1','1','1','1','7')";
+//	   helper.modificarRegistro(sql);
+//	 return false;  
+//   }
+//   catch (SQLException e) {
+//	   String sql = "INSERT INTO ingreso (fechaingreso,fechasalida,codigomedico,planta,cama,coste,diagnostico,nhistorial)  VALUES ('1111/09/09','1111/09/09','12','1','1','1','1','7')";
+//	   helper.modificarRegistro(sql);
+//	 return false;  
+//   }
+  
 
 }
 public  void editarIngreso() throws URISyntaxException, SQLException {

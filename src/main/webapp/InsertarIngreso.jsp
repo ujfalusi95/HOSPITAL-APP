@@ -26,15 +26,15 @@
 	 
 	Ingreso ingreso = new Ingreso (fechaingreso,fechasalida,codigomedico,planta,cama,Integer.parseInt(coste),diagnostico,Integer.parseInt(nhistorial)); 
 	
-		ingreso.insertarIngreso();
-		if	(ingreso.insertarIngreso()==true){
+		boolean dime=ingreso.insertarIngreso();
+		if	(dime==true){
 			
 			response.sendRedirect("MostrarIngresos.jsp");
 			out.println("El médico o el paciente insertado se ha creado");
 		}else{
+			response.sendRedirect("FormularioAgregarIngreso.jsp");
 			out.println("El médico o el paciente insertado no existe");
 		}
-		out.println("HOOOOOOOOOOLLAAAAAAAAAAAAA");
 	%>
 	
 </body>

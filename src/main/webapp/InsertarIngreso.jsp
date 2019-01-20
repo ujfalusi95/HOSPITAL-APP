@@ -12,7 +12,7 @@
 
 </head>
 <body>
-
+<%@include file= "VentanaModalIngreso.jsp"%>
 
 <%
 
@@ -33,8 +33,11 @@
 			
 			response.sendRedirect("MostrarIngresos.jsp");
 			
-		}else{
-			response.sendRedirect("FormularioAgregarIngreso.jsp");
+		}else{%>
+		<script type="text/javascript">
+			$('#miModal').modal('show');
+			</script>
+		<%	response.sendRedirect("FormularioAgregarIngreso.jsp");
 		}
 			%>
 </body>

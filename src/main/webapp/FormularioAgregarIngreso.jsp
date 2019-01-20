@@ -23,21 +23,7 @@
 <body background="public\custom\images\hospital_perspective_perspectiva_architecture_arquitectura_woman_mujer_color-752878.png">
 
 <div>
-<div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-				<h4 class="modal-title" id="myModalLabel">Error al insertar el ingreso</h4>
-			</div>
-			<div class="modal-body">
-				El código de médico o el número de historial de paciente insertado no existe.
-			</div>
-		</div>
-	</div>
-</div>
+
 	<form action="InsertarIngreso.jsp" method="post">
 	<div>&nbsp;</div>
 		<fieldset>

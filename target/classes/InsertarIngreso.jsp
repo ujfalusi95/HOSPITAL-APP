@@ -25,8 +25,6 @@ var fechaingreso = request.getParameter("fechaingreso");
 		var coste = request.getParameter("coste");
 		var diagnostico = request.getParameter("diagnostico");
 		var nhistorial = request.getParameter("nhistorial");
-		
-	 
 	var ingreso = new var (fechaingreso,fechasalida,codigomedico,planta,cama,Integer.parseInt(coste),diagnostico,Integer.parseInt(nhistorial)); 
 	
 		var dime=ingreso.insertarIngreso();
@@ -35,10 +33,12 @@ var fechaingreso = request.getParameter("fechaingreso");
 			response.sendRedirect("MostrarIngresos.jsp");
 			
 		}else{
-			
+			$('#miModal').modal('show');
 			response.sendRedirect("FormularioAgregarIngreso.jsp");
             
-		}
+		}		
+	 
+
            </script>	
 </body>
 </html>

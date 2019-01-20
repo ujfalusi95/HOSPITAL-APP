@@ -14,7 +14,7 @@
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<button onclick="javascript:location.href='FormularioEditarIngreso.jsp'" type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<button onclick="javascript:location.href='MostrarIngresos.jsp'" type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
 				<h4 class="modal-title" id="myModalLabel">Error al editar el ingreso</h4>

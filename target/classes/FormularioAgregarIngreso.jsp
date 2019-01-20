@@ -21,7 +21,7 @@
 
 </head>
 <body background="public\custom\images\hospital_perspective_perspectiva_architecture_arquitectura_woman_mujer_color-752878.png">
-
+<%@include file= "InsertarIngreso.jsp"%>
 <div>
 
 	<form action="InsertarIngreso.jsp" method="post">

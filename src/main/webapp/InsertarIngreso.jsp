@@ -35,7 +35,7 @@ var fechaingreso = request.getParameter("fechaingreso");
 			response.sendRedirect("MostrarIngresos.jsp");
 			
 		}else{
-			$('#miModal').modal('show');
+			
 			response.sendRedirect("FormularioAgregarIngreso.jsp");
             
 		}

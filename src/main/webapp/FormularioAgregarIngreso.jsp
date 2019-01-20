@@ -79,6 +79,12 @@
 
 
 </div>
-
+<div id="openModal" class="modalDialog">
+	<div>
+		<a href="FormularioAgregarIngreso.jsp" title="Close" class="close">X</a>
+		<h2>Error al insertar el ingreso</h2>
+		<p>El código de médico o el número de historial de paciente insertado no existe.</p>
+	</div>
+</div>
 </body>
 </html>

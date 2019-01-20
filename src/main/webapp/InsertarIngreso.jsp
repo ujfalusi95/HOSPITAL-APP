@@ -10,13 +10,7 @@
 <title>Nuevo Ingreso</title>
 </head>
 <body>
-<div id="openModal" class="modalDialog">
-	<div>
-		<a href="FormularioAgregarIngreso.jsp" title="Close" class="close">X</a>
-		<h2>Error al insertar el ingreso</h2>
-		<p>El código de médico o el número de historial de paciente insertado no existe.</p>
-	</div>
-</div>
+<%@include file= "FormularioAgregarIngreso.jsp"%>
 <%-- 	<% --%>
 
 <!-- 		String fechaingreso = request.getParameter("fechaingreso"); -->
@@ -58,7 +52,7 @@ var fechaingreso = request.getParameter("fechaingreso");
 			out.println("El médico o el paciente insertado se ha creado");
 		}else{
 			
-			response.sendRedirect("FormularioAgregarIngreso.jsp");
+			//response.sendRedirect("FormularioAgregarIngreso.jsp");
             $('#openModal').modal('show');
 			out.println("El médico o el paciente insertado no existe");
 		}

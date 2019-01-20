@@ -12,10 +12,9 @@
 <body>
 <div id="openModal" class="modalDialog">
 	<div>
-		<a href="#close" title="Close" class="close">X</a>
-		<h2>Mi modal</h2>
-		<p>Este es un ejemplo de modal, creado gracias al poder de CSS3.</p>
-		<p>Puedes hacer un montón de cosas aquí, como alertas o incluso crear un formulario de registro aquí mismo.</p>
+		<a href="FormularioAgregarIngreso.jsp" title="Close" class="close">X</a>
+		<h2>Error al insertar el ingreso</h2>
+		<p>El código de médico o el número de historial de paciente insertado no existe.</p>
 	</div>
 </div>
 <%-- 	<% --%>
@@ -58,8 +57,9 @@ var fechaingreso = request.getParameter("fechaingreso");
 			response.sendRedirect("MostrarIngresos.jsp");
 			out.println("El médico o el paciente insertado se ha creado");
 		}else{
-			$('#openModal').modal('show');
+			
 			response.sendRedirect("FormularioAgregarIngreso.jsp");
+            $('#openModal').modal('show');
 			out.println("El médico o el paciente insertado no existe");
 		}
            </script>

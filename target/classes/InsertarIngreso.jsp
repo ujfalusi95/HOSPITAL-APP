@@ -52,9 +52,8 @@ var fechaingreso = request.getParameter("fechaingreso");
 			out.println("El médico o el paciente insertado se ha creado");
 		}else{
 			
-			//response.sendRedirect("FormularioAgregarIngreso.jsp");
-            $('#openModal').modal('show');
-			out.println("El médico o el paciente insertado no existe");
+			
+            $('#miModal').modal('show');
 		}
            </script>
 

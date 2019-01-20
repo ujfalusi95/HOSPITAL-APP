@@ -15,6 +15,9 @@
 <link href="../public/dist/css/bootstrap.min.css" rel="stylesheet">
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <!-- Include Date Range Picker -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
@@ -79,12 +82,22 @@
 
 
 </div>
-<div id="openModal" class="modalDialog">
-	<div>
-		<a href="FormularioAgregarIngreso.jsp" title="Close" class="close">X</a>
-		<h2>Error al insertar el ingreso</h2>
-		<p>El código de médico o el número de historial de paciente insertado no existe.</p>
+
+<div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<h4 class="modal-title" id="myModalLabel">Error al insertar el ingreso</h4>
+			</div>
+			<div class="modal-body">
+				El código de médico o el número de historial de paciente insertado no existe.
+			</div>
+		</div>
 	</div>
 </div>
+
 </body>
 </html>

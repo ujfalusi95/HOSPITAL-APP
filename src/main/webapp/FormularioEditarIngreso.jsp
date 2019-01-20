@@ -47,7 +47,7 @@
 			</p>
 			<p>
 				<label for="codigomedico">Código del médico </label>
-				<input type="number" value="<%=ingreso.getCodigomedico()%>" name="codigomedico" class="field"  />
+				<input disabled type="number" value="<%=ingreso.getCodigomedico()%>" name="codigomedico" class="field"  />
 			</p>
 			<p>
 			<p>
@@ -69,7 +69,7 @@
 			
 			<p>
 				<label for="nhistorial">Número del historial</label>
-				<input type="text" value="<%=ingreso.getNhistorial()%>" name="nhistorial" class="field"  />
+				<input disabled type="text" value="<%=ingreso.getNhistorial()%>" name="nhistorial" class="field"  />
 			</p>
 			<p>
 				<input type="hidden" value="<%=ingreso.getNexpediente()%>" name="nexpediente" class="field"  />

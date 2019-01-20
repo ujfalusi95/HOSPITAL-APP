@@ -20,7 +20,7 @@
 				<h4 class="modal-title" id="myModalLabel">Error al editar el ingreso</h4>
 			</div>
 			<div class="modal-body">
-				El código de médico o el número de historial de paciente insertado no existe.
+				El código de médico o el número de historial de paciente introducido no existe.
 			</div>
 		</div>
 	</div>

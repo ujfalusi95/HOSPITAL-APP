@@ -41,6 +41,6 @@ Ingreso ingreso = new Ingreso (fechaingreso,fechasalida,codigomedico,planta,cama
 	
 
 		
-	%>
+
 </body>
 </html>

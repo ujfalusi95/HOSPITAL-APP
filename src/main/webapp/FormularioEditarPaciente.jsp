@@ -86,7 +86,7 @@
 				<input type="text" value="<%=paciente.getNss()%>" name="nss" class="field" />
 			</p>
 			<p>
-				<input type="hidden" value="<%=paciente.getNhistorial()%>" name="nhistorial" class="field" />
+				<input disabled type="text" value="<%=paciente.getNhistorial()%>" name="nhistorial" class="field" />
 			</p>
 			
 			

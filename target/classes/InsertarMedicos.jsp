@@ -13,6 +13,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<%@include file= "VentanaModalMedico.jsp"%>
 	<%
 		
 		
@@ -27,12 +28,20 @@
 	
 		
 	Medico medico = new Medico(nombremedico,apellidosmedico,especialidad,numerocolegiado,cargo,codigomedico);
-	
-		medico.insertarMedico();
-			
-	
-			response.sendRedirect("MostrarMedicos.jsp");
 		
-	%>
+			boolean dime=medico.insertarMedico();
+			if	(dime==true){
+				
+				response.sendRedirect("MostrarMedicos.jsp");
+				
+			}else{%>
+			<script type="text/javascript">
+				$('#modalMedico').modal('show');
+				</script>
+			<%	
+			}
+				%>
+		
+	
 </body>
 </html>

@@ -16,29 +16,28 @@
 <body>
 
 
-<script type=javascript/text>
-var fechaingreso = request.getParameter("fechaingreso");
-		var fechasalida = request.getParameter("fechasalida");
-		var codigomedico = request.getParameter("codigomedico");
-		var planta = request.getParameter("planta");
-		var cama = request.getParameter("cama");
-		var coste = request.getParameter("coste");
-		var diagnostico = request.getParameter("diagnostico");
-		var nhistorial = request.getParameter("nhistorial");
-	var ingreso = new var (fechaingreso,fechasalida,codigomedico,planta,cama,Integer.parseInt(coste),diagnostico,Integer.parseInt(nhistorial)); 
+<%
+
+		String fechaingreso = request.getParameter("fechaingreso");
+		String fechasalida = request.getParameter("fechasalida");
+		String codigomedico = request.getParameter("codigomedico");
+		String planta = request.getParameter("planta");
+		String cama = request.getParameter("cama");
+		String coste = request.getParameter("coste");
+		String diagnostico = request.getParameter("diagnostico");
+		String nhistorial = request.getParameter("nhistorial");
+		
+	 
+	Ingreso ingreso = new Ingreso (fechaingreso,fechasalida,codigomedico,planta,cama,Integer.parseInt(coste),diagnostico,Integer.parseInt(nhistorial)); 
 	
-		var dime=ingreso.insertarIngreso();
+		boolean dime=ingreso.insertarIngreso();
 		if	(dime==true){
 			
 			response.sendRedirect("MostrarIngresos.jsp");
 			
 		}else{
-			$('#miModal').modal('show');
 			response.sendRedirect("FormularioAgregarIngreso.jsp");
-            
-		}		
-	 
-
-           </script>	
+		}
+			%>
 </body>
 </html>

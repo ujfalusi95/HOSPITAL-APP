@@ -212,9 +212,9 @@ public  boolean insertarIngreso() throws URISyntaxException, SQLException {
    JDBCHelper<Medico> medicoHelper = new JDBCHelper<Medico>();
    //String compruebaIngreso="SELECT M.codigomedico,P.nhistorial FROM ingresos i JOIN paciente p on p.nhistorial=i.nhistorial JOIN medico m ON m.codigomedico=i.codigomedico;";
    //helper.modificarRegistro(compruebaIngreso);
-   String compruebaPaciente="SELECT P.nhistorial FROM paciente p where nhistorial='"+this.nhistorial+"'";
+   String compruebaPaciente="SELECT * FROM paciente p where nhistorial='"+this.nhistorial+"'";
    List<Paciente> listaPacientes=pacienteHelper.seleccionarRegistros(compruebaPaciente,Paciente.class);
-   String compruebaMedico="SELECT m.codigomedico FROM medico m where codigomedico='"+this.codigomedico+"'";
+   String compruebaMedico="SELECT * FROM medico m where codigomedico='"+this.codigomedico+"'";
    List<Medico> listaMedicos=medicoHelper.seleccionarRegistros(compruebaMedico,Medico.class);
    
    if (listaPacientes==null || listaMedicos==null || listaPacientes.size()==0 || listaMedicos.size()==0) {

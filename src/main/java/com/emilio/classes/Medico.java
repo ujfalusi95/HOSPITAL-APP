@@ -137,7 +137,7 @@ public  boolean insertarMedico() throws URISyntaxException, SQLException {
    String compruebaMedico="SELECT * FROM medico m where codigomedico='"+this.codigomedico+"'";
    List<Medico> listaMedicos=medicoHelper.seleccionarRegistros(compruebaMedico,Medico.class);
    
-   if (listaMedicos==null || listaMedicos.size()==0) {
+   if (listaMedicos.size()!=0) {
 	   return false;
    }
    else{

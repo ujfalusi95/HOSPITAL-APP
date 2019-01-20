@@ -15,27 +15,7 @@
 </head>
 <body>
 
-<%-- 	<% --%>
 
-<!-- 		String fechaingreso = request.getParameter("fechaingreso"); -->
-<!-- 		String fechasalida = request.getParameter("fechasalida"); -->
-<!-- 		String codigomedico = request.getParameter("codigomedico"); -->
-<!-- 		String planta = request.getParameter("planta"); -->
-<!-- 		String cama = request.getParameter("cama"); -->
-<!-- 		String coste = request.getParameter("coste"); -->
-<!-- 		String diagnostico = request.getParameter("diagnostico"); -->
-<!-- 		String nhistorial = request.getParameter("nhistorial"); -->
-		
-	 
-<!-- 	Ingreso ingreso = new Ingreso (fechaingreso,fechasalida,codigomedico,planta,cama,Integer.parseInt(coste),diagnostico,Integer.parseInt(nhistorial));  -->
-	
-<!-- 		boolean dime=ingreso.insertarIngreso(); -->
-<!-- 		if	(dime==true){ -->
-			
-<!-- 			response.sendRedirect("MostrarIngresos.jsp"); -->
-<!-- 			out.println("El médico o el paciente insertado se ha creado"); -->
-<!-- 		}else{ -->
-<%-- 			%> --%>
 <script type=javascript/text>
 var fechaingreso = request.getParameter("fechaingreso");
 		var fechasalida = request.getParameter("fechasalida");
@@ -47,7 +27,7 @@ var fechaingreso = request.getParameter("fechaingreso");
 		var nhistorial = request.getParameter("nhistorial");
 		
 	 
-	Ingreso ingreso = new Ingreso (fechaingreso,fechasalida,codigomedico,planta,cama,Integer.parseInt(coste),diagnostico,Integer.parseInt(nhistorial)); 
+	var ingreso = new var (fechaingreso,fechasalida,codigomedico,planta,cama,Integer.parseInt(coste),diagnostico,Integer.parseInt(nhistorial)); 
 	
 		var dime=ingreso.insertarIngreso();
 		if	(dime==true){

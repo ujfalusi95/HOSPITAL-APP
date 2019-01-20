@@ -243,10 +243,22 @@ public  boolean insertarIngreso() throws URISyntaxException, SQLException {
   
 
 }
-public  void editarIngreso() throws URISyntaxException, SQLException {
+public  boolean editarIngreso() throws URISyntaxException, SQLException {
    JDBCHelper<Ingreso> helper = new JDBCHelper<Ingreso>();
-   String sql = "UPDATE ingreso SET fechaingreso='"+this.fechaingreso+"',fechasalida='"+this.fechasalida+"',codigomedico='"+this.codigomedico+"',planta='"+this.planta+"',cama='"+this.cama+"',coste='"+this.coste+"',diagnostico='"+this.diagnostico+"',nhistorial='"+this.nhistorial+"' WHERE nexpediente='"+this.nexpediente+"'";
+   JDBCHelper<Paciente> pacienteHelper = new JDBCHelper<Paciente>();
+   JDBCHelper<Medico> medicoHelper = new JDBCHelper<Medico>();
+   String compruebaPaciente="SELECT * FROM paciente p where nhistorial='"+this.nhistorial+"'";
+   List<Paciente> listaPacientes=pacienteHelper.seleccionarRegistros(compruebaPaciente,Paciente.class);
+   String compruebaMedico="SELECT * FROM medico m where codigomedico='"+this.codigomedico+"'";
+   List<Medico> listaMedicos=medicoHelper.seleccionarRegistros(compruebaMedico,Medico.class);
+   
+   if (listaPacientes==null || listaMedicos==null || listaPacientes.size()==0 || listaMedicos.size()==0) {
+	   return false;
+   }
+   else{String sql = "UPDATE ingreso SET fechaingreso='"+this.fechaingreso+"',fechasalida='"+this.fechasalida+"',codigomedico='"+this.codigomedico+"',planta='"+this.planta+"',cama='"+this.cama+"',coste='"+this.coste+"',diagnostico='"+this.diagnostico+"',nhistorial='"+this.nhistorial+"' WHERE nexpediente='"+this.nexpediente+"'";
    helper.modificarRegistro(sql);
+   return true;
+   }
 }
 public  Ingreso buscarHistorial() throws URISyntaxException, SQLException {
    JDBCHelper<Ingreso> helper = new JDBCHelper<Ingreso>();

@@ -35,7 +35,7 @@
 			
 		}else{%>
 		<script type="text/javascript">
-			$('#miModal').modal('show');
+			$('#modalIngreso').modal('show');
 			</script>
 		<%	
 		}

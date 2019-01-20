@@ -9,6 +9,7 @@
 <title>Editar Ingreso</title>
 </head>
 <body> 
+<%@include file= "VentanaModalEditarIngreso.jsp"%>
 	<%
 		
 		
@@ -24,11 +25,19 @@
  
 Ingreso ingreso = new Ingreso (fechaingreso,fechasalida,codigomedico,planta,cama,Integer.parseInt(coste),diagnostico,Integer.parseInt(nhistorial),Integer.parseInt(nexpediente)); 
 
-	ingreso.editarIngreso(); 
-		
-		
-		response.sendRedirect("MostrarIngresos.jsp");
-	
+
+		boolean dime=ingreso.editarIngreso();
+		if	(dime==true){
+			
+			response.sendRedirect("MostrarIngresos.jsp");
+			
+		}else{%>
+		<script type="text/javascript">
+			$('#modalEditarIngreso').modal('show');
+			</script>
+		<%	
+		}
+			%>
 	
 
 		

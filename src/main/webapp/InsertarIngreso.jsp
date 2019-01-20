@@ -37,7 +37,7 @@
 		<script type="text/javascript">
 			$('#miModal').modal('show');
 			</script>
-		<%	response.sendRedirect("FormularioAgregarIngreso.jsp");
+		<%	
 		}
 			%>
 </body>

@@ -33,15 +33,25 @@
 			<p>
 			<label for="fechaingreso">Fecha de ingreso </label>
 			
-			<input type="date" name="fechaingreso" class="field" placeholder="(YYYY/MM/DD)"  />
+			<input type="date" name="fechaingreso" class="field" placeholder="(YYYY/MM/DD)" id="fechaingresoid" />
 			  
 			
 
 			</p>
 			<p>
-			<label for="fechasalida">Fecha de salida </label>
-			<input type="date" name="fechasalida" class="field" placeholder="(YYYY/MM/DD)"/>
+			<label for="fechasalida">Fecha de alta </label>
+			<input type="date" name="fechasalida" class="field" placeholder="(YYYY/MM/DD)" id="fechaaltaid" />
+			<span id="avisoFechas" style="color:#dd0000; font-weight:bold;"></span>
 			</p>
+			<script type="javascript/text">
+            var fechaingreso1=$("#fechaingresoid").val.split('/');
+            var fechaalta1=$("#fechaaltaid").val.split('/');
+ var fechaingresodate=new Date(fechaingreso1[2],fechaingreso1[0]-1,fechaingreso1[1]);
+ var fechaaltadate=new Date(fechaalta1[2],fechaalta1[0]-1,fechaingreso1[1]);
+ if(fechaingresodate>fechaaltadate){
+ $("#avisoFechas").html("La fecha del ingreso no puede ser posterior al alta");
+ }
+</script>
 			<p>
 			<label for="codigomedico">Código del médico</label>
 			<input type="number" name="codigomedico" class="field"/>

@@ -46,8 +46,8 @@
 				<input type="date" value="<%=ingreso.getFechasalida()%>" name="fechasalida" class="field" placeholder="(YYYY/MM/DD)" />
 			</p>
 			<p>
-				<label for="codigomedico">Código del médico </label>
-				<input disabled type="text" value="<%=ingreso.getCodigomedico()%>" name="codigomedico" class="field"  />
+				
+				<input type="hidden" value="<%=ingreso.getCodigomedico()%>" name="codigomedico" class="field"  />
 			</p>
 			<p>
 			<p>
@@ -77,7 +77,7 @@
 			</p>
 			
 			<p>
-				<label for="nhistorial">Número del historial</label>
+				
 				<input  type="hidden" value="<%=ingreso.getNhistorial()%>" name="nhistorial" class="field"  />
 			</p>
 			<p>

@@ -70,7 +70,7 @@
 				<input type="text" value="<%=medico.getCargo()%>" name="cargo" class="field" /><br></br>
 			</p>
 			<p>
-				<label for="codigomedico">Codigo médico </label>
+			
 				<input type="hidden" value="<%=medico.getCodigomedico()%>" name="codigomedico" class="field" /><br></br>
 			</p>
 			

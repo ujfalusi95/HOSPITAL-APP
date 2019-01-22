@@ -62,7 +62,12 @@
 			</p>
 			<p>
 			<label for="diagnostico">Diagnóstico </label>
-			<input type="text" name="diagnostico" class="field" />
+			<select id="diagnostico" name="diagnostico" class="field">
+			<option>Glucemia </option>
+			<option>EM</option>
+			<option>ELA</option>
+			<option>Diabetes </option>
+			<option>Gripe</option>
 			</p>
 			<p>
 			<label for="nhistorial">N del historial </label>

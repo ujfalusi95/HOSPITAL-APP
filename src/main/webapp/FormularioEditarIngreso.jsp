@@ -64,7 +64,16 @@
 			</p>
 			<p>
 				<label for="diagnostico">Diagnóstico </label>
-				<input type="text" value="<%=ingreso.getDiagnostico()%>" name="diagnostico" class="field"  />
+				<select id="diagnostico" name="diagnostico" class="field">
+			<option value="<%=ingreso.getDiagnostico()%>"><%=ingreso.getDiagnostico()%></option>
+			<option>Glucemia </option>
+			<option>EM</option>
+			<option>ELA</option>
+			<option>Diabetes </option>
+			<option>Gripe</option>
+			
+			
+			</select>
 			</p>
 			
 			<p>

@@ -71,7 +71,7 @@
 			</p>
 			<p>
 				<label for="codigomedico">Codigo médico </label>
-				<input disabled type="text" value="<%=medico.getCodigomedico()%>" name="codigomedico" class="field" /><br></br>
+				<input type="hidden" value="<%=medico.getCodigomedico()%>" name="codigomedico" class="field" /><br></br>
 			</p>
 			
 			

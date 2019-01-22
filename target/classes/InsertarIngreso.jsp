@@ -25,15 +25,14 @@
 		String coste = request.getParameter("coste");
 		String diagnostico = request.getParameter("diagnostico");
 		String nhistorial = request.getParameter("nhistorial");
-		
-	 
+			 
 	Ingreso ingreso = new Ingreso (fechaingreso,fechasalida,codigomedico,planta,cama,Integer.parseInt(coste),diagnostico,Integer.parseInt(nhistorial)); 
 //forma1
-    String[] partsIngreso = fechaingreso.split("-");
+    String[] partsIngreso = fechaingreso.split("/");
     String year1 = partsIngreso[0]; // 123
     String month1 = partsIngreso[1];
     String day1 = partsIngreso[2];
-	String[] partsAlta = fechasalida.split("-");
+	String[] partsAlta = fechasalida.split("/");
     String year2 = partsAlta[0]; // 123
     String month2 = partsAlta[1];
     String day2 = partsAlta[2];

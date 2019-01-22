@@ -68,6 +68,7 @@
 			<option>ELA</option>
 			<option>Diabetes </option>
 			<option>Gripe</option>
+			<br></br>
 			</p>
 			<p>
 			<label for="nhistorial">N del historial </label>

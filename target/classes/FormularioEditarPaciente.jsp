@@ -57,11 +57,11 @@
 			</p>
 			<p>
 				<label for="cp">CP </label>
-				<input type="text" value="<%=paciente.getCp()%>" name="cp" class="field"/>
+				<input type="number" value="<%=paciente.getCp()%>" name="cp" class="field"/>
 			</p>
 			<p>
 				<label for="telefono">Teléfono </label>
-				<input type="text" value="<%=paciente.getTelefono()%>" name="telefono" class="field"/>
+				<input type="tel" value="<%=paciente.getTelefono()%>" name="telefono" class="field"/>
 			</p>
 			<p>
 				<label for="fechanacimiento">Fecha de nacimiento </label>

@@ -60,7 +60,7 @@
 			</p>
 			<p>
 				<label for="coste">Coste </label>
-				<input type="number" value="<%=ingreso.getCoste()%>" name="coste" class="field"  />
+				<input type="text" value="<%=ingreso.getCoste()%>" name="coste" class="field"  />
 			</p>
 			<p>
 				<label for="diagnostico">Diagnóstico </label>

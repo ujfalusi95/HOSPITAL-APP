@@ -78,7 +78,7 @@
 			
 			<p>
 				<label for="nhistorial">Número del historial</label>
-				<input disabled type="text" value="<%=ingreso.getNhistorial()%>" name="nhistorial" class="field"  />
+				<input  type="hidden" value="<%=ingreso.getNhistorial()%>" name="nhistorial" class="field"  />
 			</p>
 			<p>
 				<input type="hidden" value="<%=ingreso.getNexpediente()%>" name="nexpediente" class="field"  />

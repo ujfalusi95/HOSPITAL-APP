@@ -12,6 +12,7 @@
 
 </head>
 <body>
+<%@include file= "VentanaModalFecha.jsp"%>
 <%@include file= "VentanaModalIngreso.jsp"%>
 
 <%
@@ -27,13 +28,36 @@
 		
 	 
 	Ingreso ingreso = new Ingreso (fechaingreso,fechasalida,codigomedico,planta,cama,Integer.parseInt(coste),diagnostico,Integer.parseInt(nhistorial)); 
+//forma1
+    String[] partsIngreso = fechaingreso.split("-");
+    String year1 = partsIngreso[0]; // 123
+    String month1 = partsIngreso[1];
+    String day1 = partsIngreso[2];
+	String[] partsAlta = fechasalida.split("-");
+    String year2 = partsAlta[0]; // 123
+    String month2 = partsAlta[1];
+    String day2 = partsAlta[2];
+ //forma 2
+ //String[] partsIngreso = fechaingreso.split("-");
+ //String[] partsAlta = fechasalida.split("-");
+ //Date fechaIngresoDate= new Date(partsIngreso[2],partsIngreso[0]-1,partsIngreso[2]);
+ //Date fechaAltaDate= new Date(partsAlta[2],partsAlta[0]-1,partsAlta[2]);
 	
+		
+			
+			
+		if (Integer.parseInt(year1)>Integer.parseInt(year2) || Integer.parseInt(month1)>Integer.parseInt(month2) || Integer.parseInt(day1)>Integer.parseInt(day2)){%>
+			<script type="text/javascript">		
+					$('#modalFecha').modal('show');
+
+			</script>
+		<%
+		}
 		boolean dime=ingreso.insertarIngreso();
 		if	(dime==true){
-			
 			response.sendRedirect("MostrarIngresos.jsp");
-			
-		}else{%>
+		}
+		else{%>
 		<script type="text/javascript">
 			$('#modalIngreso').modal('show');
 			</script>

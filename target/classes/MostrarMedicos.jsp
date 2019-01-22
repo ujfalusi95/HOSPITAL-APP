@@ -15,7 +15,7 @@
 <%@ page import="org.jfree.chart.ChartUtils" %>
 <%@ page import="org.jfree.chart.plot.PlotOrientation" %>
 <%@ page import= "java.awt.image.BufferedImage"%>
-  <%@ page import="javax.imageio.ImageIO"%>
+
 <!doctype html>
 <html lang="en">
   <head>

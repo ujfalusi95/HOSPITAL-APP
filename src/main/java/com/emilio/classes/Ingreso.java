@@ -2,7 +2,7 @@ package com.emilio.classes;
 import java.net.URISyntaxException;
 
 import java.sql.SQLException;
-import static java.lang.System.out;
+
 
 
 import java.util.List;

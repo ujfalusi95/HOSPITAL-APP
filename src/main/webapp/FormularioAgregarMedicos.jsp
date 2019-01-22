@@ -58,7 +58,7 @@
 			</p>
 			<p>
 			<label for="codigomedico">Código del médico </label>
-			<input type="number" name="codigomedico" class="field" /><br></br>
+			<input type="text" name="codigomedico" class="field" /><br></br>
 			</p>
 			
 			

@@ -41,24 +41,24 @@
 			<p>
 			<label for="fechasalida">Fecha de alta </label>
 			<input type="date" name="fechasalida" class="field" placeholder="(YYYY/MM/DD)" id="fechaaltaid" />
-			<
+			
 			</p>
 
 			<p>
 			<label for="codigomedico">Código del médico</label>
-			<input type="number" name="codigomedico" class="field"/>
+			<input type="text" name="codigomedico" class="field"/>
 			</p>
 			<p>
 			<label for="planta">Planta</label>
-			<input type="number" name="planta" class="field" />
+			<input type="text" name="planta" class="field" />
 			</p>
 			<p>
 			<label for="cama">Cama</label>
-			<input type="number" name="cama" class="field"/>
+			<input type="text" name="cama" class="field"/>
 			</p>
 			<p>
 			<label for="coste">Coste</label>
-			<input type="number" name="coste" class="field" />
+			<input type="text" name="coste" class="field" />
 			</p>
 			<p>
 			<label for="diagnostico">Diagnóstico </label>

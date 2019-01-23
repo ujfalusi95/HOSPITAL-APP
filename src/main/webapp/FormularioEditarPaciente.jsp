@@ -61,7 +61,7 @@
 			</p>
 			<p>
 				<label for="telefono">Teléfono </label>
-				<input type="tel" value="<%=paciente.getTelefono()%>" name="telefono" class="field"/>
+				<input type="number" value="<%=paciente.getTelefono()%>" name="telefono" class="field"/>
 			</p>
 			<p>
 				<label for="fechanacimiento">Fecha de nacimiento </label>

@@ -50,7 +50,7 @@
 			</p>
 			<p>
 			<label for="telefono">Teléfono </label>
-			<input type="tel" name="telefono" class="field" />
+			<input type="number" name="telefono" class="field" />
 			</p>
 			<p>
 			<label for="fechanacimiento">Fecha de nacimiento </label>
